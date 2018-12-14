@@ -155,10 +155,14 @@ class RoomType(db.Model):
 
 @app.route('/',methods=['GET','POST'])
 def hello_world():
-    user = UserFav.query.filter(UserFav.uid==None)
-    [db.delete(u) for u in user]
-    db.session.commit()
-    return 'Hello World!'
+    # user = UserFav.query.filter(UserFav.uid==None)
+    # [db.delete(u) for u in user]
+    # db.session.commit()
+    return '欢迎来到Hardcore TV!'
+
+@app.route('/lubo',methods=['GET','POST'])
+def lubo():
+    return render_template('TV.html')
 
 
 if __name__ == '__main__':
