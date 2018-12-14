@@ -21,6 +21,9 @@ class UserMain(db.Model):
         self.age = age
         self.email = email
 
+    def __repr__(self):
+        return 'userinfo %s %s'%(self.user_name,self.u_passwd)
+
 class UserOther(db.Model):
     __tablename__ = 'user_other_info'
     id = db.Column(db.INTEGER,primary_key=True)
