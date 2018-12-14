@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Registration Page</title>
+	<link rel="stylesheet" href="">
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			width: 100%;
+			height: 100vh;
+			background-color: #2b3137;
+		}
+		.wrapper {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 24px;
+			border-radius: 6px;
+			background-color: #fff;
+		}
+		.logo {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.item {
+			margin-bottom: 10px;
+		}
+		.item label {
+			width: 70px;
+			display: inline-block;
+			color: #2b2b2b;
+		}
+		.item input {
+			border-radius: 5px;
+		    font-size: 16px;
+		    padding: 5px 10px;
+		    border: 1px solid #2b2b2b;
+		    outline: 0;
+		}
+		.button {
+			width: 200px;
+			display: block;
+			padding: 10px;
+			margin: 20px auto 0;
+			border-radius: 5px;
+			border: none;
+			background-color: #2ebc4f;
+			color: #fff;
+			font-size: 16px;
+			outline: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="logo">
+			Hardcore TV
+		</div>
+		<form class="input-group" action="/register" method="post">
+			<div class="item">
+				<label>用户名：</label>
+				<input type="text" name="user_name" value="">
+			</div>
+			<div class="item">
+				<label>密码：</label>
+				<input type="password" name="u_passwd" value="">
+			</div>
+            <div class="item">
+				<label>确认密码：</label>
+				<input type="password" name="u_passwd2" value="">
+			</div>
+			<div class="item">
+				<label>年龄：</label>
+				<input type="text" name="age" value="">
+			</div>
+			<div class="item">
+				<label>email：</label>
+				<input type="text" name="email" value="">
+			</div>
+			<div class="item">
+				<label>性别:</label>
+				<input type="text" name="sex" value="">
+			</div>
+			<div class="item">
+				<label>手机:</label>
+				<input type="text" name="phone" value="">
+			</div>
+			<div class="item">
+				<label>城市:</label>
+				<input type="text" name="city" value="">
+			</div>
+			<div class="item">
+				<label>签名：</label>
+				<input type="text" name="ps" value="">
+			</div>
+			<input class="button" type="submit" value="提交">
+		</form>
+	</div>
+</body>
+</html>

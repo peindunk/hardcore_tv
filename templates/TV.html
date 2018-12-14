@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>TV</title>
-        <link rel="shortcut icon" href="logo.jpg">
-        <link rel="stylesheet" type="text/css" href="TV.css">
+        <link rel="shortcut icon" href="{{url_for('static',filename='img/logo.jpg')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/TV.css')}}">
     </head>
     <body>
         <div class="head">
             <div class="logo">
-                <img src="tvlogo.jpg" height="60px">
+                <img src="{{url_for('static',filename='img/tvlogo.jpg')}}" height="60px">
             </div>
             <div id="head1">
                 <a href="">首页</a>
@@ -31,7 +31,7 @@
         </div>
         <div class="video">
             <video class="vid" width="1244px" height="700px" controls>
-                <source src="xmj.mp4">
+                <source src="{{url_for('static',filename='video/xmj.mp4')}}">
             </video>
         </div>
         <div class="comment">
