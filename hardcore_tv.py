@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
-from flask import Flask,render_template,request
 from mysql_table import *
+from flask import Flask,render_template,request
 from flask_wtf import FlaskForm
 from wtforms import StringField,TextAreaField,SubmitField,SelectField
 from wtforms.validators import DataRequired
@@ -13,9 +13,12 @@ app = Flask(__name__)
 # 制定数据库的配置
 app.config['SQLALCHEMY_DATABASE_URI']="mysql://root:123456@localhost/hardcore_tv"
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN']=True
+# 未来移除  不看warning
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 
 # 创建数据库实例
 db = SQLAlchemy(app)
+
 
 class LoginForm(FlaskForm):
     uname = StringField(label='用户名:',validators=[DataRequired('请输入用户名')],
@@ -35,8 +38,11 @@ def register_api(req):
 
 
 @app.route('/',methods=['GET','POST'])
-def hello_world():
-    return '欢迎来到Hardcore TV!'
+def index():
+    # user = UserMain('xz','123456',25,'123@qq.com')
+    # db.session.add(user)
+    # db.session.commit()
+    return render_template('mainTest.html')
 
 
 @app.route('/lubo',methods=['GET','POST'])
@@ -69,7 +75,6 @@ def login():
                 return '登录失败'
 
 
-
 if __name__ == '__main__':
-    db.create_all()
+    createTables()
     app.run()

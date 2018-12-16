@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 from hardcore_tv import *
 
-# 创建实体类
+# 创建实体模板类
 class UserMain(db.Model):
     __tablename__ = 'userinfo_main'
     user_id = db.Column(db.INTEGER,primary_key=True)
@@ -145,5 +145,9 @@ class RoomType(db.Model):
         self.type = type
 
 
+def createTables():
+    db.create_all()
 
+def deleteTables():
+    db.drop_all()
 
