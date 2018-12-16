@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Hardcore_TV登录</title>
 </head>
 <body>
+    <h1>登录</h1>
     <form action="/login" method="post">
-        登录<br>
-        用户名：　<input type="text" name="uname" value=""> <br>
-        密码　：　<input type="password" name="pwd" value=""> <br>
-        <button type="submit">登录</button>
+        {{ form.csrf_token() }}
+        {{ form.uname.label }} {{ form.uname }} <br>
+        {{ form.upwd.label }} &nbsp {{ form.upwd }} <br>
+        {{ form.submit }}
+        {% for message in get_flashed_messages() %}
+        {{ message }}
+        {% endfor %}
     </form>
 </body>
 </html>

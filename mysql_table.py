@@ -24,6 +24,8 @@ class UserMain(db.Model):
     def __repr__(self):
         return 'userinfo %s %s'%(self.user_name,self.u_passwd)
 
+
+
 class UserOther(db.Model):
     __tablename__ = 'user_other_info'
     id = db.Column(db.INTEGER,primary_key=True)
@@ -39,6 +41,7 @@ class UserOther(db.Model):
         self.phone = phone
         self.city = city
         self.ps = ps
+
 
 class UserFav(db.Model):
     __tablename__ = 'user_fav'

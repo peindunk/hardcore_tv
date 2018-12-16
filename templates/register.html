@@ -63,45 +63,58 @@
 			Hardcore TV
 		</div>
 		<form class="input-group" action="/register" method="post">
+	        {{ form.csrf_token() }}
 			<div class="item">
 				<label>用户名：</label>
-				<input type="text" name="user_name" value="">
+				<!--<input type="text" name="user_name" value="">-->
+				{{ form.uname }}
 			</div>
 			<div class="item">
 				<label>密码：</label>
-				<input type="password" name="u_passwd" value="">
+				<!--<input type="password" name="u_passwd" value="">-->
+				{{ form.upwd1 }}
 			</div>
             <div class="item">
 				<label>确认密码：</label>
-				<input type="password" name="u_passwd2" value="">
+				<!--<input type="password" name="u_passwd2" value="">-->
+				{{ form.upwd2 }}
 			</div>
 			<div class="item">
 				<label>年龄：</label>
-				<input type="text" name="age" value="">
+				<!--<input type="text" name="age" value="">-->
+				{{ form.age }}
 			</div>
 			<div class="item">
 				<label>email：</label>
-				<input type="text" name="email" value="">
+				<!--<input type="text" name="email" value="">-->
+				{{ form.email }}
 			</div>
 			<div class="item">
 				<label>性别:</label>
-				<input type="radio" name="sex" value="0">男
-				<input type="radio" name="sex" value="1">女
-				<input type="radio" name="sex" value="2">保密
+				<!--<input type="radio" name="sex" value="0">男-->
+				<!--<input type="radio" name="sex" value="1">女-->
+				<!--<input type="radio" name="sex" value="2">保密-->
 			</div>
 			<div class="item">
 				<label>手机:</label>
-				<input type="text" name="phone" value="">
+				<!--<input type="text" name="phone" value="">-->
+				{{ form.phone }}
 			</div>
 			<div class="item">
 				<label>城市:</label>
-				<input type="text" name="city" value="">
+				<!--<input type="text" name="city" value="">-->
+				{{ form.city }}
 			</div>
 			<div class="item">
 				<label>签名：</label>
-				<input type="text" name="ps" value="">
+				<!--<input type="text" name="ps" value="">-->
+				{{ form.ps }}
 			</div>
-			<input class="button" type="submit" value="提交">
+			<!--<input class="button" type="submit" value="注册">-->
+			{{ form.submit }}
+			{% for message in get_flashed_messages() %}
+        	{{ message }}
+        	{% endfor %}
 		</form>
 	</div>
 </body>
