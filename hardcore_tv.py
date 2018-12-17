@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 from mysql_table import *
-from config import  *
+from config import *
 from flask import Flask,render_template,request,flash
 from flask_wtf import FlaskForm
 from wtforms import StringField,SubmitField,IntegerField,RadioField,TextAreaField,widgets
@@ -119,6 +119,10 @@ def login():
                 else:
                     return render_template('mainTest.html')
     return render_template('login.html',form=login)
+
+@app.route('/all',methods=['GET','SET'])
+def livelist():
+    return render_template('livelist.html')
 
 
 if __name__ == '__main__':
