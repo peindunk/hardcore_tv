@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Hardcore_TV登录</title>
+    <style>
+        html, body {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			width: 100%;
+			height: 100vh;
+		}
+        div {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 24px;
+			border-radius: 6px;
+			background-color: #fff;
+		}
+    </style>
 </head>
-<body>
+<body background="{{ url_for('static',filename='img/kobe.jpg') }}">
     <h1>登录</h1>
     <form action="/login" method="post">
-        {{ form.csrf_token() }}
-        {{ form.uname.label }} {{ form.uname }} <br>
-        {{ form.upwd.label }} &nbsp {{ form.upwd }} <br>
-        {{ form.submit }}
-        {% for message in get_flashed_messages() %}
-        {{ message }}
-        {% endfor %}
+        <div>
+            {{ form.csrf_token() }}
+            {{ form.uname.label }} {{ form.uname }} <br>
+            {{ form.upwd.label }} &nbsp {{ form.upwd }} <br>
+            {{ form.submit }}
+            {% for message in get_flashed_messages() %}
+            {{ message }}
+            {% endfor %}
+        </div>
     </form>
 </body>
 </html>
