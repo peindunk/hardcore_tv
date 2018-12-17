@@ -40,7 +40,9 @@ class RegisteForm(FlaskForm):
     age = IntegerField('年龄',validators=[DataRequired(),NumberRange(1,150)])
     email = StringField('邮箱',validators=[DataRequired(),Email()])
 
-    # sex = RadioField('性别',validators=[DataRequired()])
+    sex = RadioField('性别',
+                     choices=[('男','男'),('女','女'),('保密','保密')],
+                     validators=[DataRequired()])
     phone = StringField('手机',validators=[DataRequired(),Length(11,12)])
     city = StringField('城市',validators=[DataRequired(),Length(1,10)])
     ps = TextAreaField('签名')
@@ -52,7 +54,7 @@ def do_register(register):
     age = register.age.data
     email = register.email.data
 
-    # sex = register.sex.data
+    sex = register.sex.data
     phone = register.phone.data
     city = register.city.data
     ps = register.ps.data
@@ -66,9 +68,10 @@ def do_register(register):
         user_m = UserMain(uname,upwd,age,email)
         db.session.add(user_m)
         db.session.commit()
-        user = UserMain.query.filter_by(user_name=uname).first()
+        user = UserMain.query.filter().all()[-1]
+        print('user',user)
         uid = user.user_id
-        user_o = UserOther(uid,'男',phone,city,ps)
+        user_o = UserOther(uid,sex,phone,city,ps)
         db.session.add(user_o)
         db.session.commit()
         user_s = UserScore(uid,100)
