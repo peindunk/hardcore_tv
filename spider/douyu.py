@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-from selenium import webdriver
+from selenium.webdriver import Firefox
 from bs4 import BeautifulSoup as bs
 import sys
 
@@ -9,7 +9,7 @@ import sys
 class Douyu():
     
     def __init__(self):
-        self.driver = webdriver.PhantomJS()
+        self.driver = Firefox()
         self.img_count = 0
         self.num = 0
         self.count = 0
@@ -17,6 +17,7 @@ class Douyu():
     def douyuSpider(self):
         self.driver.get("https://www.douyu.com/directory/all")
         f = open('douyu.txt','w')
+        f2 = open('fenlei.txt','a')
         while True:
             soup = bs(self.driver.page_source, "lxml")
             # 主播名, 返回列表
@@ -33,12 +34,10 @@ class Douyu():
                     imgs.remove(img)
                     continue
                 print(img.get("data-original"))
-            s = set()
             for name, number ,title ,img ,dtype in zip(names, numbers,titles,imgs,dtypes):
                 f.write(u"观众人数:\t" + number.get_text().strip() + u"-\t主播名: " + name.get_text().strip()+' ')
                 f.write(u'房间标题:\t' + title.get_text().strip()+' ')
                 f.write(u'封面链接：\t' + img.get("data-original")+' ')
-                s.add(dtype.get_text().strip())
                 f.write(u'分类：\t' + dtype.get_text().strip())
                 f.write(u'\n')
                 self.num += 1
@@ -48,20 +47,16 @@ class Douyu():
                 else:
                     countNum = float(count)
                 self.count += countNum
-            
+                f2.write(u'%s#'%dtype.get_text().strip())
             # 一直点击下一页
-            # self.driver.find_element_by_class_name("shark-pager-next").click()
+            self.driver.find_element_by_class_name("shark-pager-next").click()
             # 如果在页面源码里找到"下一页"为隐藏的标签，就退出循环
-            # if self.driver.page_source.find("shark-pager-disable-next") != -1:
-            #         break
-            break
-        f.write(u'当前主要分类有:')
-        for i in s:
-            f.write(u'%s#'%i)
+            if self.driver.page_source.find("shark-pager-disable-next") != -1:
+                f.close()
+                f2.close()
+                break
         print("当前直播人数:%s" % self.num)
         print("当前观众人数:%s" % self.count)
-        f.close()
-
 
 
 if __name__ == "__main__":
