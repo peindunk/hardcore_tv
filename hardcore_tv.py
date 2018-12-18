@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 # 制定数据库的配置
 app.config['SQLALCHEMY_DATABASE_URI']="mysql://root:123456@localhost/hardcore_tv"
-app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN']=True
+# app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN']=True
 # 未来移除  避免warning
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 
@@ -80,6 +80,7 @@ def do_register(register):
         user_g = UserGift(uid,0,0,0,0)
         db.session.add(user_g)
         db.session.commit()
+        flash('注册成功～～～～～')
     else:
         flash('有选项为空或者填写不正确')
 

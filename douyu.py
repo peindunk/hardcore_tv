@@ -16,6 +16,7 @@ class Douyu():
 
     def douyuSpider(self):
         self.driver.get("https://www.douyu.com/directory/all")
+        f = open('douyu.txt','w')
         while True:
             soup = bs(self.driver.page_source, "lxml")
             # 主播名, 返回列表
@@ -26,15 +27,20 @@ class Douyu():
             titles = soup.find_all("h3",{"class":"ellipsis"})
             # 封面地址
             imgs = soup.find_all("img",{"class":"JS_listthumb"})
+            dtypes = soup.find_all('span',{"class":"tag ellipsis"})
             for img in imgs:
                 if not img.get("alt"):
                     imgs.remove(img)
                     continue
                 print(img.get("data-original"))
-            for name, number ,title ,img in zip(names, numbers,titles,imgs):
-                print(u"观众人数: -" + number.get_text().strip() + u"-\t主播名: " + name.get_text().strip())
-                print(u'房间标题:\t' + title.get_text().strip())
-                print(u'封面链接：\t' + img.get("data-original"))
+            s = set()
+            for name, number ,title ,img ,dtype in zip(names, numbers,titles,imgs,dtypes):
+                f.write(u"观众人数:\t" + number.get_text().strip() + u"-\t主播名: " + name.get_text().strip()+' ')
+                f.write(u'房间标题:\t' + title.get_text().strip()+' ')
+                f.write(u'封面链接：\t' + img.get("data-original")+' ')
+                s.add(dtype.get_text().strip())
+                f.write(u'分类：\t' + dtype.get_text().strip())
+                f.write(u'\n')
                 self.num += 1
                 count = number.get_text().strip()
                 if count[-1]=="万":
@@ -49,8 +55,13 @@ class Douyu():
             # if self.driver.page_source.find("shark-pager-disable-next") != -1:
             #         break
             break
+        f.write(u'当前主要分类有:')
+        for i in s:
+            f.write(u'%s#'%i)
         print("当前直播人数:%s" % self.num)
         print("当前观众人数:%s" % self.count)
+        f.close()
+
 
 
 if __name__ == "__main__":

@@ -24,7 +24,7 @@
     </style>
 </head>
 <body background="{{ url_for('static',filename='img/kobe.jpg') }}">
-    <h1>登录</h1>
+
     <form action="/login" method="post">
         <div>
             {{ form.csrf_token() }}
@@ -36,5 +36,6 @@
             {% endfor %}
         </div>
     </form>
+
 </body>
 </html>
