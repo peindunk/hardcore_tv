@@ -7,6 +7,7 @@ body{
 }
 
 .head{
+    width: 1800px;
     height:60px;
     background-color:rgb(255,255,255);
 }
@@ -107,7 +108,24 @@ body{
     height:60px;
     color:rgb(1,1,1);
     text-align: center;
-    line-height: 2;
+    line-height: 60px;
+    position:absolute;
+    z-index:2
+}
+
+.chat .vide:hover{
+    background-color:rgb(240, 180, 199);
+    color:rgb(255,255,255);
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.chat .comments:hover{
+    background-color:rgb(240, 180, 199);
+    color:rgb(255,255,255);
+    font-weight:bold;
+    cursor:pointer;
+    z-index:3;
 }
 
 .chat .comments{
@@ -118,5 +136,37 @@ body{
     position:absolute;
     top:0px;
     left:200px;
-    line-height: 2;
+    line-height:60px;
+    z-index: 1;
 }
+
+.chat .comments .chatarea{
+    width:400px;
+    height:720px;
+    background-color:rgb(255,255,255);
+    position:absolute;
+    right:0px;
+}
+
+.chat .vide .show{
+    width:400px;
+    height:720px;
+    overflow:hidden;
+    position:absolute;
+    top:60px;
+    overflow: scroll;
+}
+
+.chat .vide .show div{
+    height:200px;
+    margin:0px;
+    border:10px solid rgb(255,255,255);
+} 
+
+
+.chat .vide .show div:hover{
+    height:200px;
+    margin:0px;
+    cursor:pointer;
+    border:10px solid  rgb(240, 180, 199);
+} 

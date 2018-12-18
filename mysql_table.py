@@ -16,7 +16,7 @@ class UserMain(db.Model):
     score = db.relationship('UserScore',backref='userinfo_main',lazy='dynamic')
 
     def __init__(self,uname,pwd,age,email):
-        self.user_name = uname
+        self.user_name = unamespan
         self.u_passwd = pwd
         self.age = age
         self.email = email

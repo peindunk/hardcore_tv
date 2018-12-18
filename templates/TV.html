@@ -2,14 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Video</title>
-        <link rel="shortcut icon" href="{{url_for('static',filename='img/logo.jpg')}}">
-        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/TV.css')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+         minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+        <title>TV</title>
+        <link rel="shortcut icon" href="{{ url_for('static',filename='img/logo.jpg') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/TV.css') }}">
     </head>
     <body>
         <div class="head">
             <div class="logo">
-                <img src="{{url_for('static',filename='img/tvlogo.jpg')}}" height="60px">
+                <img src="{{ url_for('static',filename='img/452.jpg') }}" height="60px">
             </div>
             <div id="head1">
                 <a href="">首页</a>
@@ -25,13 +27,13 @@
             </form>
             <div id="head4">
                 <a href="">登录</a>
-                <span> | </span>
+                <label> | </label>
                 <a href="">注册</a>
             </div>
         </div>
         <div class="video">
             <video class="vid" width="1244px" height="700px" controls>
-                <source src="{{url_for('static',filename='video/xmj.mp4')}}">
+                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
             </video>
         </div>
         <div class="comment">
@@ -41,11 +43,57 @@
             </form>
         </div>
         <div class="chat">
-            <div class="vide">
-                视频
+            <div class="vide">视频
+                <div class="show">
+                    <div>
+                        <video width="220px" height="155px">
+                            <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                        </video>
+                    </div>
+                    <div>
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                    </div>
+                    <div>
+                        <video width="220px" height="155px">
+                            <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                        </video>
+                    </div>
+                    <div>
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                    </div>
+                    <div>
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                    </div>
+                    <div>
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                    </div>
+                    <div>
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                    </div>
+                    <div>
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                    </div>
+                    <div>
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                    </div>
+                </div>
             </div>
-            <div class="comments">
-                评论
+            <div class="comments">评论
+                <div class="chatarea"></div>
             </div>
         </div>
     </body>
