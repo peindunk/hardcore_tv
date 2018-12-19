@@ -1,10 +1,8 @@
 #-*- coding:utf-8 -*-
 from mysql_table import *
 from config import *
+from form_model import LoginForm,RegisteForm
 from flask import Flask,render_template,request,flash
-from flask_wtf import FlaskForm
-from wtforms import StringField,SubmitField,IntegerField,RadioField,TextAreaField,widgets
-from wtforms.validators import DataRequired,EqualTo,Email,NumberRange,Length
 from flask_sqlalchemy import SQLAlchemy
 import pymysql
 pymysql.install_as_MySQLdb()
@@ -16,37 +14,11 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 # 制定数据库的配置
 app.config['SQLALCHEMY_DATABASE_URI']="mysql://root:123456@localhost/hardcore_tv"
-# app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN']=True
 # 未来移除  避免warning
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 
 # 创建数据库实例
 db = SQLAlchemy(app)
-
-
-class LoginForm(FlaskForm):
-    uname = StringField('用户名',validators=[DataRequired()])
-    upwd = StringField('密码',validators=[DataRequired()],widget=widgets.PasswordInput())
-    submit = SubmitField('登录')
-
-class RegisteForm(FlaskForm):
-    uname = StringField('用户名',validators=[DataRequired(),Length(1,8)])
-    upwd1 = StringField('密码',
-                        validators=[DataRequired()],
-                        widget=widgets.PasswordInput())
-    upwd2 = StringField('确认密码',
-                        validators=[DataRequired(),EqualTo('upwd1','密码不一致')],
-                        widget=widgets.PasswordInput())
-    age = IntegerField('年龄',validators=[DataRequired(),NumberRange(1,150)])
-    email = StringField('邮箱',validators=[DataRequired(),Email()])
-
-    sex = RadioField('性别',
-                     choices=[('男','男'),('女','女'),('保密','保密')],
-                     validators=[DataRequired()])
-    phone = StringField('手机',validators=[DataRequired(),Length(11,12)])
-    city = StringField('城市',validators=[DataRequired(),Length(1,10)])
-    ps = TextAreaField('签名')
-    submit = SubmitField('注册')
 
 def do_register(register):
     uname = register.uname.data
@@ -84,21 +56,28 @@ def do_register(register):
     else:
         flash('有选项为空或者填写不正确')
 
+def lubo_visble():
+    pass
+
 @app.route('/',methods=['GET','POST'])
 def index():
-    return render_template('mainTest.html')
+    result = ''
+    if request.method=='POST':
+        result = request.form['num']
+        print(result)
+    return render_template('mainTest.html',result=result)
 
 
 @app.route('/lubo',methods=['GET','POST'])
 def lubo():
+    if request.method == "GET":
+        lubo_visble()
     return render_template('TV.html')
 
 
 @app.route('/register',methods=['GET','POST'])
 def register():
     register = RegisteForm(request.form)
-    # if request.method == 'GET':
-    #     return render_template('register.html',form=register)
     if request.method == 'POST':
         do_register(register)
     return render_template('register.html',form=register)
@@ -127,5 +106,6 @@ def livelist():
 
 
 if __name__ == '__main__':
+    # deleteAllTables()
     createTables()
     app.run('0.0.0.0',port=5000)

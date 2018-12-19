@@ -35,10 +35,12 @@ class Douyu():
                     continue
                 print(img.get("data-original"))
             for name, number ,title ,img ,dtype in zip(names, numbers,titles,imgs,dtypes):
-                f.write(u"观众人数:\t" + number.get_text().strip() + u"-\t主播名: " + name.get_text().strip()+' ')
-                f.write(u'房间标题:\t' + title.get_text().strip()+' ')
-                f.write(u'封面链接：\t' + img.get("data-original")+' ')
-                f.write(u'分类：\t' + dtype.get_text().strip())
+                # f.write(u"观众人数:\t" + number.get_text().strip() + u"-\t主播名: " + name.get_text().strip()+' ')
+                # f.write(u'房间标题:\t' + title.get_text().strip()+' ')
+                # f.write(u'封面链接：\t' + img.get("data-original")+' ')
+                # f.write(u'分类：\t' + dtype.get_text().strip())
+                f.write(number.get_text().strip()+'##'+name.get_text().strip()+'##'+title.get_text().strip()+'##'+
+                        img.get("data-original")+'##'+dtype.get_text().strip())
                 f.write(u'\n')
                 self.num += 1
                 count = number.get_text().strip()
@@ -48,13 +50,14 @@ class Douyu():
                     countNum = float(count)
                 self.count += countNum
                 f2.write(u'%s#'%dtype.get_text().strip())
-            # 一直点击下一页
-            self.driver.find_element_by_class_name("shark-pager-next").click()
-            # 如果在页面源码里找到"下一页"为隐藏的标签，就退出循环
-            if self.driver.page_source.find("shark-pager-disable-next") != -1:
-                f.close()
-                f2.close()
-                break
+            # # 一直点击下一页
+            # self.driver.find_element_by_class_name("shark-pager-next").click()
+            # # 如果在页面源码里找到"下一页"为隐藏的标签，就退出循环
+            # if self.driver.page_source.find("shark-pager-disable-next") != -1:
+            #     f.close()
+            #     f2.close()
+            #     break
+            break
         print("当前直播人数:%s" % self.num)
         print("当前观众人数:%s" % self.count)
 

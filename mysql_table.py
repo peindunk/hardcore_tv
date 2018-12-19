@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
-from hardcore_tv import *
+from hardcore_tv import db
+from config import *
 
 # 创建实体模板类
 class UserMain(db.Model):
@@ -24,8 +25,6 @@ class UserMain(db.Model):
     def __repr__(self):
         return 'userinfo %s %s'%(self.user_name,self.u_passwd)
 
-
-
 class UserOther(db.Model):
     __tablename__ = 'user_other_info'
     id = db.Column(db.INTEGER,primary_key=True)
@@ -42,7 +41,6 @@ class UserOther(db.Model):
         self.city = city
         self.ps = ps
 
-
 class UserFav(db.Model):
     __tablename__ = 'user_fav'
     id = db.Column(db.INTEGER,primary_key=True)
@@ -57,18 +55,20 @@ class RoomMain(db.Model):
     __tablename__ = 'roominfo_main'
     room_id = db.Column(db.INTEGER,primary_key=True)
     room_name = db.Column(db.String(100))
-    room_comment = db.Column(db.Text)
-    host_name = db.Column(db.String(20))
+    host_name = db.Column(db.String(50))
+    img = db.Column(db.String(128))
 
     count = db.relationship('RoomCount',backref='roominfo_main',lazy='dynamic')
     gift = db.relationship('RoomGift',backref='roominfo_main',lazy='dynamic')
     video = db.relationship('VideoLoad',backref='roominfo_main',lazy='dynamic')
     type = db.relationship('RoomType',backref='roominfo_main',lazy='dynamic')
+    comment = db.relationship('RoomComment',backref='roominfo_main',lazy='dynamic')
 
-    def __init__(self,rname,rcomment,hname):
+
+    def __init__(self,rname,hname,img):
         self.room_name = rname
-        self.room_comment = rcomment
         self.host_name = hname
+        self.img = img
 
 class RoomCount(db.Model):
     __tablename__ =  'roominfo_count'
@@ -77,12 +77,14 @@ class RoomCount(db.Model):
     host_lv = db.Column(db.INTEGER)
     fans_num = db.Column(db.INTEGER)
     exp = db.Column(db.INTEGER)
+    p_count = db.Column(db.INTEGER)
 
-    def __init__(self,r_id,lv,fans,exp):
+    def __init__(self,r_id,lv,fans,exp,pco):
         self.r_id = r_id
         self.lv = lv
         self.fans = fans
         self.exp = exp
+        self.p_count = pco
 
 class RoomGift(db.Model):
     __tablename__ = 'roominfo_gift'
@@ -99,7 +101,6 @@ class RoomGift(db.Model):
         self.low = low
         self.middle = middle
         self.high = high
-
 
 class UserGift(db.Model):
     __tablename__ = 'userinfo_gift'
@@ -141,16 +142,89 @@ class RoomType(db.Model):
     __tablename__ = 'room_type'
     id = db.Column(db.INTEGER,primary_key=True)
     r_id = db.Column(db.INTEGER,db.ForeignKey('roominfo_main.room_id'))
-    type = db.Column(db.Enum('体育','游戏','娱乐','户外','星秀'))
+    type = db.Column(db.Enum('PC游戏','主机游戏','手机游戏','户外美食','娱乐','其它'))
 
     def __init__(self,rid,type):
         self.r_id = rid
         self.type = type
 
+class RoomComment(db.Model):
+    # __tablename__ == 'room_comment'
+    id = db.Column(db.INTEGER,primary_key=True)
+    rid = db.Column(db.INTEGER,db.ForeignKey('roominfo_main.room_id'))
+    uid = db.Column(db.INTEGER)
+    comment = db.Column(db.Text)
 
+    def __init__(self,rid,comment,uid):
+        self.rid = rid
+        self.comment = comment
+        self.uid = uid
+
+# 插入爬取数据
+def gen_data():
+    with open('hardcore_tv/spider/douyu.txt') as f:
+        for line in f:
+            data = line.split('##')
+            p_count = int(float(data[0][:-1])*10000)
+            host_name = data[1]
+            r_name = data[2]
+            img = data[3]
+            type = data[4].strip()
+            rm = RoomMain(r_name,host_name,img)
+            db.session.add(rm)
+            db.session.commit()
+            robj = RoomMain.query.filter().all()[-1]
+            rc = RoomCount(robj.room_id,0,0,0,p_count)
+            db.session.add(rc)
+            db.session.commit()
+            rg = RoomGift(robj.room_id,0,0,0,0)
+            db.session.add(rg)
+            db.session.commit()
+            # 'PC游戏', '主机游戏', '手机游戏', '户外美食', '娱乐', '其它'
+            if type in pcgame:
+                type = 'PC游戏'
+            elif type in videoGame:
+                type = '主机游戏'
+            elif type in mobileGame:
+                type = '手机游戏'
+            elif type in outdoor_food:
+                type = '户外美食'
+            elif type in entertainment:
+                type = '娱乐'
+            else:
+                type = '其它'
+            rt = RoomType(robj.room_id,type)
+            db.session.add(rt)
+            db.session.commit()
+
+# 删除房间相关数据
+def del_room_table():
+    del1 = RoomMain.query.filter().all()
+    del2 = RoomGift.query.filter().all()
+    del3 = RoomType.query.filter().all()
+    del4 = RoomCount.query.filter().all()
+    for d in del1:
+        db.session.delete(d)
+    for d in del2:
+        db.session.delete(d)
+    for d in del3:
+        db.session.delete(d)
+    for d in del4:
+        db.session.delete(d)
+    db.session.commit()
+
+# 创建初始表
 def createTables():
     db.create_all()
+    # 创建管理员
+    adm = UserMain.query.filter(UserMain.user_name=='admin').first()
+    if not adm:
+        admobj = UserMain('admin','admin',0,'admin@admin.com')
+        db.session.add(admobj)
+        db.session.commit()
+    del_room_table()
+    gen_data()
 
-def deleteTables():
+def deleteAllTables():
     db.drop_all()
 
