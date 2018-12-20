@@ -4,6 +4,7 @@ from config import *
 from form_model import LoginForm,RegisteForm
 from flask import Flask,render_template,request,flash
 from flask_sqlalchemy import SQLAlchemy
+from spider.douyu import Douyu
 import pymysql
 pymysql.install_as_MySQLdb()
 
@@ -19,6 +20,22 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 
 # 创建数据库实例
 db = SQLAlchemy(app)
+
+def do_login(login):
+    if request.method == 'POST':
+        uname = login.uname.data
+        upwd = login.upwd.data
+        user = UserMain.query.filter_by(user_name=uname).first()
+        # 通过验证器验证
+        if login.validate_on_submit():
+            if not user:
+                flash('用户不存在')
+            else:
+                if user.u_passwd != upwd:
+                    flash('密码不正确')
+                    return 0
+                else:
+                    return 1
 
 def do_register(register):
     uname = register.uname.data
@@ -56,8 +73,28 @@ def do_register(register):
     else:
         flash('有选项为空或者填写不正确')
 
+# 录播显示数据接口
 def lubo_visble():
-    pass
+    rid = 1555
+    rm = RoomMain.query.filter(RoomMain.room_id==rid).first()
+    rcm = RoomComment.query.filter(RoomComment.rid==rid).all()
+    rc = RoomCount.query.filter(RoomCount.r_id==rid).first()
+    rt = RoomType.query.filter(RoomType.r_id==rid).first()
+    if rt:
+        type = rt.type
+    if rc:
+        lv = rc.host_lv
+        fans = rc.fans_num
+        exp = rc.exp
+        pcount = rc.p_count
+    if rm:
+        rname = rm.room_name
+        hname = rm.host_name
+        print(type,lv,fans,exp,pcount,rname,hname)
+    user_com = []
+    for item in rcm:
+        user_com.append((item.uname,item.comment))
+    # 显示逻辑　显示录像列表
 
 @app.route('/',methods=['GET','POST'])
 def index():
@@ -74,7 +111,6 @@ def lubo():
         lubo_visble()
     return render_template('TV.html')
 
-
 @app.route('/register',methods=['GET','POST'])
 def register():
     register = RegisteForm(request.form)
@@ -85,25 +121,14 @@ def register():
 @app.route('/login',methods=['GET','POST'])
 def login():
     login = LoginForm(request.form)
-    if request.method == 'POST':
-        uname = login.uname.data
-        upwd = login.upwd.data
-        user = UserMain.query.filter_by(user_name=uname).first()
-        # 通过验证器验证
-        if login.validate_on_submit():
-            if not user:
-                flash('用户不存在')
-            else:
-                if user.u_passwd != upwd:
-                    flash('密码不正确')
-                else:
-                    return render_template('mainTest.html')
+    islogin = do_login(login)
+    if islogin:
+        return render_template('mainTest.html')
     return render_template('login.html',form=login)
 
 @app.route('/all',methods=['GET','SET'])
 def livelist():
     return render_template('livelist.html')
-
 
 if __name__ == '__main__':
     # deleteAllTables()

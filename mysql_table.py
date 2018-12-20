@@ -60,9 +60,9 @@ class RoomMain(db.Model):
 
     count = db.relationship('RoomCount',backref='roominfo_main',lazy='dynamic')
     gift = db.relationship('RoomGift',backref='roominfo_main',lazy='dynamic')
-    video = db.relationship('VideoLoad',backref='roominfo_main',lazy='dynamic')
     type = db.relationship('RoomType',backref='roominfo_main',lazy='dynamic')
     comment = db.relationship('RoomComment',backref='roominfo_main',lazy='dynamic')
+    videolist = db.relationship('VideoList',backref='roominfo_main',lazy='dynamic')
 
 
     def __init__(self,rname,hname,img):
@@ -118,16 +118,6 @@ class UserGift(db.Model):
         self.middle = middle
         self.high = high
 
-class VideoLoad(db.Model):
-    __tablename__ = 'video_load'
-    id = db.Column(db.INTEGER,primary_key=True)
-    r_id = db.Column(db.INTEGER,db.ForeignKey('roominfo_main.room_id'))
-    path = db.Column(db.String(100))
-
-    def __init__(self,rid,path):
-        self.r_id = rid
-        self.path = path
-
 class UserScore(db.Model):
     __tablename__ = 'user_score'
     id = db.Column(db.INTEGER,primary_key=True)
@@ -154,11 +144,27 @@ class RoomComment(db.Model):
     rid = db.Column(db.INTEGER,db.ForeignKey('roominfo_main.room_id'))
     uid = db.Column(db.INTEGER)
     comment = db.Column(db.Text)
+    uname = db.Column(db.String(30))
 
-    def __init__(self,rid,comment,uid):
+    def __init__(self,rid,comment,uid,uname):
         self.rid = rid
         self.comment = comment
         self.uid = uid
+        self.uname = uname
+
+class VideoList(db.Model):
+    # __table__ == 'videolist'
+    id = db.Column(db.INTEGER,primary_key=True)
+    rid = db.Column(db.INTEGER,db.ForeignKey('roominfo_main.room_id'))
+    video_url = db.Column(db.String(128))
+    poster_url = db.Column(db.String(128))
+    video_name = db.Column(db.String(64))
+
+    def __init__(self,rid,v_url,p_url,v_name):
+        self.rid = rid
+        self.video_url = v_url
+        self.poster_url = p_url
+        self.video_name = v_name
 
 # 插入爬取数据
 def gen_data():
