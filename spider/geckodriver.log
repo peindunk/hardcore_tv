@@ -62,3 +62,894 @@ console.error: BroadcastService:
 [Parent 5306, Gecko_IOThread] WARNING: pipe error (97): 连接被对方重设: file /build/firefox-h0evE3/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
 [Parent 5306, Gecko_IOThread] WARNING: pipe error (80): 连接被对方重设: file /build/firefox-h0evE3/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
 1545206645760	Marionette	INFO	Stopped listening on port 44040
+1545538521865	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aZAymvCltwc3"
+1545538522638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545538522638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545538525565	Marionette	INFO	Listening on port 33235
+1545538525596	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545538680052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ng5oKf2oycnx"
+1545538680362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545538680362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545538682452	Marionette	INFO	Listening on port 46143
+1545538682461	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545538771716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KD9FO58ZPAN2"
+1545538772020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545538772020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545538773956	Marionette	INFO	Listening on port 34167
+1545538774022	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 18436, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 18274, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 18274, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545538849214	Marionette	INFO	Stopped listening on port 34167
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x580029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 18079, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 17913, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 17913, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545538852341	Marionette	INFO	Stopped listening on port 46143
+[Parent 17058, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 17058, Gecko_IOThread] WARNING: pipe error (123): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545538856414	Marionette	INFO	Stopped listening on port 33235
+1545538880775	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2EOOoisXjofR"
+1545538881075	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545538881076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545538883516	Marionette	INFO	Listening on port 40505
+1545538883628	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 18679, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 18679, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545539196788	Marionette	INFO	Stopped listening on port 40505
+1545539386449	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UwZdyQafBq9z"
+1545539386755	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545539386755	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545539388824	Marionette	INFO	Listening on port 39123
+1545539388857	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545540234876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uNfe0aazMy4m"
+1545540235180	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540235180	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540237287	Marionette	INFO	Listening on port 42527
+1545540237427	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 19435, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 19435, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545540243639	Marionette	INFO	Stopped listening on port 39123
+[Parent 21720, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 21720, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545540250160	Marionette	INFO	Stopped listening on port 42527
+1545540312770	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8T8V5tSHzFjc"
+1545540313080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540313080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540315111	Marionette	INFO	Listening on port 43769
+1545540315175	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 22386, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 22386, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545540406910	Marionette	INFO	Stopped listening on port 43769
+1545540413660	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wH9LneqUxplg"
+1545540413968	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540413969	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540416023	Marionette	INFO	Listening on port 37779
+1545540416070	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545540501031	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1X0vrdvj5IP7"
+1545540501341	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540501342	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540503453	Marionette	INFO	Listening on port 43155
+1545540503537	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545540506735	Marionette	INFO	Stopped listening on port 37779
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545540618682	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.nNFCDJlGIhtT"
+1545540618993	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540618993	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540621027	Marionette	INFO	Listening on port 35059
+1545540621100	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 23256, Gecko_IOThread] WARNING: pipe error (71): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 23256, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545540622552	Marionette	INFO	Stopped listening on port 43155
+1545540671824	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iyibwAXTvxpK"
+1545540672152	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540672152	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540674182	Marionette	INFO	Listening on port 38523
+1545540674230	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545540777313	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tzQ2ruItQGZL"
+1545540777631	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540777632	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540779693	Marionette	INFO	Listening on port 42085
+1545540779722	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545540862589	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fmRbvOvKZzfo"
+1545540862892	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540862892	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540864959	Marionette	INFO	Listening on port 38853
+1545540864998	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545540914678	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KZV2SkCfbVq1"
+1545540914987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540914988	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540917132	Marionette	INFO	Listening on port 38575
+1545540917189	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545540952617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ipA8RgDiFlPA"
+1545540953005	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545540953006	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545540955410	Marionette	INFO	Listening on port 33253
+1545540955434	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545541093301	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6NPVUj1sYmkm"
+1545541093647	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545541093647	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545541096020	Marionette	INFO	Listening on port 35549
+1545541096169	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 25771, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 25771, Gecko_IOThread] WARNING: pipe error (65): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 25771, Gecko_IOThread] WARNING: pipe error (111): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541098501	Marionette	INFO	Stopped listening on port 33253
+[Parent 25387, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 25387, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541099771	Marionette	INFO	Stopped listening on port 38575
+[Parent 25046, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541100975	Marionette	INFO	Stopped listening on port 38853
+1545541102163	Marionette	INFO	Stopped listening on port 42085
+[Parent 24197, Gecko_IOThread] WARNING: pipe error (80): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541103126	Marionette	INFO	Stopped listening on port 38523
+[Child 23989, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 23815, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541104456	Marionette	INFO	Stopped listening on port 35059
+1545541173174	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.I8KCaXJXm6Zz"
+1545541173502	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545541173502	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545541175613	Marionette	INFO	Listening on port 37989
+1545541175735	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545541554593	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3svaYYz8oVHG"
+1545541554899	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545541554899	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545541557161	Marionette	INFO	Listening on port 37869
+1545541557199	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545541727742	Marionette	INFO	Stopped listening on port 35549
+[Parent 26624, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 26624, Gecko_IOThread] WARNING: pipe error (113): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541729954	Marionette	INFO	Stopped listening on port 37989
+[Parent 27280, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 27280, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541731440	Marionette	INFO	Stopped listening on port 37869
+1545541851761	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.78MpwYkaWQnM"
+1545541852063	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545541852063	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545541854507	Marionette	INFO	Listening on port 38695
+1545541854581	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 28248, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 28248, Gecko_IOThread] WARNING: pipe error (65): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545541915720	Marionette	INFO	Stopped listening on port 38695
+1545541922102	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.r2PWhVCqmPWd"
+1545541922406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545541922406	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545541924393	Marionette	INFO	Listening on port 39915
+1545541924410	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545542012283	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mgcO6fpanLp1"
+1545542012590	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545542012591	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545542014793	Marionette	INFO	Listening on port 33699
+1545542014889	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545542091844	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.GAKoLGuksjkN"
+1545542092154	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545542092154	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545542094243	Marionette	INFO	Listening on port 39235
+1545542094252	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545542134414	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KQ9ZLXRRNV1e"
+1545542134727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545542134727	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545542136962	Marionette	INFO	Listening on port 40707
+1545542137060	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545545431897	Marionette	INFO	Stopped listening on port 40707
+[Parent 29392, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 29392, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545545433093	Marionette	INFO	Stopped listening on port 39235
+[Parent 29031, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545545434520	Marionette	INFO	Stopped listening on port 33699
+[Parent 28613, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 28613, Gecko_IOThread] WARNING: pipe error (96): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545545440425	Marionette	INFO	Stopped listening on port 39915
+1545545531018	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NEbSznv1jdal"
+1545545531332	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545545531332	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545545533352	Marionette	INFO	Listening on port 36947
+1545545533428	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 1203, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 1203, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545545559247	Marionette	INFO	Stopped listening on port 36947
+1545545583158	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.z8BHVE10z4JD"
+1545545583464	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545545583465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545545585515	Marionette	INFO	Listening on port 37435
+1545545585563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545545655222	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ts2XKuWQcHH6"
+1545545655526	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545545655526	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545545657575	Marionette	INFO	Listening on port 43485
+1545545657628	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545545784057	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1Aqqvib3Ionc"
+1545545784363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545545784363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545545786477	Marionette	INFO	Listening on port 46529
+1545545786563	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 2659, Gecko_IOThread] WARNING: pipe error (71): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 2659, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545545838933	Marionette	INFO	Stopped listening on port 46529
+[Parent 2078, Gecko_IOThread] WARNING: pipe error (80): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 2078, Gecko_IOThread] WARNING: pipe error (111): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 2078, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545545840012	Marionette	INFO	Stopped listening on port 43485
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 1658, Gecko_IOThread] WARNING: pipe error (93): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 1658, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545545841253	Marionette	INFO	Stopped listening on port 37435
+1545546205060	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dVuSaFbgKjZN"
+1545546205379	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545546205380	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545546207547	Marionette	INFO	Listening on port 45961
+1545546207568	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545546213701	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oMKIQ4O29pE0"
+1545546214032	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545546214032	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545546216118	Marionette	INFO	Listening on port 40395
+1545546216269	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 4750, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 4750, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545546223817	Marionette	INFO	Stopped listening on port 40395
+[Parent 4458, Gecko_IOThread] WARNING: pipe error (93): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 4458, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545546225725	Marionette	INFO	Stopped listening on port 45961
+1545547702438	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IbSJ0xB9ClTI"
+1545547702770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545547702770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545547704792	Marionette	INFO	Listening on port 41951
+1545547704848	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545547828916	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HQVAgoLnpZkM"
+1545547829240	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545547829240	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545547831645	Marionette	INFO	Listening on port 41403
+1545547831740	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 7168, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545547950171	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hSwciTagTXiN"
+1545547950475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545547950475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545547952582	Marionette	INFO	Listening on port 41671
+1545547952745	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545547976364	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qmJuubDKHFqs"
+1545547976677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545547976678	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545547978785	Marionette	INFO	Listening on port 42579
+1545547978873	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7389, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 7389, Gecko_IOThread] WARNING: pipe error (80): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545548076937	Marionette	INFO	Stopped listening on port 41671
+1545548189052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wF3OagdXu4Fp"
+1545548189363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545548189363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545548191334	Marionette	INFO	Listening on port 37939
+1545548191363	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545548240468	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AoYhMe0Wt6RU"
+1545548240773	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545548240773	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545548242815	Marionette	INFO	Listening on port 37325
+1545548242878	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+[Parent 8483, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 8483, Gecko_IOThread] WARNING: pipe error (107): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545548398526	Marionette	INFO	Stopped listening on port 37325
+1545548535316	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TyVuZ9SCPvfx"
+1545548535627	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545548535627	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545548537700	Marionette	INFO	Listening on port 33755
+1545548537728	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545548587708	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.idIUHRAsOO4a"
+1545548588022	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545548588022	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545548590052	Marionette	INFO	Listening on port 37627
+1545548590114	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545548616882	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8qOTMHKsxyqv"
+1545548617197	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545548617197	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545548619601	Marionette	INFO	Listening on port 41563
+1545548619718	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 9797, Gecko_IOThread] WARNING: pipe error (90): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 9797, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545548637443	Marionette	INFO	Stopped listening on port 41563
+[Parent 9490, Gecko_IOThread] WARNING: pipe error (80): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545548638885	Marionette	INFO	Stopped listening on port 37627
+[Parent 8150, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 8150, Gecko_IOThread] WARNING: pipe error (80): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545548742232	Marionette	INFO	Stopped listening on port 37939
+1545548743962	Marionette	INFO	Stopped listening on port 33755
+1545548935778	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.63VWI5JSwODy"
+1545548936086	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545548936086	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545548938071	Marionette	INFO	Listening on port 42099
+1545548938084	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 10714, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 10714, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545548953568	Marionette	INFO	Stopped listening on port 42099
+1545549102931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iv3bx4xqOLZW"
+1545549103239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545549103239	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545549105394	Marionette	INFO	Listening on port 36363
+1545549105492	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+[Parent 11214, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545549508837	Marionette	INFO	Stopped listening on port 36363
+1545550891741	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.25QI08W8ORRN"
+1545550892061	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545550892061	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545550894139	Marionette	INFO	Listening on port 39225
+1545550894151	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x580029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 14480, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545550910903	Marionette	INFO	Stopped listening on port 39225
+1545552618461	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ut8AEtPfgvt7"
+1545552618771	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545552618771	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545552621148	Marionette	INFO	Listening on port 39553
+1545552621176	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545552786278	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dJKo9TimhN9T"
+1545552786590	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545552786590	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545552788586	Marionette	INFO	Listening on port 41923
+1545552788684	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 16769, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 16769, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545552803301	Marionette	INFO	Stopped listening on port 41923
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545553691755	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mVIwXYf6CUiO"
+1545553692059	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545553692059	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545553694159	Marionette	INFO	Listening on port 35671
+1545553694262	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545553995920	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IY0P7djI2dyX"
+1545553996229	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545553996229	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545553998639	Marionette	INFO	Listening on port 46129
+1545553998727	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 18357, Gecko_IOThread] WARNING: pipe error (85): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545554028975	Marionette	INFO	Stopped listening on port 46129
+1545554030671	Marionette	INFO	Stopped listening on port 35671
+1545554032171	Marionette	INFO	Stopped listening on port 39553
+1545554221033	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Jhv8GzlwqIyl"
+1545554221419	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545554221419	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545554223937	Marionette	INFO	Listening on port 40719
+1545554223948	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545554422259	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.r3yb9tEwxwvL"
+1545554422597	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545554422597	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545554424732	Marionette	INFO	Listening on port 42017
+1545554424770	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545554499281	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KMDR4MqeszHr"
+1545554499594	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545554499594	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545554501688	Marionette	INFO	Listening on port 41771
+1545554501788	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545554556714	Marionette	INFO	Stopped listening on port 41771
+JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 410: Error: OS.File has been shut down. Rejecting post to stat
+[Parent 19264, Gecko_IOThread] WARNING: pipe error (65): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 19264, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545554557692	Marionette	INFO	Stopped listening on port 42017
+1545555777222	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AZoptzxpk7P7"
+1545555777596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545555777596	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545555780131	Marionette	INFO	Listening on port 35169
+1545555780141	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545555818765	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tmfW8ySKbcnD"
+1545555819070	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545555819070	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545555821244	Marionette	INFO	Listening on port 37521
+1545555821270	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 21779, Gecko_IOThread] WARNING: pipe error (71): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 21779, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545555858329	Marionette	INFO	Stopped listening on port 37521
+[Parent 21460, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 21460, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545555859363	Marionette	INFO	Stopped listening on port 35169
+[Parent 18837, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 18837, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545555863195	Marionette	INFO	Stopped listening on port 40719
+1545555898042	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oZ0ngoVkuwtR"
+1545555898354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545555898354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545555900722	Marionette	INFO	Listening on port 43309
+1545555900755	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+[Parent 22161, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 22161, Gecko_IOThread] WARNING: pipe error (127): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 22161, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545556499514	Marionette	INFO	Stopped listening on port 43309
+1545557302476	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xOhEMNrXwFiY"
+1545557302814	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545557302814	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545557304944	Marionette	INFO	Listening on port 41239
+1545557304997	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545557360928	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0Sw8iIIvRJh3"
+1545557361246	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545557361247	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545557363385	Marionette	INFO	Listening on port 32885
+1545557363435	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545557433934	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CerkyBkj8cZ7"
+1545557434270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545557434270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545557436757	Marionette	INFO	Listening on port 44637
+1545557436864	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545557543198	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CnYXFL5MASeb"
+1545557543653	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545557543653	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545557545913	Marionette	INFO	Listening on port 46011
+1545557546038	Marionette	WARN	TLS certificate errors will be ignored for this session
+1545557598232	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eJyhUxlT62vA"
+1545557598717	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545557598717	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545557601254	Marionette	INFO	Listening on port 44817
+1545557601341	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (total compilation time 66ms; stored in cache)
+[Parent 25278, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 25278, Gecko_IOThread] WARNING: pipe error (71): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545557697081	Marionette	INFO	Stopped listening on port 46011
+[Parent 24912, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 24912, Gecko_IOThread] WARNING: pipe error (65): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545557698794	Marionette	INFO	Stopped listening on port 44637
+[Parent 24579, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 24579, Gecko_IOThread] WARNING: pipe error (82): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545557700392	Marionette	INFO	Stopped listening on port 32885
+1545557701806	Marionette	INFO	Stopped listening on port 41239
+[Parent 25606, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1545557702924	Marionette	INFO	Stopped listening on port 44817
+1545557813047	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4lUFwEoIwfgC"
+1545557813467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545557813467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545557816068	Marionette	INFO	Listening on port 46275
+1545557816168	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (total compilation time 67ms; stored in cache)
+1545557998623	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HvfwyoTFAs6k"
+1545557998943	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545557998943	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545558001024	Marionette	INFO	Listening on port 41045
+1545558001033	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (total compilation time 43ms; stored in cache)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545558130007	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OdweqpgHmX7z"
+1545558130323	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545558130324	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545558132414	Marionette	INFO	Listening on port 34273
+1545558132514	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (total compilation time 47ms; stored in cache)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+1545558239383	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.rvvSMwAyfh1P"
+1545558239693	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545558239693	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545558241812	Marionette	INFO	Listening on port 42655
+1545558241889	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (total compilation time 59ms; stored in cache)
+1545558295409	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jPktUDOoqjXX"
+1545558295730	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1545558295730	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1545558297859	Marionette	INFO	Listening on port 39231
+1545558297916	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (total compilation time 60ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 120ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 122ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 282ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 96ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 112ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 137ms)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 103ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 160ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 48ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 129ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 189ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 217ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 105ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 163ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 319ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 112ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 57ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 96ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 123ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 89ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 114ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 89ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 128ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 127ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 300ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 2071ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 112ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 33ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 153ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 70ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 120ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 104ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 117ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 42ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 98ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 118ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 45ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 120ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 92ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 238ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 102ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 119ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 122ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 268ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 119ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 163ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 122ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 67ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 134ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 147ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 42ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 103ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 143ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 290ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 85ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 216ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 205ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 89ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 328ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 122ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 136ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 102ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 92ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 72ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 141ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 99ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 206ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 137ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 51ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 101ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 116ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 178ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 92ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 68ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 114ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 104ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 463ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 111ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 205ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 100ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 97ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 102ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 93ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 163ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 103ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 77ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 2892ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 105ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 109ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 97ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 111ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 111ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 101ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181221.0202, line 0: Successfully compiled asm.js code (loaded from cache in 195ms)
+1545558902017	Marionette	INFO	Stopped listening on port 42655
+[Child 28584, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 28426, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3000B8,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x990006,name=PWebSocket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+1545558905047	Marionette	INFO	Stopped listening on port 39231
+1545558906564	Marionette	INFO	Stopped listening on port 34273
+1545558907437	Marionette	INFO	Stopped listening on port 41045
+1545558914885	Marionette	INFO	Stopped listening on port 46275

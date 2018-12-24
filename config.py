@@ -2,12 +2,10 @@
 '''
 https://www.jianshu.com/p/7e16877757f8
 '''
-SECRET_KEY = 'hunxiao'
+zq_api = "rtmp://txrtmp.cdn.zhanqi.tv/zqlive/"
+SECRET_KEY = 'hardcore_tv'
 pcgame = ['英雄联盟','DNF','绝地求生','魔兽世界','DOTA2',\
-              '魔兽争霸','守望先锋','炉石传说','梦幻西游','传奇']
+              '梦三国2','守望先锋','三国杀','梦幻西游','传奇','暴雪游戏']
 videoGame = ['主机游戏','火影忍者']
-mobileGame = ['CF手游','热门手游','王者荣耀']
-outdoor_food = ['美食','户外','鱼教']
-entertainment = ['颜值','二次元','星娱','音乐电台']
-
-
+mobileGame = ['CF手游','热门手游','王者荣耀','吃鸡手游','第五人格','狼人杀']
+entertainment = ['百变娱乐','游戏放映室']

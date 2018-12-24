@@ -2,6 +2,7 @@
 from hardcore_tv import db
 from config import *
 
+
 # 创建实体模板类
 class UserMain(db.Model):
     __tablename__ = 'userinfo_main'
@@ -57,6 +58,8 @@ class RoomMain(db.Model):
     room_name = db.Column(db.String(100))
     host_name = db.Column(db.String(50))
     img = db.Column(db.String(128))
+    is_oline = db.Column(db.INTEGER)
+    live_url = db.Column(db.String(128))
 
     count = db.relationship('RoomCount',backref='roominfo_main',lazy='dynamic')
     gift = db.relationship('RoomGift',backref='roominfo_main',lazy='dynamic')
@@ -65,10 +68,12 @@ class RoomMain(db.Model):
     videolist = db.relationship('VideoList',backref='roominfo_main',lazy='dynamic')
 
 
-    def __init__(self,rname,hname,img):
+    def __init__(self,rname,hname,img,ol,url):
         self.room_name = rname
         self.host_name = hname
         self.img = img
+        self.is_oline = ol
+        self.live_url = url
 
 class RoomCount(db.Model):
     __tablename__ =  'roominfo_count'
@@ -166,17 +171,38 @@ class VideoList(db.Model):
         self.poster_url = p_url
         self.video_name = v_name
 
+# 创建离线房间信息 空置房间封面
+def gen_offline():
+    rm = RoomMain('classic music for memory~',
+             '无与伦比',
+             '',
+             0,
+             '')
+    db.session.add(rm)
+    db.session.commit()
+    rr = RoomMain.query.filter().all()[-1]
+    rid = rr.room_id
+    rc = RoomCount(rid,100,888888,0,0)
+    rt = RoomType(rid,'娱乐')
+    rcm = RoomComment(rid,'无与伦比 为杰沉沦',0,'小jayjay')
+    db.session.add_all([rm,rc,rt,rcm])
+    db.session.commit()
+
 # 插入爬取数据
 def gen_data():
-    with open('hardcore_tv/spider/douyu.txt') as f:
+    with open('./spider/zhanqi.txt') as f:
         for line in f:
             data = line.split('##')
-            p_count = int(float(data[0][:-1])*10000)
+            if data[0][-1]=='万':
+                p_count = int(float(data[0][:-1])*10000)
+            else:
+                p_count = int(data[0])
             host_name = data[1]
             r_name = data[2]
             img = data[3]
             type = data[4].strip()
-            rm = RoomMain(r_name,host_name,img)
+            live_id = data[-1].strip()
+            rm = RoomMain(r_name,host_name,img,1,zq_api+live_id)
             db.session.add(rm)
             db.session.commit()
             robj = RoomMain.query.filter().all()[-1]
@@ -193,8 +219,6 @@ def gen_data():
                 type = '主机游戏'
             elif type in mobileGame:
                 type = '手机游戏'
-            elif type in outdoor_food:
-                type = '户外美食'
             elif type in entertainment:
                 type = '娱乐'
             else:
@@ -230,6 +254,8 @@ def createTables():
         db.session.commit()
     del_room_table()
     gen_data()
+    gen_offline()
+
 
 def deleteAllTables():
     db.drop_all()

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+         minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+        <title>TV_record</title>
+        <link rel="shortcut icon" href="{{ url_for('static',filename='img/logo.jpg') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/TV_record.css') }}">
+        <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-1.11.3.js') }}"></script>
+    </head>
+    <body>
+        <!-- <div class="head">
+            <div class="logo">
+                <img src="452.jpg" height="60px">
+            </div>
+            <div id="head1">
+                <a href="">首页</a>
+            </div>
+            <div id="head2">
+                <a href="" >全部</a>
+            </div>
+            <div id="head3">
+                <a href="">关于我们</a>
+            </div>
+            <form class="form1" action="" method="">
+                <input type="text" name="search" placeholder="搜比赛/美食">
+            </form>
+            <div id="head4">
+                <a href="">登录</a>
+                <label> | </label>
+                <a href="">注册</a>
+            </div>
+        </div> -->
+        <div id="header" >
+            <a class="head_logo_hc" href="javascript:location.reload();" style="background: rgba(0, 0, 0, 0)
+            no-repeat scroll left center;">
+                <img id="homelogo" src="{{ url_for('static',filename='img/HC_logo.png') }}">
+            </a>
+            <ul class="head_nav">
+                <li class="nav_current">
+                    <a href="javascript:location.reload();">首页</a>
+                </li>
+                <li class="nav_total">
+                    <a href="javascript:location.reload();">全部</a>
+                </li>
+                <li class="nav_classification">
+                    <a href="javascript:location.reload();">分类</a>
+                </li>
+                <li class="nav_ad">
+                    <a href="javascript:location.reload();">广告</a>
+                </li>
+                <li class="nav_aboutUs">
+                    <a href="javascript:location.reload();">关于我们</a>
+                </li>
+            </ul>
+            <form class="in_header_right" method="post" action="/">
+                <input id="suggest_search" class="search" type="text" autocomplete="off" value="" placeholder="搜游戏/主播">
+                <a id="p_search" href="#">
+                    <img src="{{ url_for('static',filename='img/search.png') }}">
+                </a>
+                <span id="log_regis">
+                    <img class="person" src="{{ url_for('static',filename='img/person.png') }}">
+                    <a id="login" href="/login" rel="nofollow">登录</a>
+                    <span id="sep">|</span>
+                    <a id="register" href="/register">注册</a>
+                </span>
+            </form>
+        </div>
+        <div id="roomname">
+            <span class="roomtitle">直播间直播名称</span>
+            <br>
+            <span class="roominfo">分类  发布于.... 播放共。。次</span>
+        </div>
+        <div id="starframe">
+            <div class="starpic"></div>
+            <span>主播名字</span>
+        </div>
+        <div id="attention">
+            <button class="try" onclick="at()">订阅</button>
+            <button class="num">5201314关注</button>
+            <script type="text/javascript">
+                function at(){
+                    if ($("#attention .try").text()=="订阅"){
+                        var x=confirm("是否订阅？");
+                        if (x==true){
+                            $("#attention .try").text("已订阅");
+                            var b=parseInt($("#attention .num").text());
+                            var b=b+1;
+                            var q=b.toString();
+                            $("#attention .num").text(q+"关注");
+                        }
+                    }else if($("#attention .try").text()=="已订阅"){
+                        var y=confirm("是否取消订阅？");
+                        if(y==true){
+                            $("#attention .try").text("订阅");
+                            var b=parseInt($("#attention .num").text());
+                            var b=b-1;
+                            var q=b.toString();
+                            $("#attention .num").text(q+"关注");
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <div class="video">
+            <video class="vid" width="1244px" height="700px" controls  autoplay="autoplay">
+                <source src="{{ url_for('static',filename='video/roc.mp4') }}">
+            </video>
+        </div>
+        <div class="comment">
+            <input type="text" name="sendcomm" placeholder="发送评论...">
+            <form class="form2" action="" method="">
+                <input type="submit" name="sencomment" value="发送评论">
+            </form>
+        </div>
+        <div class="chat">
+            <div class="vide">视频
+                <div class="show">
+                    <div onclick="play1()">
+                        <video width="220px" height="155px">
+                            <source src="{{ url_for('static',filename='video/roc.mp4') }}">
+                        </video>
+                        <span>火箭少女最新单曲MV light首发</span>
+                    </div>
+                    <div onclick="play2()">
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
+                            </video>
+                            <span>2018年最火网络歌曲学猫叫</span>
+                    </div>
+                    <div onclick="play3()">
+                        <video width="220px" height="155px">
+                            <source src="{{ url_for('static',filename='video/zj.mp4') }}">
+                        </video>
+                        <span>张杰最新情歌MV 无可救药</span>
+                    </div>
+                    <div onclick="play4()">
+                            <video width="220px" height="155px">
+                                <source src="{{ url_for('static',filename='video/131.mp4') }}">
+                            </video>
+                            <span>Jessica再次出发 庆祝圣诞歌曲</span>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function play1(){
+                        $('.vid').html("<source src='static/video/roc.mp4'>");
+                        $('.vid').load();
+                    }
+                function play2(){
+                        $('.vid').html("<source src='static/video/xmj.mp4'>");
+                        $('.vid').load();
+                    }
+                    function play3(){
+                        $('.vid').html("<source src='static/video/zj.mp4'>");
+                        $('.vid').load();
+                    }
+                    function play4(){
+                        $('.vid').html("<source src='static/video/131.mp4'>");
+                        $('.vid').load();
+                    }
+            </script>
+            <div class="comments">评论
+                <div class="chatarea"></div>
+            </div>
+            <script type="text/javascript">
+                $(".chat .comments .chatarea").hide()
+                $(".chat .vide").click(function(){
+                    $(".chat .vide").show();
+                    $(".chat .vide .show").show();
+                    $(".chat .comments .chatarea").hide();
+                    $(".chat .vide").css("background-color","rgb(240, 180, 199)");
+                    $(".chat .vide").css("color","rgb(255,255,255)");
+                    $(".chat .vide").css("font-weight","bold");
+                    $(".chat .comments").css("background-color","rgb(255,255,255)");
+                    $(".chat .comments").css("color","rgb(1,1,1)");
+                    $(".chat .comments").css("font-weight","normal");
+                });
+                $(".chat .comments").click(function(){
+                    $(".chat .comments").show();
+                    $(".chat .comments .chatarea").show()
+                    $(".chat .vide .show").hide();
+                    $(".chat .comments").css("background-color","rgb(240, 180, 199)");
+                    $(".chat .comments").css("color","rgb(255,255,255)");
+                    $(".chat .comments").css("font-weight","bold");
+                    $(".chat .vide").css("background-color","rgb(255,255,255)");
+                    $(".chat .vide").css("color","rgb(1,1,1)");
+                    $(".chat .vide").css("font-weight","normal");
+                });
+            </script>
+        </div>
+    </body>
+</html>
