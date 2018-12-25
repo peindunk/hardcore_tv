@@ -94,6 +94,7 @@ class API_Surface:
                 info["video_name"] = v.video_name
         return  jsonify(info)
 
+    # 评论
     def comment_visible(self):
         rid = 1
         rcm = mt.RoomComment.query.filter(mt.RoomComment.rid==rid).all()
@@ -102,6 +103,19 @@ class API_Surface:
             user_com.append(item.uname+":"+item.comment)
         return user_com
 
+    def show_index(self):
+        pc = mt.RoomType.query.filter(mt.RoomType.type=='PC游戏').all()[:4]
+        moblie = mt.RoomType.query.filter(mt.RoomType.type=='手机游戏')[:4]
+        rids = []
+        for p in pc:
+            rids.append(p.r_id)
+        for m in moblie:
+            rids.append(m.r_id)
+        rms = []
+        for id in rids:
+            rm = mt.RoomMain.query(room_name,img).filter(mt.RoomMain.room_id==id)
+            rms.append(rm)
+        return rms
 
     def show_live(self):
         rid = 1
@@ -129,7 +143,6 @@ class API_Surface:
             type = rt.type
             info["type"] = type
         return jsonify(info)
-
 
     # 搜索接口  (等待完成)
     def search(self):

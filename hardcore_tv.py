@@ -13,7 +13,7 @@ app = Flask(__name__)
 # 制定数据库的配置
 app.config['SQLALCHEMY_DATABASE_URI']="mysql://root:123456@localhost/hardcore_tv"
 # 未来移除  避免warning
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 # 创建数据库实例
 db = SQLAlchemy(app)
 # CSRF
@@ -50,7 +50,6 @@ def login():
 
 @app.route('/list/<type>',methods=['GET','POST'])
 def livelist(type):
-
     return render_template('livelist.html')
 
 @app.route('/live',methods=['GET','POST'])

@@ -190,7 +190,7 @@ def gen_offline():
 
 # 插入爬取数据
 def gen_data():
-    with open('./spider/zhanqi.txt') as f:
+    with open('hardcore_tv/spider/zhanqi.txt') as f:
         for line in f:
             data = line.split('##')
             if data[0][-1]=='万':
@@ -212,7 +212,7 @@ def gen_data():
             rg = RoomGift(robj.room_id,0,0,0,0)
             db.session.add(rg)
             db.session.commit()
-            # 'PC游戏', '主机游戏', '手机游戏', '户外美食', '娱乐', '其它'
+            # 'PC游戏', '主机游戏', '手机游戏', '娱乐', '其它'
             if type in pcgame:
                 type = 'PC游戏'
             elif type in videoGame:
@@ -233,6 +233,8 @@ def del_room_table():
     del2 = RoomGift.query.filter().all()
     del3 = RoomType.query.filter().all()
     del4 = RoomCount.query.filter().all()
+    del5 = RoomComment.query.filter().all()
+    del6 = VideoList.query.filter().all()
     for d in del1:
         db.session.delete(d)
     for d in del2:
@@ -240,6 +242,10 @@ def del_room_table():
     for d in del3:
         db.session.delete(d)
     for d in del4:
+        db.session.delete(d)
+    for d in del5:
+        db.session.delete(d)
+    for d in del6:
         db.session.delete(d)
     db.session.commit()
 
@@ -256,7 +262,5 @@ def createTables():
     gen_data()
     gen_offline()
 
-
 def deleteAllTables():
     db.drop_all()
-
