@@ -21,7 +21,10 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 @app.route('/',methods=['GET','POST'])
 def index():
-    return render_template('home_page.html')
+    api_obj = api.API_Surface(request)
+    if request.method == "GET":
+        result = api_obj.show_index()
+    return render_template('home_page.html',result=result)
 
 @app.route('/lubo',methods=['GET','POST'])
 def lubo():
@@ -52,8 +55,8 @@ def login():
 def livelist(type):
     return render_template('livelist.html')
 
-@app.route('/live',methods=['GET','POST'])
-def liveroom():
+@app.route('/live/<int:id>',methods=['GET','POST'])
+def liveroom(id):
     return render_template('TV_live.html')
 
 @app.route('/test')

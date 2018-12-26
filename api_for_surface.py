@@ -113,7 +113,7 @@ class API_Surface:
             rids.append(m.r_id)
         rms = []
         for id in rids:
-            rm = mt.RoomMain.query(room_name,img).filter(mt.RoomMain.room_id==id)
+            rm = mt.RoomMain.query.filter(mt.RoomMain.room_id==id).first()
             rms.append(rm)
         return rms
 

@@ -98,7 +98,7 @@
 {#        网页主题布局#}
         #mainbody{
             width:1841px;
-            height: 10442px;
+            height: 1430px;
             background-color: #F2F2F2;
             position: relative;
             top:51px;
@@ -186,9 +186,267 @@
             position: relative;
             list-style: none;
         }
+        #mainbody .bglink .channel .c_items ul li a .txt{
+            background: #40454C;
+            opacity: 0.5;
+            text-align: center;
+            color: #fff;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
 {#starshow布局#}
         .starshow{
-
+            width:1841px;
+            height:570px;
+            background-color: #F2F2F2;
+            position: relative;
+            top:670px;
+        }
+        .starshow .s_content{
+            width: 1460px;
+            height: 470px;
+            margin: 0 auto;
+            padding-top: 40px;
+            padding-left: 40px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .starshow .s_content .classify{
+            width:660px;
+            height:470px;
+            margin:0 35px;
+            display: inline;
+            float: left;
+        }
+        h2{
+            height: 34px;
+            overflow: hidden;
+            padding-bottom: 10px;
+            width: 660px;
+            border-bottom: 1px solid #f3f4f8;
+            font-weight: 500;
+            font: 30px/1.5 微软雅黑,arial,sans-serif;
+            margin: 0 0;
+        }
+        .classify h2 a{
+            text-decoration: none;
+        }
+        .classify h2 a span{
+            padding-left: 10px;
+            line-height: 30px;
+            font-size: 26px;
+            color: #3e3e3e;
+            font-weight: 700;
+        }
+        .classify > h2:hover .title_info {
+            color: #8e8e8e;
+        }
+        .classify > h2:hover span {
+            color: #f70;
+        }
+        .classify h2 .title_info{
+            padding-left: 20px;
+            padding-top: 2px;
+            color: #8e8e8e;
+            font-weight: 400;
+            font-size: 12px;
+            width: 125px;
+            height: 28px;
+            line-height: 30px;
+        }
+        .starshow .s_content .classify > ul{
+            width: 660px;
+            padding-top: 20px;
+            height: 405px;
+            margin:0 0;
+            padding-left: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        .starshow .s_content .classify > ul > li {
+            width: 310px;
+            height: 175px;
+            margin: 0 20px 35px 0;
+            float: left;
+            display: inline;
+            padding: 0;
+            list-style: none;
+        }
+        .starshow .s_content .classify > ul > li a{
+            width: 310px;
+            height: 175px;
+            position: relative;
+            display: block;
+        }
+        .starshow .s_content .classify > ul > li a .picture{
+            width: 310px;
+            height: 175px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 6px;
+            padding: 0;
+            margin: 0;
+        }
+        .starshow .s_content .classify > ul > li a .picture img{
+            border: none;
+            width: 310px;
+            height: 175px;
+            display: block;
+        }
+        .starshow .s_content .classify > ul > li a .picture span{
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            transition: all 250ms ease-out;
+            -webkit-transition: all 250ms ease-out;
+            -moz-transition: all 250ms ease-out;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+        }
+        .starshow .s_content .classify > ul > li a .picture span b{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 32px;
+            left: 72px;
+            background: #40454C url({{ url_for('static',filename='img/play.png') }}) no-repeat fixed top;
+            opacity: 0.3;
+        }
+        .starshow .s_content .classify > ul > li a .txt{
+            height: 25px;
+            line-height: 25px;
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0 0 4px 4px;
+            cursor: pointer;
+            color: #fff;
+            background: #40454C url({{ url_for('static',filename='img/play.png') }}) no-repeat fixed top;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: absolute;
+            width: 310px;
+            top: 150px;
+            left: 0;
+            text-align: center;
+            opacity: 0.5;
+        }
+{#        footer布局#}
+        #footer{
+            width: 100%;
+            height: 200px;
+            background-color: #3d3d3d;
+            position: relative;
+            top: 640px;
+            padding-top: 15px;
+        }
+        #footer .foot_friendly_wrap{
+            height: 75px;
+            padding-bottom: 0;
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #footer .foot_friendly_wrap .friendly{
+            width: 1200px;
+            height: 75px;
+            padding-right: 0;
+            position: relative;
+        }
+        #footer .foot_friendly_wrap .friendly .links{
+            border-bottom: 1px solid #5c5c5c;
+            padding-bottom: 6px;
+            height: 68px;
+        }
+        #footer .foot_friendly_wrap .friendly .links ul{
+            margin-right: 0;
+            display: block;
+            float: left;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font: 12px/1.5 微软雅黑,arial,sans-serif;
+        }
+        #footer .foot_friendly_wrap .friendly .links li{
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+        #footer .foot_friendly_wrap .friendly .links li h3{
+            color: #fff;
+            display: inline-block;
+            width: 120px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+        }
+        #footer .foot_friendly_wrap .friendly .links li span{
+            color: #b1b1b1;
+            display: inline-block;
+            width: 120px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 14px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-decoration: none;
+        }
+        #footer .outlink_wrap{
+            background: #3d3d3d;
+            padding: 10px 0;
+            height: auto;
+            min-height: 85px;
+            margin: 0;
+            font: 12px/1.5 微软雅黑,arial,sans-serif;
+        }
+        #footer .outlink_wrap .outlink{
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0;
+        }
+        #footer .outlink_wrap .outlink .about{
+            width: 100%;
+            padding-left: 0;
+            line-height: 30px;
+            margin: 0 auto;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        #footer .outlink_wrap .outlink .about li{
+            float: left;
+            margin-left: 25px;
+            padding: 0;
+            line-height: 30px;
+            list-style: none;
+        }
+        #footer .outlink_wrap .outlink .about li span{
+            padding: 0 2px;
+            color: #b1b1b1;
+            text-decoration: none;
+            font: 12px/1.5 微软雅黑,arial,sans-serif;
+        }
+        #footer .outlink_wrap .outlink p{
+            line-height: 30px;
+            color: #b1b1b1;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font: 12px/1.5 微软雅黑,arial,sans-serif;
         }
     </style>
 
@@ -241,7 +499,7 @@
             <img src="{{ url_for('static',filename='img/index_banner.jpg') }}" width="1841px" height="650px">
         </a>
         <div id="channel_id" class="channel">
-            <div id="video_area" >
+            <div id="video_area" class="show">
                 <div id="a1" class="video_play_area1"></div>
                 <script type="text/javascript" src="{{ url_for('static',filename='js/ckplayer/ckplayer/ckplayer.js') }}"></script>
                 <script type="text/javascript">
@@ -251,7 +509,7 @@
                                     autoplay: true,//自动播放
                                     html5m3u8: true,
                                     live:true,
-                                    video: 'rtmp://176.47.1.46/hardcore/hardcore'//视频地址
+                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/276611_D7L5A'//视频地址
 
                             };
                             var player = new ckplayer(videoObject);
@@ -267,7 +525,7 @@
                                     autoplay: true,//自动播放
                                     html5m3u8: true,
                                     live:true,
-                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/276611_D7L5A'//视频地址
+                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/34338_PVMT5'//视频地址
 
                             };
                             var player = new ckplayer(videoObject);
@@ -283,13 +541,13 @@
                                     autoplay: true,//自动播放
                                     html5m3u8: true,
                                     live:true,
-                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/278475_lsi9S'//视频地址
+                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/41832_NfsIa'//视频地址
 
                             };
                             var player = new ckplayer(videoObject);
                     </script>
             </div>
-            <div id="video_area" class="show">
+            <div id="video_area" >
                 <div id="a1" class="video_play_area4"></div>
                 <script type="text/javascript" src="{{ url_for('static',filename='js/ckplayer/ckplayer/ckplayer.js') }}"></script>
                 <script type="text/javascript">
@@ -299,11 +557,11 @@
                                     autoplay: true,//自动播放
                                     html5m3u8: true,
                                     live:true,
-                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/278475_lsi9S'//视频地址
+                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/102444_ZGmRp'//视频地址
 
                             };
                             var player = new ckplayer(videoObject);
-                    </script>
+                </script>
             </div>
             <div id="video_area" >
                 <div id="a1" class="video_play_area5"></div>
@@ -315,7 +573,7 @@
                                     autoplay: true,//自动播放
                                     html5m3u8: true,
                                     live:true,
-                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/75607_hLSKk'//视频地址
+                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/7032_0s2qn'//视频地址
 
                             };
                             var player = new ckplayer(videoObject);
@@ -328,10 +586,10 @@
                             var videoObject = {
                                     container: '.video_play_area6',//“#”代表容器的ID，“.”或“”代表容器的class
                                     variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
-                                    autoplay: true,//自动播放
+                                    autoplay: true,//自动播放   1d4ff91d2da6bb61defdee03db64aecb
                                     html5m3u8: true,
                                     live:true,
-                                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/24163_v7WWQ'//视频地址
+                                    video: 'rtmp://58.200.131.2:1935/livetv/hunantv'//视频地址
 
                             };
                             var player = new ckplayer(videoObject);
@@ -339,11 +597,12 @@
             </div>
             <div class="c_items" style="display: block">
                 <ul>
-                    <li>
+                    <li class="select">
                         <a href="#">
                             <div class="pic">
-                                <img class="select" src="{{ url_for('static',filename='img/xyy.jpg') }}" style="display: inline" width="166px" height="94px">
+                                <img src="{{ url_for('static',filename='img/index1.jpg') }}" style="display: inline" width="166px" height="94px">
                             </div>
+                            <div class="txt">经典电影.电视剧</div>
                         </a>
                     </li>
 
@@ -351,48 +610,266 @@
                     <li>
                         <a href="#">
                             <div class="pic">
-                                <img src="{{ url_for('static',filename='img/xyy.jpg') }}" style="display: inline" width="166px" height="94px">
+                                <img src="{{ url_for('static',filename='img/index2.jpg') }}" style="display: inline" width="166px" height="94px">
                             </div>
+                            <div class="txt">武林外传</div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="pic">
-                                <img src="{{ url_for('static',filename='img/xyy.jpg') }}" style="display: inline" width="166px" height="94px">
+                                <img src="{{ url_for('static',filename='img/index3.jpg') }}" style="display: inline" width="166px" height="94px">
                             </div>
+                            <div class="txt">火影忍者</div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="pic">
-                                <img src="{{ url_for('static',filename='img/xyy.jpg') }}" style="display: inline" width="166px" height="94px">
+                                <img src="{{ url_for('static',filename='img/index4.jpg') }}" style="display: inline" width="166px" height="94px">
                             </div>
+                            <div class="txt">恐怖电影</div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="pic">
-                                <img src="{{ url_for('static',filename='img/xyy.jpg') }}" style="display: inline" width="166px" height="94px">
+                                <img src="{{ url_for('static',filename='img/index5.jpg') }}" style="display: inline" width="166px" height="94px">
                             </div>
+                            <div class="txt">大力影院</div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <div class="pic">
-                                <img src="{{ url_for('static',filename='img/xyy.jpg') }}" style="display: inline" width="166px" height="94px">
+                                <img src="{{ url_for('static',filename='img/index6.jpg') }}" style="display: inline" width="166px" height="94px">
                             </div>
+                            <div class="txt">湖南卫视</div>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+    <div class="starshow">
+        <div class="s_content">
+            <div class="classify">
+                <h2>
+                    <a href="/list/aa" title="刺激端游看hardcore_tv">
+                        <img src="{{ url_for('static',filename='img/eat_chicken.png') }}" style="display: inline">
+                        <span>PC游戏</span>
+                    </a>
+                    <span class="title_info">刺激端游看hardcore_tv</span>
+                </h2>
+                <ul class="clearfix">
+                    <li>
+                        <a href="/live/1">
+                            <div class="picture">
+                                <img src={{ result[0].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">{{ result[0].room_name }}</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/live/1">
+                            <div class="picture">
+                                <img src={{ result[1].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">{{ result[1].room_name }}</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/live/1">
+                            <div class="picture">
+                                <img src={{ result[2].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">{{ result[2].room_name }}</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/live/1">
+                            <div class="picture">
+                                <img src={{ result[3].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">{{ result[3].room_name }}</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="classify" style="float: left">
+                <h2>
+                    <a href="/list/a" title="英雄热血竞技">
+                        <img src="{{ url_for('static',filename='img/king_honor.png') }}" style="display: inline">
+                        <span>手游天地</span>
+                    </a>
+                    <span class="title_info">{{ result[4].room_name }}</span>
+                </h2>
+                <ul class="clearfix">
+                    <li>
+                        <a href="live/1">
+                            <div class="picture">
+                                <img src={{ result[4].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">国服貂蝉，进来学技术！</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="live/1">
+                            <div class="picture">
+                                <img src={{ result[5].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">{{ result[5].room_name }}</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="live/1">
+                            <div class="picture">
+                                <img src={{ result[6].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">{{ result[6].room_name }}</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="live/1">
+                            <div class="picture">
+                                <img src={{ result[7].img }} style="display: block">
+                                <span>
+                                    <b></b>
+                                </span>
+                            </div>
+                            <div class="txt">{{ result[7].room_name }}</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="home_footer">
+        <div class="foot_friendly_wrap">
+            <div class="friendly">
+                <div class="links">
+                    <ul>
+                        <li>
+                            <h3>友情链接</h3>
+                        </li>
+                        <li>
+                            <span>hardcore招采平台</span>
+                        </li>
+                        <li>
+                            <span>hardcore手机站</span>
+                        </li>
+                        <li>
+                            <span>core吧手机站</span>
+                        </li>
+                        <li>
+                            <span>开发者论坛</span>
+                        </li>
+                        <li>
+                            <span>企鹅直播</span>
+                        </li>
+                        <li>
+                            <span>沙发管家</span>
+                        </li>
+                        <li>
+                            <span>齐齐乐</span>
+                        </li>
+                        <li>
+                            <span>A9VG电玩部落</span>
+                        </li>
+                        <li>
+                            <span>当贝市场</span>
+                        </li>
+                        <li>
+                            <span>兔玩网</span>
+                        </li>
+                        <li>
+                            <span>轻文轻小说</span>
+                        </li>
+                        <li>
+                            <span>游民星空</span>
+                        </li>
+                        <li>
+                            <span>hardcore竞价广告</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="outlink_wrap">
+            <div class="outlink">
+                <ul class="about">
+                    <li>
+                        <span>关于我们</span>
+                    </li>
+                    <li>
+                        <span>联系客服</span>
+                    </li>
+                    <li>
+                        <span>招聘信息</span>
+                    </li>
+                    <li>
+                        <span>友情链接</span>
+                    </li>
+                    <li>
+                        <span>我要直播</span>
+                    </li>
+                    <li>
+                        <span>意见反馈</span>
+                    </li>
+                    <li>
+                        <span>版本保护投诉指引</span>
+                    </li>
+                    <li>
+                        <span>hardcore官方QQ号</span>
+                    </li>
+                    <li>
+                        <span>12318全国文化市场举报网站</span>
+                    </li>
+                    <li>
+                        <span>网上有害信息举报专区</span>
+                    </li>
+                </ul>
+                <p class="footer_company_info">
+                    上海hardcore网络科技有限公司 版权所有 ©www.hardcore_tv.com 沪ICP备15011961号-1 |
+                    <img src="{{ url_for('static',filename='img/gongAn.png') }}" style="vertical-align: text-bottom;display: inline;">
+                    沪公网安备 42018502000107号
+                     |
+                    <img src="{{ url_for('static',filename='img/gswj.gif') }}" style="vertical-align: text-bottom">
+                    工商网监
+                     |
+                    <img src="{{ url_for('static',filename='img/kxwz.png') }}" style="vertical-align: middle;margin-top: -4px;">
+                    沪网文（2018）9760-291号
+                    <br>
+                    公司地址：上海市浦东新区光谷软件园F4栋8楼 客户服务热线：027-87750710/027-87057679
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="starshow">
 
-</div>
 <script>
-     $('ul li a div img').click(function() {
+     $('ul li').click(function() {
          $(this).addClass('select');
          $(this).siblings().removeClass('select');
          console.log($(this).siblings());
