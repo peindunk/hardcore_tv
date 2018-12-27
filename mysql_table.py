@@ -175,7 +175,7 @@ class VideoList(db.Model):
 def gen_offline():
     rm = RoomMain('classic music for memory~',
              '无与伦比',
-             '',
+             'img/jay.jpeg',
              0,
              '')
     db.session.add(rm)
@@ -185,8 +185,25 @@ def gen_offline():
     rc = RoomCount(rid,100,888888,0,0)
     rt = RoomType(rid,'娱乐')
     rcm = RoomComment(rid,'无与伦比 为杰沉沦',0,'小jayjay')
-    db.session.add_all([rm,rc,rt,rcm])
+    db.session.add_all([rc,rt,rcm])
     db.session.commit()
+
+    rm = RoomMain('经典nba赛事',
+        'hardcore体育',
+         'img/nba.jpeg',
+          0,
+         ''
+    )
+    db.session.add(rm)
+    db.session.commit()
+    rr = RoomMain.query.filter().all()[-1]
+    rid = rr.room_id
+    rc = RoomCount(rid,100,99999,0,0)
+    rt = RoomType(rid,'娱乐')
+    rcm = RoomComment(rid,'尽享经典nba赛事',0,'5皇james')
+    db.session.add_all([rc,rt,rcm])
+    db.session.commit()
+
 
 # 插入爬取数据
 def gen_data():

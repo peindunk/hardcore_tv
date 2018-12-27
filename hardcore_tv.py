@@ -25,9 +25,7 @@ def index():
     api_obj = api.API_Surface(request)
     if request.method == "GET":
         result = api_obj.show_index()
-    else:
-        key = request.form['search']
-    return render_template('home_page.html',result=result,key=key)
+    return render_template('home_page.html',result=result)
 
 @app.route('/lubo',methods=['GET','POST'])
 def lubo():
@@ -35,7 +33,7 @@ def lubo():
     if request.method == "GET":
         api_obj.lubo_visble()
         comment = api_obj.comment_visible()
-    return render_template('TV_record1.html',comment = comment)
+    return render_template('TV_record1.html',comment=comment)
 
 @app.route('/register',methods=['GET','POST'])
 def register():
@@ -56,8 +54,8 @@ def login():
 
 @app.route('/list/<type>/<int:p>',methods=['GET','POST'])
 def livelist(type,p):
+    apiobj = api.API_Surface(request)
     if request.method == "GET":
-        apiobj = api.API_Surface(request)
         result = apiobj.showList(type)
         if result:
             page = apiobj.page_split(len(result))
@@ -69,8 +67,16 @@ def livelist(type,p):
         else:
             return '<a href="/">无结果 请返回首页<a>'
     else:
-        print('post')
-        return render_template('livelist.html')
+        key = request.form['search']
+        if not key:
+            return "<a href='/list/all/1'>没有搜索内容 请返回重新输入<a>"
+        result = apiobj.search(key)
+        page = apiobj.page_split(len(result))
+        if p == 1:
+            visible = result[0:25]
+        else:
+            visible = result[(p - 1) * 25:(p - 1) * 25 + 25]
+        return render_template('livelist.html',key=key,current=p,page=page,result=visible)
 
 @app.route('/live/<int:id>',methods=['GET','POST'])
 def liveroom(id):

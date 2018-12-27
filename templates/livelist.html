@@ -40,8 +40,8 @@
 		</li>
 	</ul>
 
-	<form class="in_header_right" method="post" action="/">
-		<input id="suggest_search" class="search" type="text" autocomplete="off" value="" placeholder="搜游戏/主播">
+	<form class="in_header_right" method="post" action="/list/search/1">
+		<input id="suggest_search" name="search" class="search" type="text" autocomplete="off" value="" placeholder="搜游戏/主播">
 		<a id="p_search" href="#">
 			<img src="{{ url_for('static',filename='img/file/7.png') }}">
 		</a>
@@ -50,7 +50,7 @@
 						<a id="login" href="/login" rel="nofollow">登录</a>
 						<span id="sep">|</span>
 						<a id="register" href="/register">注册</a>
-					</span>
+		</span>
 	</form>
 
 </div>
@@ -69,10 +69,17 @@
 	<div class="bglink">
 
 		<div class="livebg">
+			{% if not result %}
+				<h1>没有您想要的结果</h1>
+				<a href="/list/all/1">返回</a>
+			{% endif %}
             {% for r in result %}
             <div class="livelist">
-                <a href="" class="liveroom"><img src={{ r['img'] }} class="bo"></a>
-
+				{% if r['isol'] == 0 %}
+                <a href="/lubo" class="liveroom"><img src={{ url_for('static',filename=r['img']) }} class="bo"></a>
+				{% elif r['isol'] == 1 %}
+                <a href="/live/1" class="liveroom"><img src={{ r['img'] }} class="bo"></a>
+				{% endif %}
                     <span class="livespan1">
                         <a href="">{{ r['rname'] }}</a>
                     </span>
@@ -85,7 +92,6 @@
                     <span class="looknum"><img src="{{ url_for('static',filename='img/file/11.png') }}" alt="" class="eye">&nbsp{{ r['pcount'] }}
                         人</span>
             </div>
-
             {% endfor %}
             <div class="clear"></div>
 

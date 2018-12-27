@@ -146,13 +146,35 @@ class API_Surface:
 
     # 搜索接口  (等待完成)
     def search(self,key):
+        result = []
         # 获取搜索内容
         rm = mt.RoomMain.query.filter().all()
-        result = []
+        rids = []
         for r in rm:
             if (key in r.room_name) or (key in r.host_name):
-                result.append(r.room_id)
+                rids.append(r.room_id)
         # 返回显示逻辑
+        # 需要显示的内容 封面　　房间名　　主播名　　人数　　类名
+        rms = []
+        rcs = []
+        rts = []
+        for rid in rids:
+            rm = mt.RoomMain.query.filter(mt.RoomMain.room_id==rid).first()
+            rc = mt.RoomCount.query.filter(mt.RoomCount.r_id==rid).first()
+            rt = mt.RoomType.query.filter(mt.RoomType.r_id==rid).first()
+            rms.append(rm)
+            rcs.append(rc)
+            rts.append(rt)
+        for rid,rm,rc,rt in zip(rids,rms,rcs,rts):
+            d = dict()
+            d['rid'] = rid
+            d['img'] = rm.img
+            d['rname'] = rm.room_name
+            d['hname'] = rm.host_name
+            d['isol'] = rm.is_oline
+            d['pcount'] = rc.p_count
+            d['type'] = rt.type
+            result.append(d)
         return result
 
     # 获取列表页面接口
@@ -172,6 +194,8 @@ class API_Surface:
                 rts = mt.RoomType.query.filter(mt.RoomType.type == '娱乐').all()
             elif type == 'other':
                 rts = mt.RoomType.query.filter(mt.RoomType.type == '其它').all()
+            else:
+                rts = []
 
         # 需要显示的内容 封面　　房间名　　主播名　　人数　　类名
         rms = []
@@ -189,6 +213,7 @@ class API_Surface:
             d['img'] = rm.img
             d['rname'] = rm.room_name
             d['hname'] = rm.host_name
+            d['isol'] = rm.is_oline
             d['pcount'] = rc.p_count
             d['type'] = rt.type
             result.append(d)
