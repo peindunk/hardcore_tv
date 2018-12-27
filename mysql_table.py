@@ -190,7 +190,7 @@ def gen_offline():
 
 # 插入爬取数据
 def gen_data():
-    with open('hardcore_tv/spider/zhanqi.txt') as f:
+    with open('./spider/zhanqi.txt') as f:
         for line in f:
             data = line.split('##')
             if data[0][-1]=='万':

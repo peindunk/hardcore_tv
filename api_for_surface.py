@@ -145,43 +145,60 @@ class API_Surface:
         return jsonify(info)
 
     # 搜索接口  (等待完成)
-    def search(self):
+    def search(self,key):
         # 获取搜索内容
-        s = ''
         rm = mt.RoomMain.query.filter().all()
         result = []
         for r in rm:
-            if (s in r.room_name) or (s in r.host_name):
+            if (key in r.room_name) or (key in r.host_name):
                 result.append(r.room_id)
         # 返回显示逻辑
         return result
 
     # 获取列表页面接口
-    def showList(self):
-        type = 'all'
-        # 需要显示的内容
-        rid = 1
-        rm = mt.RoomMain.query.filter(mt.RoomMain.room_id == rid).all()
-        rc = mt.RoomCount.query.filter(mt.RoomCount.r_id == rid).first()
-        rt = mt.RoomType.query.filter(mt.RoomType.r_id == rid).first()
-        info = dict()
-        if rm:
-            live_url = rm.live_url
-            rname = rm.room_name
-            hname = rm.host_name
-            info["live_url"] = live_url
-            info["room_name"] = rname
-            info["host_name"] = hname
-        if rc:
-            lv = rc.host_lv
-            fans = rc.fans_num
-            exp = rc.exp
-            pcount = rc.p_count
-            info["lv"] = lv
-            info["fans"] = fans
-            info["exp"] = exp
-            info["pcount"] = pcount
-        if rt:
-            type = rt.type
-            info["type"] = type
+    def showList(self,type):
+        result = []
+        if type == 'all':
+            rts = mt.RoomType.query.filter().all()
+        else:
+            # PC游戏', '主机游戏', '手机游戏', '娱乐', '其它'
+            if type == 'pcgame':
+                rts = mt.RoomType.query.filter(mt.RoomType.type == 'PC游戏').all()
+            elif type == 'vgame':
+                rts = mt.RoomType.query.filter(mt.RoomType.type == '主机游戏').all()
+            elif type == 'mgame':
+                rts = mt.RoomType.query.filter(mt.RoomType.type == '手机游戏').all()
+            elif type == 'enjoy':
+                rts = mt.RoomType.query.filter(mt.RoomType.type == '娱乐').all()
+            elif type == 'other':
+                rts = mt.RoomType.query.filter(mt.RoomType.type == '其它').all()
+
+        # 需要显示的内容 封面　　房间名　　主播名　　人数　　类名
+        rms = []
+        rcs = []
+        rids = []
+        for rt in rts:
+            rids.append(rt.r_id)
+            rm = mt.RoomMain.query.filter(mt.RoomMain.room_id==rt.r_id).first()
+            rc = mt.RoomCount.query.filter(mt.RoomCount.r_id==rt.r_id).first()
+            rms.append(rm)
+            rcs.append(rc)
+        for rid,rm,rc,rt in zip(rids,rms,rcs,rts):
+            d = dict()
+            d['rid'] = rid
+            d['img'] = rm.img
+            d['rname'] = rm.room_name
+            d['hname'] = rm.host_name
+            d['pcount'] = rc.p_count
+            d['type'] = rt.type
+            result.append(d)
+        return result
+
+    # 分页
+    def page_split(self,count):
+        if  count % 25==0:
+            page = count//25
+        else:
+            page = count//25 + 1
+        return page
 

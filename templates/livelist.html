@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Hardcore TV主页</title>
+	<title>全部直播</title>
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/livelist.css') }}" type="text/css">
 	<script>
 	window.onload = function(){
@@ -20,19 +20,21 @@
 
 	<a class="head_logo_hc" href="javascript:location.reload();" style="background: rgba(0, 0, 0, 0)
 				no-repeat scroll left center;">
-		<img src="{{ url_for('static',filename='img/file/logo1.png') }}" name="homelogo" id="homelogo">
+		<img src="{{ url_for('static',filename='img/file/Hardcore.png') }}" name="homelogo" id="homelogo">
 	</a>
 	<ul class="head_nav">
 		<li class="homepage">
-			<a href="javascript:location.reload();">首页</a>
+			<a href="/">首页</a>
 		</li>
 		<li class="current">
-			<a href="javascript:location.reload();">全部</a>
+			<a href="/list/all/1">全部</a>
 		</li>
 		<li class="nav_classification">
 			<a href="javascript:location.reload();">分类</a>
 		</li>
-
+		<li class="ad">
+			<a href="javascript:location.reload();">广告</a>
+		</li>
 		<li class="nav_aboutUs">
 			<a href="javascript:location.reload();">关于我们</a>
 		</li>
@@ -55,87 +57,55 @@
 <!--网页主体-->
 <div id="mainbody">
 	<div class='nav2'>
-		<span class="sep1">&nbsp&nbsp&nbsp|</span>
-		<span class="sep1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp正在直播</span>
-		<a href="#">全部</a>
-		<a href="#">游戏</a>
-		<a href="#">户外</a>
-		<a href="#">歌舞</a>
+		<span class="sep1">&nbsp||</span>
+		<span class="sep1">&nbsp&nbsp&nbsp&nbsp&nbsp正在直播</span>
+		<a href="/list/all/1">全部</a>
+		<a href="/list/pcgame/1">PC游戏</a>
+		<a href="/list/vgame/1">主机游戏</a>
+		<a href="/list/mgame/1">手机游戏</a>
+        <a href="/list/enjoy/1">娱乐</a>
+        <a href="/list/other/1">其他</a>
 	</div>
 	<div class="bglink">
 
 		<div class="livebg">
-			<div class="livelist" id="livelistid">
+            {% for r in result %}
+            <div class="livelist">
+                <a href="" class="liveroom"><img src={{ r['img'] }} class="bo"></a>
 
-			</div>
-			<div class="livelist" id="livelistid">
+                    <span class="livespan1">
+                        <a href="">{{ r['rname'] }}</a>
+                    </span>
+                    <span class="livespan2">
+                        <a href=""><img src="{{ url_for('static',filename='img/file/9.png') }}" alt="" class="hostpic">{{ r['hname'] }}</a>
+                    </span>
+                    <span class="livespan3">
+                        <a href="">{{ r['type'] }}</a>
+                    </span>
+                    <span class="looknum"><img src="{{ url_for('static',filename='img/file/11.png') }}" alt="" class="eye">&nbsp{{ r['pcount'] }}
+                        人</span>
+            </div>
 
-			</div>
-			<div class="livelist" id="livelistid">
+            {% endfor %}
+            <div class="clear"></div>
 
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="livelist" id="livelistid">
-
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div class='nav3'>
-		<a href="#">上一页</a>
-		<a href="#">1</a>
-		<a href="#">2</a>
-		<a href="#">3</a>
-		<a href="#">4</a>
-		<a href="#">下一页</a>
-	</div>
+        </div>
+    </div>
+    <div class='tcd-page-code'>
+        {% if current>1 %}
+            <a href="/list/{{ type }}/{{ current-1 }}">上一页</a>
+        {% endif %}
+        {% for i in range(1,page+1) %}
+            {% if i==current %}
+                <a href="/list/{{ type }}/{{ i }}" class="current">{{ i }}</a>
+            {% else %}
+                <a href="/list/{{ type }}/{{ i }}">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
+        {% if current<page %}
+            <a href="/list/{{ type }}/{{ current+1 }}">下一页</a>
+        {% endif %}
+    </div>
 </div>
 </body>
 </html>

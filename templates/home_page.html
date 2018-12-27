@@ -188,7 +188,7 @@
         }
         #mainbody .bglink .channel .c_items ul li a .txt{
             background: #40454C;
-            opacity: 0.5;
+            opacity: 0.99;
             text-align: center;
             color: #fff;
             text-overflow: ellipsis;
@@ -335,7 +335,7 @@
             top: 150px;
             left: 0;
             text-align: center;
-            opacity: 0.5;
+            opacity: 0.99;
         }
 {#        footer布局#}
         #footer{
@@ -467,7 +467,7 @@
         </li>
         <li class="nav_total">
             <!--<a href="javascript:location.reload();">全部</a>-->
-            <a href="/list/all">全部</a>
+            <a href="/list/all/1">全部</a>
         </li>
         <li class="nav_classification">
             <a href="javascript:location.reload();">分类</a>
@@ -479,8 +479,8 @@
             <a href="javascript:location.reload();">关于我们</a>
         </li>
     </ul>
-    <form class="in_header_right" method="post" action="/">
-        <input id="suggest_search" class="search" type="text" autocomplete="off" value="" placeholder="搜游戏/主播">
+    <form class="in_header_right" method="post" action="/list/search?key={{ key }}/1">
+        <input id="suggest_search" name="search" class="search" type="text" autocomplete="off" value="" placeholder="搜游戏/主播">
         <a id="p_search" href="#">
             <img src="{{ url_for('static',filename='img/search.png') }}">
         </a>
