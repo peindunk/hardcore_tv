@@ -59,6 +59,55 @@
             top:10px;
             display:inline;
         }
+        #header .head_nav .nav_classification .a_pop{
+            padding: 10px 15px 12px;
+            width: 100px;
+            position: absolute;
+            right: -40px;
+            top: 20px;
+            display: none;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            margin: 0;
+        }
+        #header .head_nav .nav_classification:hover .a_pop.open{
+            display: block;
+        }
+        #header .head_nav .nav_classification .a_pop ul{
+            list-style: none;
+            float: left;
+            width: 40px;
+            padding-left: 10px;
+        }
+        #header .head_nav .nav_classification .a_pop ul li{
+            text-align: center;
+            line-height: 30px;
+            font-family: "微软雅黑";
+        }
+        #header .head_nav .nav_classification .a_pop ul li a{
+            display: block;
+            padding: 0;
+            width: 80px;
+            height: 24px;
+            background: #ececec;
+            border: none;
+            font-size: 12px;
+            line-height: 24px;
+            color: #797979;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        #header .head_nav .nav_classification .a_pop ul li a:hover{
+            background-color: #930;
+            color: #FFF;
+        }
+
         #header .head_nav > li > a{
             color: #333333;
             font-size: 22px;
@@ -89,12 +138,16 @@
             top:5px;
             left:450px;
         }
-        .in_header_right #log_regis #login,#sep,#register{
+        .in_header_right #log_regis #login,#sep,#register,.success_login{
             float: right;
             color: #959595;
             text-decoration: none;
             font-size: 16px;
         }
+        .in_header_right .success_login{
+{#            display: none;#}
+        }
+
 {#        网页主题布局#}
         #mainbody{
             width:1841px;
@@ -471,6 +524,16 @@
         </li>
         <li class="nav_classification">
             <a href="javascript:location.reload();">分类</a>
+            <div class="a_pop open">
+                <ul class="second_menu">
+                    <li><a href="/list/pcgame/1">PC游戏</a></li>
+                    <li><a href="/list/vgame/1">主机游戏</a></li>
+                    <li><a href="/list/mgame/1">手机游戏</a></li>
+                    <li><a href="/list/enjoy/1">娱乐</a></li>
+                    <li><a href="/list/other/1">其它</a></li>
+                </ul>
+            </div>
+
         </li>
         <li class="nav_ad">
             <a href="javascript:location.reload();">广告</a>
@@ -480,16 +543,26 @@
         </li>
     </ul>
     <form class="in_header_right" method="post" action="/list/search/1">
-        <input id="suggest_search" name="search" class="search" type="text" autocomplete="off" value="" placeholder="搜游戏/主播">
-        <a id="p_search" href="">
+        <input id="suggest_search" name="search" class="search" type="text" autocomplete="off" value="" placeholder="搜游戏/主播" style="position: absolute;left: 20px;">
+        <a id="p_search" href="" style="left: 240px;">
             <img src="{{ url_for('static',filename='img/search.png') }}">
         </a>
+        {% if not session.get('is_login') %}
         <span id="log_regis">
             <img class="person" src="{{ url_for('static',filename='img/person.png') }}">
             <a id="login" href="/login" rel="nofollow">登录</a>
             <span id="sep">|</span>
             <a id="register" href="/register">注册</a>
         </span>
+        {% elif session.get('is_login') %}
+        <span class="nav_user success_login">
+            <img id="login_user" src="{{ url_for('static',filename='img/user.jpg') }}" alt="头像" style="width: 26px;height: 26px;border-radius: 13px;">
+            <div class="user_position" style="height: 29px;line-height: 10px;line-height: 29px;float: right;">
+                <span id="login_userName">{{ user.user_name }}</span>
+                <span><a href="/skip" style="text-decoration: none">退出</a></span>
+            </div>
+        </span>
+        {% endif %}
     </form>
 </div>
 <!--网页主体-->

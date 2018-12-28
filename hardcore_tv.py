@@ -2,7 +2,7 @@
 from mysql_table import *
 from config import *
 from form_model import LoginForm,RegisteForm
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,session
 import api_for_surface as api
 from flask_sqlalchemy import SQLAlchemy
 import pymysql
@@ -21,11 +21,12 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 @app.route('/',methods=['GET','POST'])
 def index():
-    key = ''
     api_obj = api.API_Surface(request)
-    if request.method == "GET":
-        result = api_obj.show_index()
-    return render_template('home_page.html',result=result)
+    # if request.method == "GET":
+    result = api_obj.show_index()
+    print(session.get('is_login'))
+    user = api_obj.get_user()
+    return render_template('home_page.html',result=result,user=user)
 
 @app.route('/lubo',methods=['GET','POST'])
 def lubo():
@@ -49,7 +50,7 @@ def login():
     api_obj = api.API_Surface(request)
     islogin = api_obj.do_login(login)
     if islogin:
-        return render_template('mainTest.html')
+        return render_template('skip.html')
     return render_template('login.html',form=login)
 
 @app.route('/list/<type>/<int:p>',methods=['GET','POST'])
@@ -85,6 +86,11 @@ def liveroom(id):
 @app.route('/test')
 def test():
     return render_template('mainTest.html')
+
+@app.route('/skip')
+def skip():
+    session.pop('is_login')
+    return render_template('skip.html')
 
 if __name__ == '__main__':
     # deleteAllTables()

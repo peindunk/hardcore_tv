@@ -1,27 +1,29 @@
 # -*- coding:utf-8 -*-
 from hardcore_tv import db
 from config import *
-
+from flask_login import UserMixin
 
 # 创建实体模板类
-class UserMain(db.Model):
+class UserMain(UserMixin,db.Model):
     __tablename__ = 'userinfo_main'
     user_id = db.Column(db.INTEGER,primary_key=True)
     user_name = db.Column(db.String(20),nullable=False,unique=True)
     u_passwd = db.Column(db.String(20),nullable=False)
     age = db.Column(db.INTEGER,nullable=False)
     email = db.Column(db.String(50),nullable=False)
+    img = db.Column(db.String(128))
 
     other = db.relationship('UserOther',backref='userinfo_main',lazy='dynamic')
     fav = db.relationship('UserFav',backref='useinfo_main',lazy='dynamic')
     gift = db.relationship('UserGift',backref='userinfo_main',lazy='dynamic')
     score = db.relationship('UserScore',backref='userinfo_main',lazy='dynamic')
 
-    def __init__(self,uname,pwd,age,email):
+    def __init__(self,uname,pwd,age,email,img='img/user.jpg'):
         self.user_name = uname
         self.u_passwd = pwd
         self.age = age
         self.email = email
+        self.img = img
 
     def __repr__(self):
         return 'userinfo %s %s'%(self.user_name,self.u_passwd)
@@ -173,7 +175,7 @@ class VideoList(db.Model):
 
 # 创建离线房间信息 空置房间封面
 def gen_offline():
-    rm = RoomMain('classic music for memory~',
+    rm = RoomMain('classic music for jay',
              '无与伦比',
              'img/jay.jpeg',
              0,

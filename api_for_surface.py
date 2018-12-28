@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from flask import flash,jsonify
+from flask import flash,jsonify,session
 import mysql_table as mt
 
 class API_Surface:
@@ -20,6 +20,9 @@ class API_Surface:
                         flash('密码不正确')
                         return 0
                     else:
+                        session.permanent = True
+                        session['is_login'] = '%d:1'%user.user_id
+                        print('登录成功')
                         return 1
 
     def do_register(self,register):
@@ -227,3 +230,15 @@ class API_Surface:
             page = count//25 + 1
         return page
 
+    def show_login(self):
+        if session.get('islogin')[-1] == 1:
+            return 1
+        else:
+            return 0
+
+    def get_user(self):
+        if session.get('is_login'):
+            uid = int(session.get('is_login').split(':')[0])
+            user = mt.UserMain.query.filter(mt.UserMain.user_id==uid).first()
+            return user
+        return None
