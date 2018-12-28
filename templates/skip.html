@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>hardcore跳转...</title>
     <script type="text/javascript">
-		setTimeout("location.href='/';", 3800);
+		setTimeout("location.href='/';", 5000);
     </script>
-    <style>
-        h1{
-            position:absolute;
-            top: 50%;
-            left: 50%;
-            transform:translate(-50%,-50%);
-            color: rgba(2,93,86,1);
-            font-size: 60px;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/skip.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body background="{{ url_for('static',filename='img/file/timg1.jpg') }}">
-    <h1>
-        3秒后为您跳转主页...
-    </h1>
+    <div class="text-wrapper">
+        <h1>正在为您跳转主页...<span>www.hardcoretv.com</span></h1>
+        <h1>正在为您跳转主页...<span>www.hardcoretv.com</span></h1>
+    </div>
+
+<div style="text-align:center;clear:both;">
+
 </body>
 </html>
