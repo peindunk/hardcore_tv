@@ -104,9 +104,12 @@
             </script>
         </div>
         <div class="video">
-            <video class="vid" width="1244px" height="700px" controls  autoplay="autoplay">
-                <source src="{{ url_for('static',filename='video/roc.mp4') }}">
-            </video>
+{#            <video class="vid" width="1244px" height="700px" controls  autoplay="autoplay">#}
+                <iframe src="//player.bilibili.com/player.html?aid=1415480&cid=2154848&page=1"
+                  class="vid"  width="1244px" height="700px" autoplay="autoplay" frameborder="0">
+                </iframe>
+{#                <source src="{{ url_for('static',filename='video/roc.mp4') }}">#}
+{#            </video>#}
         </div>
         <div class="comment">
             <input type="text" name="sendcomm" placeholder="发送评论...">
@@ -118,28 +121,39 @@
             <div class="vide">视频
                 <div class="show">
                     <div onclick="play1()">
-                        <video width="220px" height="155px">
-                            <source src="{{ url_for('static',filename='video/roc.mp4') }}">
-                        </video>
-                        <span>火箭少女最新单曲MV light首发</span>
+{#                        <video width="220px" height="155px">#}
+{#                            <source src="{{ url_for('static',filename='video/roc.mp4') }}">#}
+                        <iframe src="//player.bilibili.com/player.html?aid=31103268&cid=54327897&page=1"　title="[周杰伦经典MV]可爱女人"
+                             class="vid"  width="380px" height="170px"  frameborder="0">
+                        </iframe>
+{#                        </video>#}
+                        <span>[周杰伦经典MV]可爱女人</span>
                     </div>
                     <div onclick="play2()">
-                            <video width="220px" height="155px">
-                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">
-                            </video>
-                            <span>2018年最火网络歌曲学猫叫</span>
+{#                            <video width="220px" height="155px">#}
+{#                                <source src="{{ url_for('static',filename='video/xmj.mp4') }}">#}
+{#                            </video>#}
+                        <iframe src="//player.bilibili.com/player.html?aid=1415480&cid=2154848&page=3"
+                             class="vid"  width="380px" height="170px"  frameborder="0">
+                        </iframe>
+                        <span>[周杰伦经典MV]星晴</span>
                     </div>
                     <div onclick="play3()">
-                        <video width="220px" height="155px">
-                            <source src="{{ url_for('static',filename='video/zj.mp4') }}">
-                        </video>
-                        <span>张杰最新情歌MV 无可救药</span>
+{#                        <video width="380px" height="170px">#}
+                        <iframe src="//player.bilibili.com/player.html?aid=14726821&cid=24003304&page=1"
+                             class="vid"  width="380px" height="170px" frameborder="0">
+                        </iframe>
+{#                        </video>#}
+                        <span>[周杰伦经典MV]世界末日</span>
                     </div>
                     <div onclick="play4()">
-                            <video width="220px" height="155px">
-                                <source src="{{ url_for('static',filename='video/131.mp4') }}">
-                            </video>
-                            <span>Jessica再次出发 庆祝圣诞歌曲</span>
+{#                            <video width="380px" height="170px">#}
+{#                                <source src="{{ url_for('static',filename='video/131.mp4') }}">#}
+{#                            </video>#}
+                        <iframe src="//player.bilibili.com/player.html?aid=8920882&cid=14723499&page=1"
+                             class="vid"  width="380px" height="170px" frameborder="0">
+                        </iframe>
+                        <span>[周杰伦经典MV]倒带</span>
                     </div>
                 </div>
             </div>
