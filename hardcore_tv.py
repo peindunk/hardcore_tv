@@ -92,6 +92,10 @@ def skip():
     session.pop('is_login')
     return render_template('skip.html')
 
+@app.route('/ads')
+def ads():
+    return render_template('ads.html')
+
 if __name__ == '__main__':
     # deleteAllTables()
     createTables()

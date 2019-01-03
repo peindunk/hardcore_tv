@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广告位</title>
+    <script type="text/javascript"> 
+        window.onload=function(){ 
+            //载入 
+          var oneInner=document.getElementById("aa") 
+            var oneButton = document.createElement("input"); 
+ 
+            oneButton.setAttribute("type","button"); 
+            oneButton.setAttribute("value","x"); 
+            if (oneButton.style.cssFloat) 
+            { 
+                oneButton.style.cssFloat="right" 
+            } 
+            else 
+            {oneButton.style.styleFloat="right"} 
+            oneInner.appendChild(oneButton); 
+          
+
+            //定时器 
+            var a1a = setInterval(moves,200); 
+            //函数 
+
+            var x = 8; 
+            var y = 8; 
+
+            function moves(){ 
+                var tops = oneInner.offsetTop 
+                var lefts = oneInner.offsetLeft 
+
+                if (lefts>=document.documentElement.clientWidth-oneInner.offsetWidth||lefts<=0) 
+                { 
+                    x=-x 
+                } 
+
+                if (tops>=document.documentElement.clientHeight-oneInner.offsetHeight||tops<=0) 
+                { 
+                    y=-y 
+                } 
+
+                tops+=y; 
+                lefts+=x; 
+
+                oneInner.style.top=tops+"px" 
+                oneInner.style.left=lefts+"px" 
+            } 
+
+            //hover停止 
+            oneInner.onmouseover=function(){ 
+                clearInterval(a1a); 
+            } 
+            //放手继续 
+            oneInner.onmouseout=function(){ 
+                a1a =setInterval(moves,200); 
+            } 
+            //删除 
+            oneButton.onclick=function(){ 
+                document.body.removeChild(oneInner); 
+            } 
+        } 
+    </script>
+    <style>
+        .xuanfu{width:200px;height: 100px;border:1px solid #ccc;z-index: 2000;position: absolute; background: #ccc; 
+        animation: 5s alternate linear infinite zhuan ; 
+        } 
+        @keyframes zhuan{ 
+            from{top:50px;left:10px;} 
+            to{top:800px;left:10px;} 
+        } 
+        .xuanfu:hover{animation-play-state:paused;}
+        #aa{width: 300px;height: 150px;z-index: 2000;position: absolute;border:solid 3px #2F74A7;cursor:pointer;}
+    </style>
+
+</head>
+<body>
+    <a href="http://www.baidu.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/baidu.jpg') }}" width="300" height="150"></a>
+    <a href="http://www.jd.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/jd.jpg') }}" width='300' height='150'></a>
+    <a href="http://www.5173.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/5173.jpg') }}" width="300" height="150"></a>
+    <a href="http://www.happicall.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/timg.jfif') }}" width="300" height="150"></a>
+    <a href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E7%8F%A0%E5%AE%9D/10170615?fr=aladdin" target="_blank">
+        <img src="{{ url_for('static',filename='img/ads/lfzb.jpg') }}" width="300" height="150">
+    </a>
+    <a href="https://www.lzlj.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/lzlj.jfif') }}" width="300" height="150"></a>
+    <div id="aa">
+        <a href="http://www.faw.com.cn" target="_blank"><img src="{{ url_for('static',filename='img/ads/1car.jfif') }}" width='300' height='150'>
+        中国一汽
+    </div>
+
+    <div class="xuanfu">
+        今日头条
+        <a href="http://www.toutiao.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/toutiao.jfif') }}" width="200" height="100"></a>
+    </div>
+    <a href="http://www.meituan.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/meituan.jfif') }}" width="300" height="150"></a>
+    <a href="http://tv.cctv.com/" target="_blank"><img src="{{ url_for('static',filename='img/ads/CCTV.jfif') }}" width="300" height="150"></a>
+    <a href="http://www.QQ.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/tencent.jpg') }}" width="300" height="150"></a>
+    <a href="http://www.yidianzixun.com/" target="_blank"><img src="{{ url_for('static',filename='img/ads/yidian.jfif') }}" width="300" height="150"></a>
+    <a href="https://news.163.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/163news.jfif') }}" width="300" height="150"></a>
+    <a href="https://news.sina.com.cn/" target="_blank"><img src="{{ url_for('static',filename='img/ads/sina.jfif') }}" width="300" height="150"></a>
+    <script type="text/javascript" language="javascript" src="http://www.cnad.com/js/jquery.rollGallery_yeso.js?v2"></script>
+
+    <div id="footer" style="text-align:center;">
+        <div id="footer_inner">
+            <div id="foot_nav">             
+                <a href="/aboutus/about_index.htm" target="_blank">|关于我们</a>|<a
+                    href="aboutus/about_contact.htm" target="_blank">业务联系</a>|<a
+                        href="/aboutus/about_job.htm" target="_blank">招聘信息</a>|<a 
+                            href="/aboutus/about_duty.htm"target="_blank">免责条款</a>|<a 
+                                href="/aboutus/about_privacy.htm"target="_blank">隐私条例</a>|<a 
+                                    href="/aboutus/about_copyright.htm"target="_blank">版权所有</a>|<a 
+                                        href="/aboutus/about_friendship.htm"target="_blank">友情链接</a>|
+            </div>
+            <div class="clear">
+            </div>
+                    <div id="copyright">
+                <p>
+                    版权所有<a href="http://www.miitbeian.gov.cn" style="color: #FFF;padding-right:10px;padding-left:10px;">66-6666666666号-6</a>
+                    &copy; Copyright 2019-xxxx 666.com All <a href="http://www.chinesewords.org" target="_blank"
+                        style="color: #bbbbbb; cursor: default">Rights</a> Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

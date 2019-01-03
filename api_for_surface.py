@@ -61,7 +61,7 @@ class API_Surface:
         else:
             flash('有选项为空或者填写不正确')
 
-    # 录播显示数据接口（等待前段页面）
+    # 录播显示数据接口
     def lubo_visble(self):
         # 获取rid
         rid = 1555
@@ -147,7 +147,7 @@ class API_Surface:
             info["type"] = type
         return jsonify(info)
 
-    # 搜索接口  (等待完成)
+    # 搜索接口
     def search(self,key):
         result = []
         # 获取搜索内容
