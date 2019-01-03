@@ -62,6 +62,7 @@ class RoomMain(db.Model):
     img = db.Column(db.String(128))
     is_oline = db.Column(db.INTEGER)
     live_url = db.Column(db.String(128))
+    host_img = db.Column(db.String(128))
 
     count = db.relationship('RoomCount',backref='roominfo_main',lazy='dynamic')
     gift = db.relationship('RoomGift',backref='roominfo_main',lazy='dynamic')
@@ -70,12 +71,13 @@ class RoomMain(db.Model):
     videolist = db.relationship('VideoList',backref='roominfo_main',lazy='dynamic')
 
 
-    def __init__(self,rname,hname,img,ol,url):
+    def __init__(self,rname,hname,img,ol,url,himg='img/user.jpg'):
         self.room_name = rname
         self.host_name = hname
         self.img = img
         self.is_oline = ol
         self.live_url = url
+        self.host_img = himg
 
 class RoomCount(db.Model):
     __tablename__ =  'roominfo_count'
