@@ -120,8 +120,8 @@ class API_Surface:
             rms.append(rm)
         return rms
 
-    def show_live(rid):
-        rm = mt.RoomMain.query.filter(mt.RoomMain.room_id==rid).all()
+    def show_live(self,rid):
+        rm = mt.RoomMain.query.filter(mt.RoomMain.room_id==rid).first()
         rc = mt.RoomCount.query.filter(mt.RoomCount.r_id==rid).first()
         rt = mt.RoomType.query.filter(mt.RoomType.r_id==rid).first()
         info = dict()
@@ -129,24 +129,26 @@ class API_Surface:
             live_url = rm.live_url
             rname = rm.room_name
             hname = rm.host_name
-            # info["live_url"] = live_url
-            # info["room_name"] = rname
-            # info["host_name"] = hname
+            himg = rm.host_img
+            info["live_url"] = live_url
+            info["room_name"] = rname
+            info["host_name"] = hname
+            info['himg'] = himg
         if rc:
             lv = rc.host_lv
             fans = rc.fans_num
             exp = rc.exp
             pcount = rc.p_count
-            # info["lv"] = lv
-            # info["fans"] = fans
-            # info["exp"] = exp
-            # info["pcount"] = pcount
+            info["lv"] = lv
+            info["fans"] = fans
+            info["exp"] = exp
+            info["pcount"] = pcount
         if rt:
             type = rt.type
-            # info["type"] = type
-        # 需要数据　真实流　房间名　主播名　关注数　人数
+            info["type"] = type
+        # 需要数据　真实流　房间名　主播名　关注数　人数 主播头像 分类 （经验 等级）
 
-        return None
+        return info
 
     # 搜索接口
     def search(self,key):

@@ -69,13 +69,13 @@
             </form>
         </div>
         <div id="roomname">
-            <span class="roomtitle">直播间直播名称</span>
+            <span class="roomtitle">{{ info['room_name'] }}</span>
             <br>
-            <span class="roominfo">分类  发布于.... 播放共。。次</span>
+            <span class="roominfo">{{ info['type'] }}</span>
         </div>
         <div id="attention">
             <button class="try" onclick="at()">订阅</button>
-            <button class="num">5234关注</button>
+            <button class="num">{{ info['fans'] }}关注</button>
             <script type="text/javascript">
                 function at(){
                     if ($("#attention .try").text()=="订阅"){
@@ -101,7 +101,9 @@
             </script>
         </div>
         <div id="starframe">
-            <div class="starpic"></div>
+            <div class="starpic">
+                <img src={{ info["himg"] }}>
+            </div>
         </div>
         <!-- <div class="video">
             <video class="vid" width="1244px" height="700px" controls>
@@ -119,7 +121,7 @@
                     html5m3u8: true,
                     rtmpBufferTime:10,
                     // video:'http://ckplayer-video.oss-cn-shanghai.aliyuncs.com/ckplayer-sample/m3u8/cd/index.m3u8'//视频地址
-                    video: 'rtmp://txrtmp.cdn.zhanqi.tv/zqlive/34338_PVMT5'
+                    video: ”{{ info['live_url'] }}“
                 };
                 var player1 = new ckplayer(videoObject);
             </script>

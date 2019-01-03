@@ -1484,3 +1484,771 @@ JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendo
 [Parent 4198, Gecko_IOThread] WARNING: pipe error (80): 连接被对方重设: file /build/firefox-h0evE3/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
 [Parent 4198, Gecko_IOThread] WARNING: pipe error (81): 连接被对方重设: file /build/firefox-h0evE3/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
 1546409368735	Marionette	INFO	Stopped listening on port 38863
+1546525421973	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XNsZlT5v5WtM"
+1546525422761	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546525422761	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546525425780	Marionette	INFO	Listening on port 35621
+1546525425788	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 3701, Gecko_IOThread] WARNING: pipe error (90): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 3701, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546525473359	Marionette	INFO	Stopped listening on port 35621
+1546525496162	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.B2ei3zCKJJ02"
+1546525496443	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546525496444	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546525498514	Marionette	INFO	Listening on port 36999
+1546525498609	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+1546525581764	Marionette	INFO	Stopped listening on port 36999
+1546525583222	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.il8dWPkY8Cjv"
+1546525583502	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546525583502	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546525585574	Marionette	INFO	Listening on port 44113
+1546525585628	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 84ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 113ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 54ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 90ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 89ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 106ms)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 149ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 85ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 68ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 131ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 100ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 46ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 62ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 131ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 110ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 59ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 50ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 162ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 60ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 38ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 49ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 137ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 98ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 1ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 32ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 28ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 31ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 30ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 12ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 5ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 165ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 36ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 51ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 49ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 26ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 23ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 35ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 28ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 30ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 22ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 22ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 51ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 53ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 20ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 2ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 32ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 28ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 1ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 1ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 54ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 40ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 1858ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 51ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 5ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 31ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 28ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 30ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 32ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 30ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 31ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 35ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 53ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 31ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 1ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 31ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 23ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 26ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 34ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 26ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 146ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 100ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 60ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 96ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 111ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 199ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 91ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 35ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 50ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 100ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 91ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 2711ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 47ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 77ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 41ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 33ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 64ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 59ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 46ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 64ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 54ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 64ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 37ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+
+(/usr/lib/firefox/firefox:4549): dconf-WARNING **: 22:30:45.077: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x580029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 4378, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 4378, Gecko_IOThread] WARNING: pipe error (87): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546525965128	Marionette	INFO	Stopped listening on port 44113
+1546526639335	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wzY2N4SZxjhb"
+1546526639614	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546526639614	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546526641692	Marionette	INFO	Listening on port 35457
+1546526641742	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 43ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 68ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 62ms)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 37ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 77ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 45ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181030.0302, line 0: Successfully compiled asm.js code (loaded from cache in 55ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 49ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 59ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 50ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 91ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 77ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 34ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 46ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 85ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 55ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 37ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 114ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 77ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 53ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 72ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 50ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 108ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 93ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 64ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 156ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 62ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 40ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 68ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 47ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 90ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 67ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 57ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 113ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 67ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 43ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 97ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 34ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 120ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 172ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 4ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 90ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 57ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 134ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 95ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 133ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 93ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 70ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 107ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 109ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 44ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 85ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 72ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 99ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 60ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 92ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 101ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 53ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 41ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 780ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 68ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 92ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 91ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 45ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 105ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 35ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 42ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 54ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 33ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+1546527373010	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1HjUtXa6gCpJ"
+1546527373299	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546527373299	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546527375652	Marionette	INFO	Listening on port 37513
+1546527375755	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x580029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 5565, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 5565, Gecko_IOThread] WARNING: pipe error (71): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Parent 5565, Gecko_IOThread] WARNING: pipe error (111): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546527389567	Marionette	INFO	Stopped listening on port 35457
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 45ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 45ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 53ms)
+[Child 6449, Chrome_ChildThread] WARNING: pipe error (31): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Child 6449, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546527464915	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yzEUeowJ9kCW"
+1546527465194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546527465194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546527467297	Marionette	INFO	Listening on port 39501
+1546527467325	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 50ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+[Child 7089, Chrome_ChildThread] WARNING: pipe error (41): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546527621715	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ypPkoiQ20TS1"
+1546527621994	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546527621994	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546527624036	Marionette	INFO	Listening on port 41151
+1546527624156	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 41ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 7700, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546527896526	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zi3Rm7ZmRdvt"
+1546527896950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546527896950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546527899728	Marionette	INFO	Listening on port 36519
+1546527899751	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 86ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 104ms)
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 9116, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+[Child 9062, Chrome_ChildThread] WARNING: pipe error: 断开的管道: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 736
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 9045, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546528430208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.v1hgPEZcW0AK"
+1546528430496	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546528430496	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546528432752	Marionette	INFO	Listening on port 46455
+1546528432875	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 43ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 46ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 33ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 90ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 53ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 91ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 38ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 89ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181030.0302, line 0: Successfully compiled asm.js code (loaded from cache in 102ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 50ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+1546528550441	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KJAoMWnMPC5C"
+1546528550814	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546528550814	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546528553667	Marionette	INFO	Listening on port 45791
+1546528553766	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 79ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 68ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 57ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 44ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 93ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 95ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 44ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 59ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181030.0302, line 0: Successfully compiled asm.js code (loaded from cache in 180ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 45ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 101ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 93ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 39ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 84ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 1ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 59ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 83ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 59ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 116ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 101ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 99ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 53ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 72ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 70ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 96ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 47ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 47ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 60ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 100ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 62ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 77ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 103ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 125ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 90ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 35ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 46ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 2ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 90ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 67ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 50ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 64ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 111ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 41ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 107ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 57ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 37ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 85ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 38ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 96ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 41ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 87ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 38ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 48ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 87ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 37ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 48ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 112ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 109ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 72ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 54ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 67ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 62ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 68ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 50ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 72ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 71ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 107ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 26ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 62ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 90ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+[Parent 9828, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546528809938	Marionette	INFO	Stopped listening on port 45791
+1546533450962	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2wz4XvIzycao"
+1546533451355	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546533451356	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546533453898	Marionette	INFO	Listening on port 34217
+1546533454041	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 64ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13027, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-wWf_B4/firefox-64.0+build3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+1546533530389	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AWH5OihPTZAd"
+1546533530770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1546533530770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1546533533589	Marionette	INFO	Listening on port 38957
+1546533533620	Marionette	WARN	TLS certificate errors will be ignored for this session
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (total compilation time 79ms; stored in cache)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 171ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 135ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 112ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 164ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 199ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 126ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 86ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 88ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 107ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 69ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 92ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 67ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 112ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 101ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20181030.0302, line 0: Successfully compiled asm.js code (loaded from cache in 7ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 108ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 40ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 10ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 119ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 55ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 1233ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 47ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 59ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 70ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 85ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 97ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 46ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 60ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 109ms)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 97ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 63ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 37ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 104ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 99ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 81ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 2460ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 60ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 35ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 54ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 28ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 119ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 93ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 87ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 87ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 42ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 39ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 79ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 28ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 46ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 91ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 119ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 67ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 73ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 49ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 125ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 64ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 76ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 38ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 2ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 25ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 30ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 32ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 29ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 39ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 52ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 17ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 42ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 44ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 23ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 31ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 5ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 25ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 41ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 131ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 703ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 74ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 129ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 47ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 80ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 75ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 87ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 65ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 56ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 93ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 78ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 64ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 114ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 66ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 85ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 785ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 82ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 57ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 94ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 70ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 72ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 100ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 5462ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 49ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 47ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 162ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 58ms)
+JavaScript warning: https://h5player.zhanqi.tv/assets/h5liveplayer/dist/js/vendor.js?v=20190102.0202, line 0: Successfully compiled asm.js code (loaded from cache in 61ms)
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+Fontconfig warning: Directory/file mtime in the future. New fonts may not be detected.
+1546533889451	Marionette	INFO	Stopped listening on port 38957

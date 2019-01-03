@@ -739,7 +739,7 @@
                 </h2>
                 <ul class="clearfix">
                     <li>
-                        <a href="/live/1">
+                        <a href="/live/{{ result[0].room_id }}">
                             <div class="picture">
                                 <img src={{ result[0].img }} style="display: block">
                                 <span>
@@ -750,7 +750,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/live/1">
+                        <a href="/live/{{ result[1].room_id }}">
                             <div class="picture">
                                 <img src={{ result[1].img }} style="display: block">
                                 <span>
@@ -761,7 +761,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/live/1">
+                        <a href="/live/{{ result[2].room_id }}">
                             <div class="picture">
                                 <img src={{ result[2].img }} style="display: block">
                                 <span>
@@ -772,7 +772,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/live/1">
+                        <a href="/live/{{ result[3].room_id }}">
                             <div class="picture">
                                 <img src={{ result[3].img }} style="display: block">
                                 <span>
@@ -790,22 +790,22 @@
                         <img src="{{ url_for('static',filename='img/king_honor.png') }}" style="display: inline">
                         <span>手游天地</span>
                     </a>
-                    <span class="title_info">{{ result[4].room_name }}</span>
+                    <span class="title_info">国服貂蝉，进来学技术！</span>
                 </h2>
                 <ul class="clearfix">
                     <li>
-                        <a href="live/1">
+                        <a href="/live/{{ result[4].room_id }}">
                             <div class="picture">
                                 <img src={{ result[4].img }} style="display: block">
                                 <span>
                                     <b></b>
                                 </span>
                             </div>
-                            <div class="txt">国服貂蝉，进来学技术！</div>
+                            <div class="txt">{{ result[4].room_name }}</div>
                         </a>
                     </li>
                     <li>
-                        <a href="live/1">
+                        <a href="/live/{{ result[5].room_id }}">
                             <div class="picture">
                                 <img src={{ result[5].img }} style="display: block">
                                 <span>
@@ -816,7 +816,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="live/1">
+                        <a href="/live/{{ result[6].room_id }}">
                             <div class="picture">
                                 <img src={{ result[6].img }} style="display: block">
                                 <span>
@@ -827,7 +827,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="live/1">
+                        <a href="/live/{{ result[7].room_id }}">
                             <div class="picture">
                                 <img src={{ result[7].img }} style="display: block">
                                 <span>

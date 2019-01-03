@@ -90,8 +90,8 @@ class RoomCount(db.Model):
 
     def __init__(self,r_id,lv,fans,exp,pco):
         self.r_id = r_id
-        self.lv = lv
-        self.fans = fans
+        self.host_lv = lv
+        self.fans_num = fans
         self.exp = exp
         self.p_count = pco
 
@@ -222,12 +222,14 @@ def gen_data():
             r_name = data[2]
             img = data[3]
             type = data[4].strip()
-            live_id = data[-1].strip()
-            rm = RoomMain(r_name,host_name,img,1,zq_api+live_id)
+            live_id = data[6].strip()
+            himg = data[7].strip()
+            fans = int(data[8])
+            rm = RoomMain(r_name,host_name,img,1,zq_api+live_id,himg)
             db.session.add(rm)
             db.session.commit()
             robj = RoomMain.query.filter().all()[-1]
-            rc = RoomCount(robj.room_id,0,0,0,p_count)
+            rc = RoomCount(robj.room_id,0,fans,0,p_count)
             db.session.add(rc)
             db.session.commit()
             rg = RoomGift(robj.room_id,0,0,0,0)

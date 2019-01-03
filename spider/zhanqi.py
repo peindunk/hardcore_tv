@@ -60,16 +60,13 @@ class Zhanqi():
             p = r'''"videoId":"(.*?)"'''
             for s in scripts:
                 live_id = re.findall(p, s.get_text().strip())
-                host_img = soup.find_all('img')
-                temp = []
-                for img in host_img:
-                    if img.get('alt'):
-                        temp.append(img)
                 if live_id:
                     break
-            print(temp[0].get('src'))
+            host_img = soup.find_all('img',{"alt":name.get_text()})
+            fans = soup.find('span',{"class":"dyue-mid js-room-follow-num"})
             f.write(number.get_text().strip()+'##'+name.get_text().strip()+'##'+title.get_text().strip()+'##'+
-                    img.get("src")+'##'+dtype.get_text().strip()+'##'+link.get("href")+'##'+live_id[0]+'##'+temp[0].get('src'))
+                    img.get("src")+'##'+dtype.get_text().strip()+'##'+link.get("href")+'##'+live_id[0]+'##'+
+                    host_img[0].get('src')+"##"+fans.get_text())
             f.write(u'\n')
             self.num += 1
 

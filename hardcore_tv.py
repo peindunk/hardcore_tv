@@ -82,8 +82,9 @@ def livelist(type,p):
 @app.route('/live/<int:id>',methods=['GET','POST'])
 def liveroom(id):
     apiobj = api.API_Surface(request)
-    apiobj.showList(id)
-    return render_template('TV_live.html')
+    info = apiobj.show_live(id)
+    print('info',info)
+    return render_template('TV_live.html',info = info)
 
 @app.route('/test')
 def test():

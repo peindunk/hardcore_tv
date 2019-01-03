@@ -78,7 +78,7 @@
 				{% if r['isol'] == 0 %}
                 <a href="/lubo" class="liveroom"><img src={{ url_for('static',filename=r['img']) }} class="bo"></a>
 				{% elif r['isol'] == 1 %}
-                <a href="/live/1" class="liveroom"><img src={{ r['img'] }} class="bo"></a>
+                <a href="/live/{{ r['rid'] }}" class="liveroom"><img src={{ r['img'] }} class="bo"></a>
 				{% endif %}
                     <span class="livespan1">
                         <a href="">{{ r['rname'] }}</a>
