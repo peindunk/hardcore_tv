@@ -83,7 +83,6 @@ def livelist(type,p):
 def liveroom(id):
     apiobj = api.API_Surface(request)
     info = apiobj.show_live(id)
-    print('info',info)
     return render_template('TV_live.html',info = info)
 
 @app.route('/test')
