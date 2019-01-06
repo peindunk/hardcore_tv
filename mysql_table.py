@@ -175,37 +175,56 @@ class VideoList(db.Model):
         self.poster_url = p_url
         self.video_name = v_name
 
-# 创建离线房间信息 空置房间封面
 def gen_offline():
+    # 创建离线房间信息 空置房间封面
     rm = RoomMain('classic music for jay',
-             '无与伦比',
-             'img/jay.jpeg',
-             0,
-             '')
+                  '无与伦比',
+                  'img/jay.jpeg',
+                  0,
+                  '',
+                  'img/jay.jpeg')
     db.session.add(rm)
     db.session.commit()
     rr = RoomMain.query.filter().all()[-1]
     rid = rr.room_id
-    rc = RoomCount(rid,100,888888,0,0)
+    rc = RoomCount(rid,100,8888,0,0)
     rt = RoomType(rid,'娱乐')
     rcm = RoomComment(rid,'无与伦比 为杰沉沦',0,'小jayjay')
-    db.session.add_all([rc,rt,rcm])
+    vl1 = VideoList(rid,'//player.bilibili.com/player.html?aid=31103268&cid=54327897&page=1',
+                    'img/poster/jay_kanr.png','周杰伦经典mv - 可爱女人')
+    vl2 = VideoList(rid,'//player.bilibili.com/player.html?aid=16584855&cid=27050072&page=1',
+                    'img/poster/jay_yfzm.png','周杰伦经典mv - 以父之名')
+    vl3 = VideoList(rid,'//player.bilibili.com/player.html?aid=14276324&cid=23300859&page=1',
+                    'img/poster/jay_py.png','周杰伦经典mv - 漂移')
+    vl4 = VideoList(rid,'//player.bilibili.com/player.html?aid=16584918&cid=27050157&page=1',
+                    'img/poster/jay_yq.png','周杰伦经典mv - 夜曲')
+
+    db.session.add_all([rc,rt,rcm,vl1,vl2,vl3,vl4])
     db.session.commit()
 
     rm = RoomMain('经典nba赛事',
-        'hardcore体育',
-         'img/nba.jpeg',
-          0,
-         ''
-    )
+                  'nbalive',
+                  'img/nba.jpeg',
+                  0,
+                  '',
+                  'img/nba.jpeg')
     db.session.add(rm)
     db.session.commit()
     rr = RoomMain.query.filter().all()[-1]
     rid = rr.room_id
-    rc = RoomCount(rid,100,99999,0,0)
+    rc = RoomCount(rid,100,9999,0,0)
     rt = RoomType(rid,'娱乐')
     rcm = RoomComment(rid,'尽享经典nba赛事',0,'5皇james')
-    db.session.add_all([rc,rt,rcm])
+    vl1 = VideoList(rid, '//player.bilibili.com/player.html?aid=34067556&cid=59668869&page=1',
+                    'img/poster/nba_md.png', 'nba经典镜头 - 麦迪时刻35秒13分')
+    vl2 = VideoList(rid, '//player.bilibili.com/player.html?aid=35069687&cid=61443376&page=1',
+                    'img/poster/nba_kb.png', 'nba经典镜头 - 科比81分')
+    vl3 = VideoList(rid, '//player.bilibili.com/player.html?aid=34060114&cid=59602853&page=1',
+                    'img/poster/nba_jd.png', 'nba经典镜头 - 乔丹生涯50佳')
+    vl4 = VideoList(rid, '//player.bilibili.com/player.html?aid=35343570&cid=61951410&page=1',
+                    'img/poster/nba_on.png', 'nba经典镜头 - 奥尼尔生涯绝佳')
+
+    db.session.add_all([rc,rt,rcm,vl1,vl2,vl3,vl4])
     db.session.commit()
 
 
@@ -272,6 +291,19 @@ def del_room_table():
         db.session.delete(d)
     db.session.commit()
 
+# 插入直播间
+def gen_myroom():
+    # 等待放入房间封面 头像封面 推流连接
+    rm = RoomMain('hardcore官方直播间','hardcore_tv','房间封面','1','推流连接','头像')
+    db.session.add(rm)
+    db.session.commit()
+    rr = RoomMain.query.filter().all()[-1]
+    rid = rr.room_id
+    rc = RoomCount(rid,99,99999,0,888888)
+    rt = RoomType(rid,'娱乐')
+    db.session.add_all([rc,rt])
+    db.session.commit()
+
 # 创建初始表
 def createTables():
     db.create_all()
@@ -281,9 +313,12 @@ def createTables():
         admobj = UserMain('admin','admin',0,'admin@admin.com')
         db.session.add(admobj)
         db.session.commit()
+        um = UserMain.query.filter().all()[-1]
+        UserScore(um.user_id,10000000)
     del_room_table()
     gen_data()
     gen_offline()
+    gen_myroom()
 
 def deleteAllTables():
     db.drop_all()

@@ -62,6 +62,11 @@
 		<div class="logo">
 			Hardcore TV
 		</div>
+        {% if sucess==True %}
+            <script>
+                window.location.href='/skip/register'
+            </script>
+        {% endif %}
 		<form class="input-group" action="/register" method="post">
 	        {{ form.csrf_token() }}
 			<div class="item">
@@ -117,6 +122,7 @@
         	{{ message }}
         	{% endfor %}
 		</form>
+
 	</div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 from flask import flash,jsonify,session
 import mysql_table as mt
+import time
 
 class API_Surface:
     def __init__(self,req):
@@ -46,7 +47,6 @@ class API_Surface:
             mt.db.session.add(user_m)
             mt.db.session.commit()
             user = mt.UserMain.query.filter().all()[-1]
-            print('user',user)
             uid = user.user_id
             user_o = mt.UserOther(uid,sex,phone,city,ps)
             mt.db.session.add(user_o)
@@ -57,14 +57,17 @@ class API_Surface:
             user_g = mt.UserGift(uid,0,0,0,0)
             mt.db.session.add(user_g)
             mt.db.session.commit()
-            flash('注册成功～～～～～')
+            flash('注册成功～～即将跳转')
+            session.permanent = True
+            session['is_login'] = '%d:1'%uid
+            print('是否成功存储session',session.get('is_login'))
+            return True
         else:
             flash('有选项为空或者填写不正确')
+            return False
 
     # 录播显示数据接口
-    def lubo_visble(self):
-        # 获取rid
-        rid = 1555
+    def lubo_visble(self,rid):
         # 数据库查询
         rm = mt.RoomMain.query.filter(mt.RoomMain.room_id==rid).first()
         rc = mt.RoomCount.query.filter(mt.RoomCount.r_id==rid).first()
@@ -86,20 +89,20 @@ class API_Surface:
         if rm:
             rname = rm.room_name
             hname = rm.host_name
+            himg = rm.host_img
             info["room_name"] = rname
             info["host_name"] = hname
-            print(type,lv,fans,exp,pcount,rname,hname)
+            info["himg"] =himg
 
-        if vl:
-            for v in vl:
-                info["video_url"] = v.video_url
-                info["poster_url"] = v.poster_url
-                info["video_name"] = v.video_name
-        return  jsonify(info)
+        # if vl:
+        #     for v in vl:
+        #         info["video_url"] = v.video_url
+        #         info["poster_url"] = v.poster_url
+        #         info["video_name"] = v.video_name
+        return  (info,vl)
 
     # 评论
-    def comment_visible(self):
-        rid = 1
+    def comment_visible(self,rid):
         rcm = mt.RoomComment.query.filter(mt.RoomComment.rid==rid).all()
         user_com = []
         for item in rcm:

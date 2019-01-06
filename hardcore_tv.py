@@ -28,21 +28,23 @@ def index():
     user = api_obj.get_user()
     return render_template('home_page.html',result=result,user=user)
 
-@app.route('/lubo',methods=['GET','POST'])
-def lubo():
+@app.route('/lubo/<int:id>',methods=['GET','POST'])
+def lubo(id):
     api_obj = api.API_Surface(request)
+    user = api_obj.get_user()
     if request.method == "GET":
-        api_obj.lubo_visble()
-        comment = api_obj.comment_visible()
-    return render_template('TV_record1.html',comment=comment)
+        info,vl = api_obj.lubo_visble(id)
+        comment = api_obj.comment_visible(id)
+    return render_template('TV_record1.html',comment=comment,info=info,videolist=vl,user=user)
 
 @app.route('/register',methods=['GET','POST'])
 def register():
+    sucess = 0
     api_obj = api.API_Surface(request)
     register = RegisteForm(request.form)
     if request.method == 'POST':
-        api_obj.do_register(register)
-    return render_template('register.html',form=register)
+        sucess = api_obj.do_register(register)
+    return render_template('register.html',form=register,sucess=sucess)
 
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -56,6 +58,7 @@ def login():
 @app.route('/list/<type>/<int:p>',methods=['GET','POST'])
 def livelist(type,p):
     apiobj = api.API_Surface(request)
+    user = apiobj.get_user()
     if request.method == "GET":
         result = apiobj.showList(type)
         if result:
@@ -64,7 +67,7 @@ def livelist(type,p):
                 visible = result[0:25]
             else:
                 visible = result[(p-1)*25:(p-1)*25+25]
-            return render_template('livelist.html',result=visible,page=page,current=p,type=type)
+            return render_template('livelist.html',result=visible,page=page,current=p,type=type,user=user)
         else:
             return '<a href="/">无结果 请返回首页<a>'
     else:
@@ -82,21 +85,25 @@ def livelist(type,p):
 @app.route('/live/<int:id>',methods=['GET','POST'])
 def liveroom(id):
     apiobj = api.API_Surface(request)
+    user = apiobj.get_user()
     info = apiobj.show_live(id)
-    return render_template('TV_live.html',info = info)
+    return render_template('TV_live.html',info = info,user=user)
 
 @app.route('/test')
 def test():
     return render_template('mainTest.html')
 
-@app.route('/skip')
-def skip():
-    session.pop('is_login')
+@app.route('/skip/<status>')
+def skip(status):
+    if status == 'logout':
+        session.pop('is_login')
     return render_template('skip.html')
 
-@app.route('/ads')
+@app.route('/ads',methods=['GET','POST'])
 def ads():
-    return render_template('ads.html')
+    apiobj = api.API_Surface(request)
+    user = apiobj.get_user()
+    return render_template('ads.html',user=user)
 
 if __name__ == '__main__':
     # deleteAllTables()

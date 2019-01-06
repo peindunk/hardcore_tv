@@ -504,9 +504,6 @@
             font: 12px/1.5 微软雅黑,arial,sans-serif;
         }
     </style>
-
-
-
 </head>
 <body>
 
@@ -562,7 +559,7 @@
             <img id="login_user" src="{{ url_for('static',filename='img/user.jpg') }}" alt="头像" style="width: 26px;height: 26px;border-radius: 13px;">
             <div class="user_position" style="height: 29px;line-height: 10px;line-height: 29px;float: right;">
                 <span id="login_userName">{{ user.user_name }}</span>
-                <span><a href="/skip" style="text-decoration: none">退出</a></span>
+                <span><a href="/skip/logout" style="text-decoration: none">退出</a></span>
             </div>
         </span>
         {% endif %}
@@ -731,7 +728,7 @@
         <div class="s_content">
             <div class="classify">
                 <h2>
-                    <a href="/list/aa" title="刺激端游看hardcore_tv">
+                    <a href="/list/all/1" title="刺激端游看hardcore_tv">
                         <img src="{{ url_for('static',filename='img/eat_chicken.png') }}" style="display: inline">
                         <span>PC游戏</span>
                     </a>
@@ -786,7 +783,7 @@
             </div>
             <div class="classify" style="float: left">
                 <h2>
-                    <a href="/list/a" title="英雄热血竞技">
+                    <a href="/list/mgame/1" title="英雄热血竞技">
                         <img src="{{ url_for('static',filename='img/king_honor.png') }}" style="display: inline">
                         <span>手游天地</span>
                     </a>
