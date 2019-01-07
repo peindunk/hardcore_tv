@@ -105,6 +105,19 @@ def ads():
     user = apiobj.get_user()
     return render_template('ads.html',user=user)
 
+@app.route('/bp',methods=['GET','POST'])
+def add_sub_bp():
+    apiobj = api.API_Surface(request)
+    user = apiobj.get_user()
+    if apiobj.change_bp(user):
+        return '改变成功'
+    else:
+        return '积分不足'
+
+@app.route('/aboutus')
+def aboutus():
+    return render_template('aboutus.html')
+
 if __name__ == '__main__':
     # deleteAllTables()
     createTables()

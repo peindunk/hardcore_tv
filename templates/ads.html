@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>广告位</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/Head.css') }}" type="text/css">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-1.11.3.js') }}"></script>
     <script type="text/javascript">
         window.onload=function(){ 
             //载入 
@@ -74,11 +75,16 @@
             to{top:800px;left:10px;} 
         } 
         .xuanfu:hover{animation-play-state:paused;}
-        #aa{width: 300px;height: 150px;z-index: 2000;position: absolute;border:solid 3px #2F74A7;cursor:pointer;}
+        #aa{width:200px;height: 100px;border:1px solid #ccc;z-index: 2000;position: absolute; background: #ccc;
+        animation: 5s alternate linear infinite zhua;}
+        @keyframes zhua{
+            from{top:50px;right:10px;}
+            to{
+                top: 500px;right:10px;}
     </style>
 
 </head>
-<body>
+<body style='margin-top:55px; background-color:darkgray; '>
     <!--网页头部-->
     <div id="header" >
     <a class="head_logo_hc" href="javascript:location.reload();" style="background: rgba(0, 0, 0, 0)
@@ -111,7 +117,7 @@
             <a href="/ads">广告</a>
         </li>
         <li class="nav_aboutUs">
-            <a href="javascript:location.reload();">关于我们</a>
+            <a href="/aboutus" target="_blank">关于我们</a>
         </li>
     </ul>
     <form class="in_header_right" method="post" action="/list/search/1">
@@ -137,31 +143,50 @@
         {% endif %}
     </form>
 </div>
-    <a href="http://www.baidu.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/baidu.jpg') }}" width="300" height="150"></a>
-    <a href="http://www.jd.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/jd.jpg') }}" width='300' height='150'></a>
-    <a href="http://www.5173.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/5173.jpg') }}" width="300" height="150"></a>
-    <a href="http://www.happicall.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/timg.jfif') }}" width="300" height="150"></a>
-    <a href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E7%8F%A0%E5%AE%9D/10170615?fr=aladdin" target="_blank">
+    <a class="adzone" href="http://www.baidu.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/baidu.jpg') }}" width="300" height="150"></a>
+    <a class="adzone" href="http://www.jd.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/jd.jpg') }}" width='300' height='150'></a>
+    <a class="adzone" href="http://www.5173.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/5173.jpg') }}" width="300" height="150"></a>
+    <a class="adzone" href="http://www.happicall.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/timg.jfif') }}" width="300" height="150"></a>
+    <a class="adzone" href="https://baike.baidu.com/item/%E9%BE%99%E5%87%A4%E7%8F%A0%E5%AE%9D/10170615?fr=aladdin" target="_blank">
         <img src="{{ url_for('static',filename='img/ads/lfzb.jpg') }}" width="300" height="150">
     </a>
-    <a href="https://www.lzlj.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/lzlj.jfif') }}" width="300" height="150"></a>
+    <a class="adzone" href="https://www.lzlj.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/lzlj.jfif') }}" width="300" height="150"></a>
     <div id="aa">
-        <a href="http://www.faw.com.cn" target="_blank"><img src="{{ url_for('static',filename='img/ads/1car.jfif') }}" width='300' height='150'>
+        <a class="adzone" href="http://www.faw.com.cn" target="_blank"><img src="{{ url_for('static',filename='img/ads/1car.jfif') }}" width='300' height='150'>
         中国一汽
     </div>
 
     <div class="xuanfu">
         今日头条
-        <a href="http://www.toutiao.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/toutiao.jfif') }}" width="200" height="100"></a>
+        <a class="adzone" href="http://www.toutiao.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/toutiao.jfif') }}" width="200" height="100"></a>
     </div>
-    <a href="http://www.meituan.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/meituan.jfif') }}" width="300" height="150"></a>
-    <a href="http://tv.cctv.com/" target="_blank"><img src="{{ url_for('static',filename='img/ads/CCTV.jfif') }}" width="300" height="150"></a>
-    <a href="http://www.QQ.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/tencent.jpg') }}" width="300" height="150"></a>
-    <a href="http://www.yidianzixun.com/" target="_blank"><img src="{{ url_for('static',filename='img/ads/yidian.jfif') }}" width="300" height="150"></a>
-    <a href="https://news.163.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/163news.jfif') }}" width="300" height="150"></a>
-    <a href="https://news.sina.com.cn/" target="_blank"><img src="{{ url_for('static',filename='img/ads/sina.jfif') }}" width="300" height="150"></a>
+    <a class="adzone" href="http://www.meituan.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/meituan.jfif') }}" width="300" height="150"></a>
+    <a class="adzone" href="http://tv.cctv.com/" target="_blank"><img src="{{ url_for('static',filename='img/ads/CCTV.jfif') }}" width="300" height="150"></a>
+    <a class="adzone" href="http://www.QQ.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/tencent.jpg') }}" width="300" height="150"></a>
+    <a class="adzone" href="http://www.yidianzixun.com/" target="_blank"><img src="{{ url_for('static',filename='img/ads/yidian.jfif') }}" width="300" height="150"></a>
+    <a class="adzone" href="https://news.163.com" target="_blank"><img src="{{ url_for('static',filename='img/ads/163news.jfif') }}" width="300" height="150"></a>
+    <a class="adzone" href="https://news.sina.com.cn/" target="_blank"><img src="{{ url_for('static',filename='img/ads/sina.jfif') }}" width="300" height="150"></a>
     <script type="text/javascript" language="javascript" src="http://www.cnad.com/js/jquery.rollGallery_yeso.js?v2"></script>
+    {% if session.get('is_login') %}
+    <script>
+        $(function () {
+            $('.adzone').click(function () {
+                var data = {'bp':100};
+                alert('恭喜获得100积分')
+                $.ajax(
+                {
+                    url:'/bp',
+                    type:'POST',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType:'json',
+                    data:JSON.stringify(data),
 
+                }
+            )
+            })
+        })
+    </script>
+    {% endif %}
     <div id="footer" style="text-align:center;">
         <div id="footer_inner">
             <div id="foot_nav">             

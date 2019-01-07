@@ -313,8 +313,15 @@ def createTables():
         admobj = UserMain('admin','admin',0,'admin@admin.com')
         db.session.add(admobj)
         db.session.commit()
-        um = UserMain.query.filter().all()[-1]
-        UserScore(um.user_id,10000000)
+    adm = UserMain.query.filter(UserMain.user_name=='admin').first()
+    uid = adm.user_id
+    us = UserScore.query.filter(UserScore.u_id==uid).first()
+    print('us',us)
+    if not us:
+        us2 = UserScore(uid,10000000)
+        db.session.add(us2)
+        db.session.commit()
+
     del_room_table()
     gen_data()
     gen_offline()

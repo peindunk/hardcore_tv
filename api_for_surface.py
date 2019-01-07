@@ -4,8 +4,9 @@ import mysql_table as mt
 import time
 
 class API_Surface:
-    def __init__(self,req):
+    def __init__(self,req,db=None):
         self.request = req
+        self.db = db
 
     def do_login(self,login):
         if self.request.method == 'POST':
@@ -248,3 +249,16 @@ class API_Surface:
             user = mt.UserMain.query.filter(mt.UserMain.user_id==uid).first()
             return user
         return None
+
+    # 积分变动
+    def change_bp(self,user):
+        data = self.request.get_json()['bp']
+        uid = user.user_id
+        us = mt.UserScore.query.filter(mt.UserScore.u_id==uid).first()
+        if us.score + data >= 0:
+            us.score += data
+            mt.db.session.add(us)
+            mt.db.session.commit()
+            return True
+        else:
+            return False
