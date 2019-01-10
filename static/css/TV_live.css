@@ -167,8 +167,22 @@ body{
     left:1400px;
     border-top:10px solid palegoldenrod;
     border-bottom:10px solid rgb(194, 245, 194);
-    border-radius:50px;
+    /*border-radius:50px;*/
     box-sizing: border-box;
+    overflow: hidden;
+    overflow-x:scroll;
+}
+
+.chat .smallcomment{
+    width:400px;
+    height:40px;
+    color:black;
+    border-bottom: 1px solid grey;
+    text-align: left;
+    font-size:12px;
+    line-height: 40px;
+    overflow:hidden;
+    text-overflow: ellipsis;
 }
 
 .sendcom{

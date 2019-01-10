@@ -153,7 +153,6 @@
             $(function () {
             $('#llg').click(function () {
                 var data = {'bp':-5};
-                alert('给主播送出斑竹-5分')
                 $.ajax(
                 {
                     url:'/bp',
@@ -168,13 +167,18 @@
                 arrlist = s.split(':')
                 score = parseInt(arrlist[1])
                 score -= 5
-                $('#showbp').html('当前积分:'+score)
+                if (score<0){
+                    alert('您的积分不足 请在广告页面获取积分')
+                }
+                else {
+                    $('#showbp').html('当前积分:' + score)
+                    alert('给主播送出斑竹-5分')
+                }
             })
         })
             $(function () {
             $('#lg').click(function () {
                 var data = {'bp':-10};
-                alert('给主播送出飞机-10分')
                 $.ajax(
                 {
                     url:'/bp',
@@ -189,14 +193,19 @@
                 arrlist = s.split(':')
                 score = parseInt(arrlist[1])
                 score -= 10
-                $('#showbp').html('当前积分:'+score)
+                if (score<0){
+                    alert('您的积分不足 请在广告页面获取积分')
+                }
+                else {
+                    $('#showbp').html('当前积分:' + score)
+                    alert('给主播送出飞机-10分')
+                }
 
             })
         })
             $(function () {
             $('#mg').click(function () {
                 var data = {'bp':-50};
-                alert('给主播送出火箭-50分')
                 $.ajax(
                 {
                     url:'/bp',
@@ -212,13 +221,18 @@
                 arrlist = s.split(':')
                 score = parseInt(arrlist[1])
                 score -= 50
-                $('#showbp').html('当前积分:'+score)
+                if (score<0){
+                    alert('您的积分不足 请在广告页面获取积分')
+                }
+                else {
+                    $('#showbp').html('当前积分:' + score)
+                    alert('给主播送出火箭-50分')
+                }
             })
         })
             $(function () {
             $('#hg').click(function () {
                 var data = {'bp':-100};
-                alert('给主播送出超级火箭-100分')
                 $.ajax(
                 {
                     url:'/bp',
@@ -234,12 +248,20 @@
                 arrlist = s.split(':')
                 score = parseInt(arrlist[1])
                 score -= 100
-                $('#showbp').html('当前积分:'+score)
+                if (score<0){
+                    alert('您的积分不足 请在广告页面获取积分')
+                }
+                else {
+                    $('#showbp').html('当前积分:' + score)
+                    alert('给主播送出超级火箭-100分')
+                }
             })
         })
         </script>
 
-        <div class="chat"></div>
+        <div class="chat">
+{#            <div class="smallcomment"></div>#}
+        </div>
         <div class="sendcom">
             <input class="input" type="text" name="sendcom" placeholder="发送评论...">
             <span class="send-btn">发送</span>
@@ -325,7 +347,9 @@
 
         //生成弹幕
         createBarrage(inputValue,true);
+        $(".chat").append("<div class='smallcomment'>"+"{{ user.user_name }}"+" : "+inputBox.value+"</div>");
         inputBox.value = '';
+
       }
 
 

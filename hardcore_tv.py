@@ -132,10 +132,12 @@ def add_sub_bp():
     print('改变积分')
     apiobj = api.API_Surface(request)
     user = apiobj.get_user()
+    info = dict()
     if apiobj.change_bp(user):
-        return 'success'
+        info['status'] = 'success'
     else:
-        return 'fail'
+        info['status'] = 'fail'
+    return jsonify(info)
 
 @app.route('/aboutus')
 def aboutus():
