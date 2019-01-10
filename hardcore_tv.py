@@ -101,13 +101,15 @@ def livelist(type,p):
             visible = result[0:25]
         else:
             visible = result[(p - 1) * 25:(p - 1) * 25 + 25]
-        return render_template('livelist.html',key=key,current=p,page=page,result=visible)
+        return render_template('livelist.html',key=key,current=p,page=page,result=visible,user=user)
 
 @app.route('/live/<int:id>',methods=['GET','POST'])
 def liveroom(id):
     apiobj = api.API_Surface(request)
+    score = None
     user = apiobj.get_user()
-    score = apiobj.get_socre()
+    if user:
+        score = apiobj.get_socre()
     info = apiobj.show_live(id)
     return render_template('TV_live.html',info = info,user=user,score=score)
 

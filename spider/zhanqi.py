@@ -4,7 +4,8 @@
 from selenium.webdriver import Firefox
 from bs4 import BeautifulSoup as bs
 import re
-
+import requests
+import time
 
 class Zhanqi():
     def __init__(self):
@@ -54,19 +55,29 @@ class Zhanqi():
 
         for name, number ,title ,img ,dtype ,link in zip(names, numbers,titles,imgs,dtypes,links):
             url = "https://www.zhanqi.tv" + link.get("href")
-            self.driver.get(url)
-            soup = bs(self.driver.page_source, "lxml")
-            scripts = soup.find_all("script")
+            result = requests.get(url).text
             p = r'''"videoId":"(.*?)"'''
-            for s in scripts:
-                live_id = re.findall(p, s.get_text().strip())
-                if live_id:
-                    break
-            host_img = soup.find_all('img',{"alt":name.get_text()})
-            fans = soup.find('span',{"class":"dyue-mid js-room-follow-num"})
+            live_id = re.findall(p,result)[0]
+            p2 = r'''<img src="(.*?)" alt="%s">'''%name.get_text()
+            host_img = re.findall(p2,result)[0]
+            p3 = r'''<span class="dyue-mid js-room-follow-num">(.*?)</span>'''
+            fans = re.findall(p3,result)[0]
+            print('live_id',live_id)
+            # print('host_img'+host_img)
+            # print('fans'+fans)
+        #     self.driver.get(url)
+        #     soup = bs(self.driver.page_source, "lxml")
+        #     scripts = soup.find_all("script")
+        #     p = r'''"videoId":"(.*?)"'''
+        #     for s in scripts:
+        #         live_id = re.findall(p, s.get_text().strip())
+        #         if live_id:
+        #             break
+        #     host_img = soup.find_all('img',{"alt":name.get_text()})
+        #     fans = soup.find('span',{"class":"dyue-mid js-room-follow-num"})
             f.write(number.get_text().strip()+'##'+name.get_text().strip()+'##'+title.get_text().strip()+'##'+
-                    img.get("src")+'##'+dtype.get_text().strip()+'##'+link.get("href")+'##'+live_id[0]+'##'+
-                    host_img[0].get('src')+"##"+fans.get_text())
+                    img.get("src")+'##'+dtype.get_text().strip()+'##'+link.get("href")+'##'+live_id+'##'+
+                    host_img+"##"+fans)
             f.write(u'\n')
             self.num += 1
 
@@ -81,6 +92,8 @@ class Zhanqi():
         print("当前观众人数:%s" % self.count)
 
 if __name__ == "__main__":
+    start = time.clock()
     d = Zhanqi()
     d.zhanqiSpider()
+    print('程序用时%f'%(time.clock()-start))
 

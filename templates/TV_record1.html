@@ -128,6 +128,9 @@
         <script>
             $(function() {
                 $(".sendd").click(function () {
+                    {% if not session.get('is_login') %}
+                        alert('请登陆发表评论')
+                    {% else %}
                     var xhr = createXhr();
                     xhr.open("post", "/get_comment", true);
                     xhr.onreadystatechange = function () {
@@ -140,6 +143,7 @@
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                     xhr.send("uname={{ user.user_name }}"+"&ucomment="+$(".form8").val()+
                     "&idnumber="+window.location.href);
+                    {% endif %}
                 });
             })
 

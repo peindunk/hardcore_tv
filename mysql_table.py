@@ -316,7 +316,6 @@ def createTables():
     adm = UserMain.query.filter(UserMain.user_name=='admin').first()
     uid = adm.user_id
     us = UserScore.query.filter(UserScore.u_id==uid).first()
-    print('us',us)
     if not us:
         us2 = UserScore(uid,10000000)
         db.session.add(us2)

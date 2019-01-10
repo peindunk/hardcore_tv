@@ -150,21 +150,25 @@
             <button id="btn"  onclick="location.href='/ads'">获取积分</button>
         </div>
         <script>
+
             $(function () {
             $('#llg').click(function () {
+                {% if not session.get('is_login') %}
+                alert('请登陆--送礼物')
+                {% else %}
                 var data = {'bp':-5};
-                $.ajax(
-                {
-                    url:'/bp',
-                    type:'POST',
-                    contentType: 'application/json; charset=UTF-8',
-                    dataType:'json',
-                    data:JSON.stringify(data),
-
-                }
-            )
                 var s = $('#showbp').text()
                 arrlist = s.split(':')
+                    $.ajax(
+                    {
+                        url:'/bp',
+                        type:'POST',
+                        contentType: 'application/json; charset=UTF-8',
+                        dataType:'json',
+                        data:JSON.stringify(data),
+
+                    }
+            )
                 score = parseInt(arrlist[1])
                 score -= 5
                 if (score<0){
@@ -174,10 +178,14 @@
                     $('#showbp').html('当前积分:' + score)
                     alert('给主播送出斑竹-5分')
                 }
+                {% endif %}
             })
         })
             $(function () {
             $('#lg').click(function () {
+                {% if not session.get('is_login') %}
+                alert('请登陆--送礼物')
+                {% else %}
                 var data = {'bp':-10};
                 $.ajax(
                 {
@@ -200,11 +208,14 @@
                     $('#showbp').html('当前积分:' + score)
                     alert('给主播送出飞机-10分')
                 }
-
+                {% endif %}
             })
         })
             $(function () {
             $('#mg').click(function () {
+                {% if not session.get('is_login') %}
+                alert('请登陆--送礼物')
+                {% else %}
                 var data = {'bp':-50};
                 $.ajax(
                 {
@@ -228,10 +239,14 @@
                     $('#showbp').html('当前积分:' + score)
                     alert('给主播送出火箭-50分')
                 }
+                {% endif %}
             })
         })
             $(function () {
             $('#hg').click(function () {
+                {% if not session.get('is_login') %}
+                alert('请登陆--送礼物')
+                {% else %}
                 var data = {'bp':-100};
                 $.ajax(
                 {
@@ -255,6 +270,7 @@
                     $('#showbp').html('当前积分:' + score)
                     alert('给主播送出超级火箭-100分')
                 }
+                {% endif %}
             })
         })
         </script>
@@ -272,57 +288,33 @@
       var barrageArray = [
               {
                 url: '用户头像',
-                text: '秋天爱美丽',
+                text: '666666666666666',
                 level: 10
               },
               {
                 url: '用户头像',
-                text: '今天很开心啊',
+                text: '哈哈哈哈哈哈',
                 level: 10
               },
               {
                 url: '用户头像',
-                text: 'winter has come',
+                text: '这个还行',
                 level: 10
               },
               {
                 url: '',
-                text: '土耳其现在形势',
+                text: '会不会玩阿',
                 level: 10
               },
               {
                 url: '',
-                text: '没事早点回家吃饭啊',
+                text: '主播你妈妈叫你回家吃饭',
                 level: 10
               },
-               {
-                url: '',
-                text: '这主角真实醉了，不会回啊',
-                level: 10
-              },
-              {
-                url: '',
-                text: '背景音乐真好听啊',
-                level: 10
-              },
-              {
-                url: '',
-                text: '背景音乐是***',
-                level: 10
-              },
-              {
-                url: '',
-                text: '经费在燃烧啊',
-                level: 10
-              },
-              {
-                url: '',
-                text: '国产良心剧',
-                level: 10
-              },
+
           ];
       var barrageColorArray = [
-        '#0099CC','#333333', '#009966','#FFFF66','#9933FF','#FFFF99','#CCCCFF','#CC9933','#FFFF66'
+        '#0099CC','#333333', '#009966','#FFFF66','#9933FF'
       ];
       var barrageTipWidth = 50; //提示语的长度
 
@@ -337,6 +329,9 @@
 
       //发送
       function sendMsg(){
+          {% if not session.get('is_login') %}
+            alert('请登陆发送弹幕')
+          {% else %}
         var inputValue = inputBox.value;
         inputValue .replace(/\ +/g, "");
 
@@ -349,7 +344,7 @@
         createBarrage(inputValue,true);
         $(".chat").append("<div class='smallcomment'>"+"{{ user.user_name }}"+" : "+inputBox.value+"</div>");
         inputBox.value = '';
-
+          {% endif %}
       }
 
 
