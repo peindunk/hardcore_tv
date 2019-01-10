@@ -2,7 +2,7 @@
 from mysql_table import *
 from config import *
 from form_model import LoginForm,RegisteForm
-from flask import Flask,render_template,request,session
+from flask import Flask,render_template,request,session,jsonify
 import api_for_surface as api
 from flask_sqlalchemy import SQLAlchemy
 import pymysql
@@ -36,6 +36,27 @@ def lubo(id):
         info,vl = api_obj.lubo_visble(id)
         comment = api_obj.comment_visible(id)
     return render_template('TV_record1.html',comment=comment,info=info,videolist=vl,user=user)
+
+@app.route('/get_comment',methods=['GET','POST'])
+def get_comment():
+    api_obj = api.API_Surface(request)
+    user = api_obj.get_user()
+    uid = user.user_id
+    uname = user.user_name
+    rid =  int(request.form["idnumber"].split('/')[-1])
+    # 存入数据库
+    aname=request.form["uname"]
+    acomment=request.form["ucomment"]
+    print('uname',aname)
+    print('comment',acomment)
+    comment_data = RoomComment(rid,acomment,uid,uname)
+    db.session.add(comment_data)
+    db.session.commit()
+
+    return "%s:%s"%(aname,acomment)
+
+
+
 
 @app.route('/register',methods=['GET','POST'])
 def register():
@@ -86,8 +107,9 @@ def livelist(type,p):
 def liveroom(id):
     apiobj = api.API_Surface(request)
     user = apiobj.get_user()
+    score = apiobj.get_socre()
     info = apiobj.show_live(id)
-    return render_template('TV_live.html',info = info,user=user)
+    return render_template('TV_live.html',info = info,user=user,score=score)
 
 @app.route('/test')
 def test():
@@ -107,16 +129,25 @@ def ads():
 
 @app.route('/bp',methods=['GET','POST'])
 def add_sub_bp():
+    print('改变积分')
     apiobj = api.API_Surface(request)
     user = apiobj.get_user()
     if apiobj.change_bp(user):
-        return '改变成功'
+        return 'success'
     else:
-        return '积分不足'
+        return 'fail'
 
 @app.route('/aboutus')
 def aboutus():
     return render_template('aboutus.html')
+
+@app.route('/showpoint')
+def showbp():
+    apiobj = api.API_Surface(request)
+    score = apiobj.get_socre()
+    info = dict()
+    info['bp'] = score
+    return jsonify(info)
 
 if __name__ == '__main__':
     # deleteAllTables()

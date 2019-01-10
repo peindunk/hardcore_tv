@@ -110,12 +110,40 @@
                   class="vid"  width="1244px" height="700px" autoplay="autoplay" frameborder="0">
                 </iframe>
         </div>
-        <div class="comment">
-            <input type="text" name="sendcomm" placeholder="发送评论...">
-            <form class="form2" action="" method="">
-                <input type="submit" name="sencomment" value="发送评论">
-            </form>
+        <div class="comment" >
+            <input class="form8" type="text" name="sendcomm" placeholder="发送评论...">
+            <input class="sendd" type="submit" name="sencomment" value="发送评论">
         </div>
+        <script>
+            function createXhr(){
+            var xhr=null;
+            if(window.XMLHttpRequest){
+                xhr=new XMLHttpRequest();
+            }else{
+                xhr=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            return xhr;
+            }
+        </script>
+        <script>
+            $(function() {
+                $(".sendd").click(function () {
+                    var xhr = createXhr();
+                    xhr.open("post", "/get_comment", true);
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            var restext = xhr.responseText;
+                            $(".chatarea").append("<div class='smallcomment'>"+restext
+                            +"</div>");
+                        };
+                    }
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.send("uname={{ user.user_name }}"+"&ucomment="+$(".form8").val()+
+                    "&idnumber="+window.location.href);
+                });
+            })
+
+        </script>
         <div class="chat">
             <div class="vide">视频
                 <div class="show">
@@ -129,12 +157,7 @@
                 </div>
             </div>
             <script type="text/javascript">
-                {#function play(){#}
-                {#        $('.vid').html("<source src='static/video/roc.mp4'>");#}
-                {#        $('.vid').load();#}
-                {#        alert(this.source.src())0#}
-                {#    }#}
-                $(function () {
+                     $(function () {
                     $('#video0').click(function () {
                     var s = $(this).attr('src');
                     $('#visible').attr('src',s);
@@ -156,9 +179,11 @@
 
             </script>
             <div class="comments">评论
-                {% for item in comment %}
-                <div class="chatarea">{{ item }}</div>
-                {% endfor %}
+                <div class="chatarea">
+                    {% for item in comment %}
+                        <div class="smallcomment">{{ item }}</div>
+                    {% endfor %}
+                </div>
             </div>
             <script type="text/javascript">
                 $(".chat .comments .chatarea").hide()

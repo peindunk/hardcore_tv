@@ -262,3 +262,9 @@ class API_Surface:
             return True
         else:
             return False
+
+    def get_socre(self):
+        user = self.get_user()
+        us = mt.UserScore.query.filter(mt.UserScore.u_id==user.user_id).first()
+        return us.score
+

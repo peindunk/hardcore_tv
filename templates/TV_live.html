@@ -61,11 +61,17 @@
         {% elif session.get('is_login') %}
         <span class="nav_user success_login">
             <img id="login_user" src="{{ url_for('static',filename='img/user.jpg') }}" alt="头像" style="width: 26px;height: 26px;border-radius: 13px;">
+            &nbsp;&nbsp;
             <div class="user_position" style="height: 29px;line-height: 10px;line-height: 29px;float: right;">
                 <span id="login_userName">{{ user.user_name }}</span>
                 <span><a href="/skip/logout" style="text-decoration: none">退出</a></span>
+                &nbsp;&nbsp;&nbsp;
+                <span id="showbp">当前积分:{{ score }}</span>
             </div>
         </span>
+            <script>
+
+            </script>
         {% endif %}
     </form>
 </div>
@@ -107,11 +113,6 @@
                 {{ info['host_name'] }}
             </div>
         </div>
-        <!-- <div class="video">
-            <video class="vid" width="1244px" height="700px" controls>
-                <source src="zj.mp4">
-            </video>
-        </div> -->
         <div class="video" width="1244px" height="700px">
             <script type="text/javascript" src="{{ url_for('static',filename='js/ckplayer/ckplayer/ckplayer.js') }}"></script>
             <div class="vid" width="1244px" height="700px"></div>
@@ -133,21 +134,111 @@
         </div>
         <div class="comment">
             <div class="present">
-                <button class="img-group" onclick=""><img title="斑竹0p" src="{{ url_for('static',filename='img/p1.png') }}">
+                <button class="img-group" id="llg" onclick=""><img title="斑竹0p" src="{{ url_for('static',filename='img/p1.png') }}">
                     <div class="img-tip">斑竹5p</div>
                 </button>
-                <button class="img-group" onclick=""><img title="飞机10p" src="{{ url_for('static',filename='img/p2.png') }}">
+                <button class="img-group" id="lg" onclick=""><img title="飞机10p" src="{{ url_for('static',filename='img/p2.png') }}">
                     <div class="img-tip">飞机10p</div>
                 </button>
-                <button class="img-group" onclick=""><img title="火箭50p" src="{{ url_for('static',filename='img/p3.png') }}">
+                <button class="img-group" id="mg" onclick=""><img title="火箭50p" src="{{ url_for('static',filename='img/p3.png') }}">
                     <div class="img-tip">火箭50p</div>
                 </button>
-                <button class="img-group" onclick=""><img title="超级火箭100p" src="{{ url_for('static',filename='img/p4.png') }}">
+                <button class="img-group" id="hg" onclick=""><img title="超级火箭100p" src="{{ url_for('static',filename='img/p4.png') }}">
                     <div class="img-tip">超级火箭100p</div>
                 </button>
             </div>
             <button id="btn"  onclick="location.href='/ads'">获取积分</button>
         </div>
+        <script>
+            $(function () {
+            $('#llg').click(function () {
+                var data = {'bp':-5};
+                alert('给主播送出斑竹-5分')
+                $.ajax(
+                {
+                    url:'/bp',
+                    type:'POST',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType:'json',
+                    data:JSON.stringify(data),
+
+                }
+            )
+                var s = $('#showbp').text()
+                arrlist = s.split(':')
+                score = parseInt(arrlist[1])
+                score -= 5
+                $('#showbp').html('当前积分:'+score)
+            })
+        })
+            $(function () {
+            $('#lg').click(function () {
+                var data = {'bp':-10};
+                alert('给主播送出飞机-10分')
+                $.ajax(
+                {
+                    url:'/bp',
+                    type:'POST',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType:'json',
+                    data:JSON.stringify(data),
+
+                }
+            )
+                var s = $('#showbp').text()
+                arrlist = s.split(':')
+                score = parseInt(arrlist[1])
+                score -= 10
+                $('#showbp').html('当前积分:'+score)
+
+            })
+        })
+            $(function () {
+            $('#mg').click(function () {
+                var data = {'bp':-50};
+                alert('给主播送出火箭-50分')
+                $.ajax(
+                {
+                    url:'/bp',
+                    type:'POST',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType:'json',
+                    data:JSON.stringify(data),
+
+                }
+
+            )
+                var s = $('#showbp').text()
+                arrlist = s.split(':')
+                score = parseInt(arrlist[1])
+                score -= 50
+                $('#showbp').html('当前积分:'+score)
+            })
+        })
+            $(function () {
+            $('#hg').click(function () {
+                var data = {'bp':-100};
+                alert('给主播送出超级火箭-100分')
+                $.ajax(
+                {
+                    url:'/bp',
+                    type:'POST',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType:'json',
+                    data:JSON.stringify(data),
+
+                }
+
+            )
+                var s = $('#showbp').text()
+                arrlist = s.split(':')
+                score = parseInt(arrlist[1])
+                score -= 100
+                $('#showbp').html('当前积分:'+score)
+            })
+        })
+        </script>
+
         <div class="chat"></div>
         <div class="sendcom">
             <input class="input" type="text" name="sendcom" placeholder="发送评论...">
