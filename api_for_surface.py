@@ -104,10 +104,13 @@ class API_Surface:
 
     # 评论
     def comment_visible(self,rid):
-        rcm = mt.RoomComment.query.filter(mt.RoomComment.rid==rid).all()
+        rcm = mt.db.session.query(mt.RoomComment).all()
+        mt.db.session.commit()
+        print(rcm)
         user_com = []
         for item in rcm:
-            user_com.append(item.uname+":"+item.comment)
+            if item.rid == rid:
+                user_com.append(item.uname+":"+item.comment)
         return user_com
 
     def show_index(self):
@@ -267,4 +270,15 @@ class API_Surface:
         user = self.get_user()
         us = mt.UserScore.query.filter(mt.UserScore.u_id==user.user_id).first()
         return us.score
+
+    def save_comment(self,rid,uid,uname):
+        # 存入数据库
+        aname = self.request.form["uname"]
+        acomment = self.request.form["ucomment"]
+        print('uname', aname)
+        print('comment', acomment)
+        comment_data = mt.RoomComment(rid, acomment, uid, uname)
+        mt.db.session.add(comment_data)
+        mt.db.session.commit()
+        return  (aname,acomment)
 

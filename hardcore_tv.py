@@ -35,6 +35,7 @@ def lubo(id):
     if request.method == "GET":
         info,vl = api_obj.lubo_visble(id)
         comment = api_obj.comment_visible(id)
+        print(comment)
     return render_template('TV_record1.html',comment=comment,info=info,videolist=vl,user=user)
 
 @app.route('/get_comment',methods=['GET','POST'])
@@ -44,18 +45,8 @@ def get_comment():
     uid = user.user_id
     uname = user.user_name
     rid =  int(request.form["idnumber"].split('/')[-1])
-    # 存入数据库
-    aname=request.form["uname"]
-    acomment=request.form["ucomment"]
-    print('uname',aname)
-    print('comment',acomment)
-    comment_data = RoomComment(rid,acomment,uid,uname)
-    db.session.add(comment_data)
-    db.session.commit()
-
-    return "%s:%s"%(aname,acomment)
-
-
+    ccom = api_obj.save_comment(rid,uid,uname)
+    return "%s:%s"%(ccom)
 
 
 @app.route('/register',methods=['GET','POST'])
