@@ -294,7 +294,9 @@ def del_room_table():
 # 插入直播间
 def gen_myroom():
     # 等待放入房间封面 头像封面 推流连接
-    rm = RoomMain('hardcore官方直播间','hardcore_tv','房间封面','1','推流连接','头像')
+    rm = RoomMain('hardcore官方直播间','hardcore_tv','http://i1.bvimg.com/674670/7a296b10394c31b2.jpg',
+                  '1','rtmp://176.47.1.46/hardcore/tv',
+                  'http://i1.bvimg.com/674670/0bf5a3f0c78e1168.jpg')
     db.session.add(rm)
     db.session.commit()
     rr = RoomMain.query.filter().all()[-1]

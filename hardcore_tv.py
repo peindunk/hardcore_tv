@@ -14,10 +14,12 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']="mysql://root:123456@localhost/hardcore_tv"
 # 未来移除  避免warning
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+app.config['SQLALCHEMY_POOL_SIZE'] = 100
 # 创建数据库实例
 db = SQLAlchemy(app)
 # CSRF
 app.config['SECRET_KEY'] = SECRET_KEY
+
 
 @app.route('/',methods=['GET','POST'])
 def index():
