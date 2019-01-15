@@ -2,13 +2,15 @@
 from hardcore_tv import db
 from config import *
 from flask_login import UserMixin
+from werkzeug.security import generate_password_hash
+
 
 # 创建实体模板类
 class UserMain(UserMixin,db.Model):
     __tablename__ = 'userinfo_main'
     user_id = db.Column(db.INTEGER,primary_key=True)
     user_name = db.Column(db.String(20),nullable=False,unique=True)
-    u_passwd = db.Column(db.String(20),nullable=False)
+    u_passwd = db.Column(db.String(256),nullable=False)
     age = db.Column(db.INTEGER,nullable=False)
     email = db.Column(db.String(50),nullable=False)
     img = db.Column(db.String(128))
@@ -312,7 +314,8 @@ def createTables():
     # 创建管理员
     adm = UserMain.query.filter(UserMain.user_name=='admin').first()
     if not adm:
-        admobj = UserMain('admin','admin',0,'admin@admin.com')
+        pwd = generate_password_hash('admin')
+        admobj = UserMain('admin',pwd,0,'admin@admin.com')
         db.session.add(admobj)
         db.session.commit()
     adm = UserMain.query.filter(UserMain.user_name=='admin').first()

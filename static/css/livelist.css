@@ -1,4 +1,3 @@
-@charset 'utf-8';
 <!--       网页头部布局-->
         html,body{
             padding:0;
@@ -140,7 +139,6 @@
 
 
 
-    <!--{#        网页主题布局#}-->
         #mainbody{
             width:100%;
             position: relative;

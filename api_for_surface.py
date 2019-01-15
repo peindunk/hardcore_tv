@@ -2,6 +2,7 @@
 from flask import flash,jsonify,session
 import mysql_table as mt
 import time
+from werkzeug.security import check_password_hash,generate_password_hash
 
 class API_Surface:
     def __init__(self,req,db=None):
@@ -18,7 +19,8 @@ class API_Surface:
                 if not user:
                     flash('用户不存在')
                 else:
-                    if user.u_passwd != upwd:
+                    if not check_password_hash( user.u_passwd,upwd):
+                    # if user.u_passwd != upwd:
                         flash('密码不正确')
                         return 0
                     else:
@@ -44,6 +46,7 @@ class API_Surface:
             return
         if register.validate_on_submit():
             print('验证通过')
+            upwd = generate_password_hash(upwd)
             user_m = mt.UserMain(uname,upwd,age,email)
             mt.db.session.add(user_m)
             mt.db.session.commit()

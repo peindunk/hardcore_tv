@@ -207,6 +207,11 @@
                 else {
                     $('#showbp').html('当前积分:' + score)
                     alert('给主播送出飞机-10分')
+                    $('#plane').css('display','inline')
+                    setTimeout(function(){
+                    $("#plane").css("display","none");
+                        },
+                        3000);
                 }
                 {% endif %}
             })
@@ -238,6 +243,11 @@
                 else {
                     $('#showbp').html('当前积分:' + score)
                     alert('给主播送出火箭-50分')
+                    $('#rocket').css('display','inline')
+                    setTimeout(function(){
+                    $("#rocket").css("display","none");
+                        },
+                        3000);
                 }
                 {% endif %}
             })
@@ -269,6 +279,11 @@
                 else {
                     $('#showbp').html('当前积分:' + score)
                     alert('给主播送出超级火箭-100分')
+                    $('#superrocket').css('display','inline')
+                    setTimeout(function(){
+                    $("#superrocket").css("display","none");
+                        },
+                        3000);
                 }
                 {% endif %}
             })
@@ -276,7 +291,9 @@
         </script>
 
         <div class="chat">
-{#            <div class="smallcomment"></div>#}
+            <img src="http://gfs-op.douyucdn.cn/dygift/1606/93daef170894a9d6bd8495fa0f81e165.gif" style="width: 300px; height: 300px; margin-left: 50px; display: none;" id="plane">
+            <img src="http://gfs-op.douyucdn.cn/dygift/1606/39b578b3cb8645b54f9a1001c392a237.gif" style="width: 300px; height: 300px; margin-left: 50px; display: none;" id="rocket">
+            <img src="http://gfs-op.douyucdn.cn/dygift/1707/c3f3f69e1fdc4f9b2c02a7bcd30334eb.gif" style="width: 300px; height: 300px; margin-left: 50px; display: none;" if="superrocket">
         </div>
         <div class="sendcom">
             <input class="input" type="text" name="sendcom" placeholder="发送评论...">
@@ -286,32 +303,11 @@
     <script>
     ;(function(){
       var barrageArray = [
-              {
-                url: '用户头像',
-                text: '666666666666666',
-                level: 10
-              },
-              {
-                url: '用户头像',
-                text: '哈哈哈哈哈哈',
-                level: 10
-              },
-              {
-                url: '用户头像',
-                text: '这个还行',
-                level: 10
-              },
-              {
-                url: '',
-                text: '会不会玩阿',
-                level: 10
-              },
-              {
-                url: '',
-                text: '主播你妈妈叫你回家吃饭',
-                level: 10
-              },
-
+            '安静爱骚白已经到了一种境界了 ','反一波','📺','瞬间爆炸','哈哈哈哈哈哈哈哈哈哈哈','','不是只有两个连胜号吗？','💃💃💃💃💃💃💃💃💃💃','🍧🍰🍱🍲🍳🍵☕🍶🍺🍺🍻🍸','哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈','󾓭󾓭󾓭󾓭󾓭󾓭󾓭󾓭󾓭󾓭󾓭。','惨叫 听到了2声惨叫'
+          ,'。。。。。。。。','→_→（●—●)（●—●)（●—●（●—●)（●—●','嗝','加油加油加油','交下免费的荧光棒哦 然后没关注的点下关注','谢谢大家支持没关注主播的关注一下哦，欢迎加入粉丝团，成为白家的小可爱谢谢❤️','滚滚滚','📅📅📅📅📅📅📅📅📅📅',
+          '🍌 🍌 🍌 🍌 🍌 🍌 🍌','💛💘💞💝💘','外号没赢过','郭显兵帮我开门','关注怎么回事','没赢过，我觉得就是立马点塔','🍮🍮🍮🍮🍮🍮🍮🍮🍮🍮🍮','💩💩💩💩💩💩','🍎️🍎️🍎️🍎️🍎️🍎️🍎','。。。。。','抱歉先吃个酸梅','有哪位兄弟也在看知否的','20秒','对面慌得一批','骚话太多就容易死啊','🍎','死了怀孕',
+          '🐷🐷🐷🐷🐷🐷🐷🐷','哈哈哈哈哈哈哈哈','10秒','0. 0','袁富行，别看了','赢了[emot:dy115]','还不如点塔','🏃🏃🏃🏃🏃🏃🏃🏃🏃','uhu8h...','大傻子','找你妈借口','好像是只有苹果手机才能打出👑吧安卓和电脑别试',' 骂你','稳重点','真的很性感嘛？','🐞️🐞️🐞️🐞️🐞️🐞️🐞️'
+          ,'我走了','名刀水晶','文体两开花，请多多','🌎🌎🌎🌎🌎🌎🌎🌎🌎🌎','🎀🎀🎀🎀🎀🎀🎀🎀🎀🎀🎀','曹操铭文','谁说手机不行','❌👃❌👃❌👃❌👃❌👃','🐕🐕🐱🐶🐈🐒🦁🐶🐃🐕','MVP没了','好像没赢过一样','🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎','','就是想吃酸梅','🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈','对面垂死挣扎','🍏🍊🍉🍈🥭',
           ];
       var barrageColorArray = [
         '#0099CC','#333333', '#009966','#FFFF66','#9933FF'
@@ -444,7 +440,7 @@
       /*******初始化事件**********/
       //系统数据
       barrageArray.forEach(function(item,index){
-        createBarrage(item.text, false);
+        createBarrage(item, false);
       });
 
       //点击发送
