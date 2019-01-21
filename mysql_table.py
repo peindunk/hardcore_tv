@@ -217,7 +217,7 @@ def gen_offline():
     rc = RoomCount(rid,100,9999,0,0)
     rt = RoomType(rid,'娱乐')
     rcm = RoomComment(rid,'尽享经典nba赛事',0,'5皇james')
-    vl1 = VideoList(rid, '//player.bilibili.com/player.html?aid=34067556&cid=59668869&page=1',
+    vl1 = VideoList(rid, '//player.bilibili.com/player.html?aid=34760420&cid=60896026&page=1',
                     'img/poster/nba_md.png', 'nba经典镜头 - 麦迪时刻35秒13分')
     vl2 = VideoList(rid, '//player.bilibili.com/player.html?aid=35069687&cid=61443376&page=1',
                     'img/poster/nba_kb.png', 'nba经典镜头 - 科比81分')

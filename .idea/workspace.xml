@@ -2,37 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62842e3c-6fe1-444b-861d-5ebe7a2def53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_for_surface.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_for_surface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/livelist.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/livelist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/TV_live.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/TV_live.html" afterDir="false" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/666.jpg" afterPath="$PROJECT_DIR$/static/img/666.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/163news.jfif" afterPath="$PROJECT_DIR$/static/img/ads/163news.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/1car.jfif" afterPath="$PROJECT_DIR$/static/img/ads/1car.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/5173.jpg" afterPath="$PROJECT_DIR$/static/img/ads/5173.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/CCTV.jfif" afterPath="$PROJECT_DIR$/static/img/ads/CCTV.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/baidu.jpg" afterPath="$PROJECT_DIR$/static/img/ads/baidu.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/jd.jpg" afterPath="$PROJECT_DIR$/static/img/ads/jd.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/lfzb.jpg" afterPath="$PROJECT_DIR$/static/img/ads/lfzb.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/lzlj.jfif" afterPath="$PROJECT_DIR$/static/img/ads/lzlj.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/meituan.jfif" afterPath="$PROJECT_DIR$/static/img/ads/meituan.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/sina.jfif" afterPath="$PROJECT_DIR$/static/img/ads/sina.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/tencent.jpg" afterPath="$PROJECT_DIR$/static/img/ads/tencent.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/timg.jfif" afterPath="$PROJECT_DIR$/static/img/ads/timg.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/toutiao.jfif" afterPath="$PROJECT_DIR$/static/img/ads/toutiao.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/ads/yidian.jfif" afterPath="$PROJECT_DIR$/static/img/ads/yidian.jfif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/bg_skip.jpg" afterPath="$PROJECT_DIR$/static/img/bg_skip.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/jay.jpeg" afterPath="$PROJECT_DIR$/static/img/jay.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/nba.jpeg" afterPath="$PROJECT_DIR$/static/img/nba.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/jay_kanr.png" afterPath="$PROJECT_DIR$/static/img/poster/jay_kanr.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/jay_py.png" afterPath="$PROJECT_DIR$/static/img/poster/jay_py.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/jay_yfzm.png" afterPath="$PROJECT_DIR$/static/img/poster/jay_yfzm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/jay_yq.png" afterPath="$PROJECT_DIR$/static/img/poster/jay_yq.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/nba_jd.png" afterPath="$PROJECT_DIR$/static/img/poster/nba_jd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/nba_kb.png" afterPath="$PROJECT_DIR$/static/img/poster/nba_kb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/nba_md.png" afterPath="$PROJECT_DIR$/static/img/poster/nba_md.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/poster/nba_on.png" afterPath="$PROJECT_DIR$/static/img/poster/nba_on.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/skip.gif" afterPath="$PROJECT_DIR$/static/img/skip.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/user.jpg" afterPath="$PROJECT_DIR$/static/img/user.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/ckplayer/material/logo.png" afterPath="$PROJECT_DIR$/static/js/ckplayer/material/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="$PROJECT_DIR$/geckodriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hardcore_tv.py" afterPath="$PROJECT_DIR$/hardcore_tv.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql_table.py" afterPath="$PROJECT_DIR$/mysql_table.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spider/fenlei.txt" afterPath="$PROJECT_DIR$/spider/fenlei.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spider/geckodriver.log" afterPath="$PROJECT_DIR$/spider/geckodriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spider/zhanqi.txt" afterPath="$PROJECT_DIR$/spider/zhanqi.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Head.css" afterPath="$PROJECT_DIR$/static/css/Head.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/TV_live.css" afterPath="$PROJECT_DIR$/static/css/TV_live.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/TV_record.css" afterPath="$PROJECT_DIR$/static/css/TV_record.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/font-awesome.css" afterPath="$PROJECT_DIR$/static/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/skip.css" afterPath="$PROJECT_DIR$/static/css/skip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/SmoothScroll.min.js" afterPath="$PROJECT_DIR$/static/js/SmoothScroll.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/easing.js" afterPath="$PROJECT_DIR$/static/js/easing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery.cm-overlay.js" afterPath="$PROJECT_DIR$/static/js/jquery.cm-overlay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery.mobile.custom.min.js" afterPath="$PROJECT_DIR$/static/js/jquery.mobile.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/move-top.js" afterPath="$PROJECT_DIR$/static/js/move-top.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/responsiveslides.min.js" afterPath="$PROJECT_DIR$/static/js/responsiveslides.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/TV_live.html" afterPath="$PROJECT_DIR$/templates/TV_live.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/TV_record1.html" afterPath="$PROJECT_DIR$/templates/TV_record1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/aboutus.html" afterPath="$PROJECT_DIR$/templates/aboutus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ads.html" afterPath="$PROJECT_DIR$/templates/ads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home_page.html" afterPath="$PROJECT_DIR$/templates/home_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/skip.html" afterPath="$PROJECT_DIR$/templates/skip.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/hardcore_tv$hardcore_tv.coverage" NAME="hardcore_tv Coverage Results" MODIFIED="1547559655697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hardcore_tv$hardcore_tv.coverage" NAME="hardcore_tv Coverage Results" MODIFIED="1547860768278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="hardcore_tv.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hardcore_tv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="106" column="76" lean-forward="true" selection-start-line="106" selection-start-column="76" selection-end-line="106" selection-end-column="76" />
+            <state relative-caret-position="468">
+              <caret line="131" column="34" lean-forward="true" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="api_for_surface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api_for_surface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+            <state relative-caret-position="18">
+              <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
               <folding>
                 <element signature="e#23#62#0" expanded="true" />
               </folding>
@@ -40,43 +94,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="TV_record1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/TV_record1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="186" column="42" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="42" />
+            <state relative-caret-position="3330">
+              <caret line="186" column="42" lean-forward="false" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="TV_live.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/TV_live.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="296" column="14" lean-forward="true" selection-start-line="296" selection-start-column="14" selection-end-line="296" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#2;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="256" column="52" lean-forward="true" selection-start-line="256" selection-start-column="52" selection-end-line="256" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="home_page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="416" column="43" selection-start-line="416" selection-start-column="43" selection-end-line="416" selection-end-column="43" />
+            <state relative-caret-position="10800">
+              <caret line="601" column="28" lean-forward="false" selection-start-line="601" selection-start-column="28" selection-end-line="601" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="mysql_table.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql_table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <state relative-caret-position="3888">
+              <caret line="219" column="92" lean-forward="false" selection-start-line="219" selection-start-column="92" selection-end-line="219" selection-end-column="92" />
               <folding>
                 <element signature="e#23#49#0" expanded="true" />
               </folding>
@@ -84,20 +136,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="livelist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/livelist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+            <state relative-caret-position="1800">
+              <caret line="101" column="55" lean-forward="false" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+            <state relative-caret-position="1188">
+              <caret line="66" column="52" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -169,30 +223,37 @@
         <option value="$PROJECT_DIR$/spider/zhanqi.py" />
         <option value="$PROJECT_DIR$/static/css/TV_live.css" />
         <option value="$PROJECT_DIR$/static/css/TV_record.css" />
-        <option value="$PROJECT_DIR$/templates/home_page.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/livelist.html" />
         <option value="$PROJECT_DIR$/templates/ads.html" />
         <option value="$PROJECT_DIR$/templates/TV_record1.html" />
         <option value="$PROJECT_DIR$/static/css/livelist.css" />
         <option value="$PROJECT_DIR$/hardcore_tv.py" />
-        <option value="$PROJECT_DIR$/templates/TV_live.html" />
-        <option value="$PROJECT_DIR$/mysql_table.py" />
         <option value="$PROJECT_DIR$/api_for_surface.py" />
+        <option value="$PROJECT_DIR$/mysql_table.py" />
+        <option value="$PROJECT_DIR$/templates/home_page.html" />
+        <option value="$PROJECT_DIR$/templates/TV_live.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="1657" />
-    <option name="height" value="835" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="59" />
+    <option name="y" value="-4" />
+    <option name="width" value="1857" />
+    <option name="height" value="931" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,7 +275,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,75 +308,76 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.hardcore_tv">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="hardcore_tv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="hardcore_tv" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
+      <method />
     </configuration>
-    <configuration name="hardcore_tv" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="hardcore_tv" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardcore_tv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method v="2" />
+      <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="hardcore_tv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="hardcore_tv" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
+      <method />
     </configuration>
+    <configuration default="false" name="hardcore_tv" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hardcore_tv" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardcore_tv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.hardcore_tv" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -344,42 +405,44 @@
       <workItem from="1547473581434" duration="735000" />
       <workItem from="1547532357608" duration="599000" />
       <workItem from="1547546528806" duration="13863000" />
+      <workItem from="1547817703275" duration="4823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66708000" />
+    <option name="totallyTimeSpent" value="71531000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="59" y="-4" width="1857" height="931" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15235457" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32920793" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980716" visible="true" weight="0.24972972" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019284" side_tool="true" weight="0.25123763" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="5" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -422,6 +485,58 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/api_for_surface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+          <folding>
+            <element signature="e#23#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TV_record1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3348">
+          <caret line="186" column="42" lean-forward="false" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TV_live.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5148">
+          <caret line="286" column="17" lean-forward="true" selection-start-line="286" selection-start-column="17" selection-end-line="286" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10818">
+          <caret line="601" column="28" lean-forward="true" selection-start-line="601" selection-start-column="28" selection-end-line="601" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3942">
+          <caret line="219" column="92" lean-forward="false" selection-start-line="219" selection-start-column="92" selection-end-line="219" selection-end-column="92" />
+          <folding>
+            <element signature="e#23#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/livelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1818">
+          <caret line="101" column="55" lean-forward="false" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/logging.py" />
     <entry file="file:///usr/lib/python3.6/logging/__init__.py" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/flask/helpers.py" />
@@ -446,36 +561,36 @@
     <entry file="file://$PROJECT_DIR$/templates/mainTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/form_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/lib/python3.6/site-packages/sqlalchemy/orm/attributes.py" />
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/sqlalchemy/orm/attributes.py" />
     <entry file="file://$PROJECT_DIR$/spider/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -489,127 +604,119 @@
     <entry file="file://$PROJECT_DIR$/templates/skip.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/TV_live.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3720">
-          <caret line="254" column="14" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="14" />
+          <caret line="254" column="14" lean-forward="false" selection-start-line="254" selection-start-column="13" selection-end-line="254" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/zhanqi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
-          <caret line="68" column="64" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+          <caret line="68" column="64" lean-forward="false" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/TV_record.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4080">
-          <caret line="272" column="13" selection-start-line="272" selection-start-column="13" selection-end-line="272" selection-end-column="13" />
+          <caret line="272" column="13" lean-forward="false" selection-start-line="272" selection-start-column="13" selection-end-line="272" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/lib/python3.6/site-packages/jinja2/environment.py" />
+    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/jinja2/environment.py" />
     <entry file="file://$PROJECT_DIR$/templates/ads.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
-          <caret line="139" column="43" selection-start-line="139" selection-start-column="43" selection-end-line="139" selection-end-column="43" />
+          <caret line="139" column="43" lean-forward="false" selection-start-line="139" selection-start-column="43" selection-end-line="139" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/skip.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/livelist.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2115">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home_page.html">
+    <entry file="file://$PROJECT_DIR$/spider/1.txt" />
+    <entry file="file://$PROJECT_DIR$/templates/TV_record1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="416" column="43" selection-start-line="416" selection-start-column="43" selection-end-line="416" selection-end-column="43" />
+        <state relative-caret-position="3330">
+          <caret line="186" column="42" lean-forward="false" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/livelist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+        <state relative-caret-position="1800">
+          <caret line="101" column="55" lean-forward="false" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3888">
+          <caret line="219" column="92" lean-forward="false" selection-start-line="219" selection-start-column="92" selection-end-line="219" selection-end-column="92" />
+          <folding>
+            <element signature="e#23#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10800">
+          <caret line="601" column="28" lean-forward="false" selection-start-line="601" selection-start-column="28" selection-end-line="601" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3072">
-          <caret line="579" lean-forward="true" selection-start-line="579" selection-end-line="579" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hardcore_tv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="106" column="76" lean-forward="true" selection-start-line="106" selection-start-column="76" selection-end-line="106" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TV_record1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="186" column="42" selection-start-line="186" selection-start-column="35" selection-end-line="186" selection-end-column="42" />
+        <state relative-caret-position="1188">
+          <caret line="66" column="52" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/TV_live.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="296" column="14" lean-forward="true" selection-start-line="296" selection-start-column="14" selection-end-line="296" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="256" column="52" lean-forward="true" selection-start-line="256" selection-start-column="52" selection-end-line="256" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api_for_surface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+        <state relative-caret-position="18">
+          <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding>
             <element signature="e#23#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql_table.py">
+    <entry file="file://$PROJECT_DIR$/hardcore_tv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#23#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="468">
+          <caret line="131" column="34" lean-forward="true" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
